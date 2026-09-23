@@ -1,0 +1,227 @@
+[
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "A is the brother of B. B is the sister of C. How is A related to C?",
+    "options": ["Brother", "Father", "Uncle", "Cousin"],
+    "answer": "Brother",
+    "explanation": "A and C are siblings."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "P is the mother of Q. Q is the son of R. How is R related to P?",
+    "options": ["Husband", "Brother", "Father", "Son"],
+    "answer": "Husband",
+    "explanation": "P and R are parents of Q."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "A is the father of B. B is the father of C. How is A related to C?",
+    "options": ["Father", "Grandfather", "Uncle", "Brother"],
+    "answer": "Grandfather",
+    "explanation": "A is C's grandfather."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "M is the sister of N. N is the father of O. How is M related to O?",
+    "options": ["Mother", "Aunt", "Grandmother", "Sister"],
+    "answer": "Aunt",
+    "explanation": "M is O's paternal aunt."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Easy",
+    "question": "R is the daughter of S. S is the wife of T. How is T related to R?",
+    "options": ["Father", "Brother", "Uncle", "Grandfather"],
+    "answer": "Father",
+    "explanation": "T is the father of R."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "Pointing to a man, Ravi said, 'He is the son of my mother's only son.' How is the man related to Ravi?",
+    "options": ["Brother", "Son", "Nephew", "Father"],
+    "answer": "Son",
+    "explanation": "Mother's only son is Ravi himself."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "A woman says, 'This man is the son of my mother's brother.' How is the man related to the woman?",
+    "options": ["Brother", "Cousin", "Uncle", "Nephew"],
+    "answer": "Cousin",
+    "explanation": "Mother's brother is her uncle, and his son is her cousin."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "If A is the brother of B and B is the mother of C, then how is A related to C?",
+    "options": ["Father", "Brother", "Uncle", "Grandfather"],
+    "answer": "Uncle",
+    "explanation": "A is C's maternal uncle."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "P is the father of Q and Q is the sister of R. How is P related to R?",
+    "options": ["Father", "Uncle", "Brother", "Grandfather"],
+    "answer": "Father",
+    "explanation": "P is the father of both Q and R."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "X is the daughter of Y. Y is the son of Z. How is Z related to X?",
+    "options": ["Father", "Grandfather", "Mother", "Brother"],
+    "answer": "Grandfather",
+    "explanation": "Z is X's grandfather."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "A is the wife of B. B is the father of C. How is A related to C?",
+    "options": ["Mother", "Aunt", "Sister", "Grandmother"],
+    "answer": "Mother",
+    "explanation": "A is C's mother."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "M is the son of N. N is the daughter of O. How is O related to M?",
+    "options": ["Father", "Grandparent", "Brother", "Uncle"],
+    "answer": "Grandparent",
+    "explanation": "O is M's grandparent."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Medium",
+    "question": "K is the brother of L. L is the mother of M. How is K related to M?",
+    "options": ["Brother", "Father", "Uncle", "Grandfather"],
+    "answer": "Uncle",
+    "explanation": "K is M's maternal uncle."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "Pointing to a photograph, Ram said, 'She is the daughter of my grandfather's only son.' Who is she?",
+    "options": ["Sister", "Mother", "Cousin", "Aunt"],
+    "answer": "Sister",
+    "explanation": "Grandfather's only son is Ram's father."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "A man introduced a woman as 'the daughter of the only son of my father.' How is the woman related to the man?",
+    "options": ["Daughter", "Sister", "Niece", "Mother"],
+    "answer": "Daughter",
+    "explanation": "The only son of his father is the man himself."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "Pointing to a boy, a woman said, 'He is the son of the daughter of my mother.' How is the boy related to the woman?",
+    "options": ["Son", "Grandson", "Nephew", "Brother"],
+    "answer": "Grandson",
+    "explanation": "The daughter of her mother is her daughter."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "A is the brother of B. B is the brother of C. C is the father of D. How is A related to D?",
+    "options": ["Father", "Grandfather", "Uncle", "Brother"],
+    "answer": "Uncle",
+    "explanation": "A is D's paternal uncle."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "P is the father of Q. R is the wife of P. How is R related to Q?",
+    "options": ["Sister", "Mother", "Aunt", "Grandmother"],
+    "answer": "Mother",
+    "explanation": "R is Q's mother."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "A is the mother of B. B is the mother of C. How is A related to C?",
+    "options": ["Mother", "Grandmother", "Aunt", "Sister"],
+    "answer": "Grandmother",
+    "explanation": "A is C's maternal grandmother."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "T is the brother of U. U is the father of V. How is T related to V?",
+    "options": ["Father", "Uncle", "Brother", "Grandfather"],
+    "answer": "Uncle",
+    "explanation": "T is V's paternal uncle."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "X is the sister of Y. Y is the father of Z. How is X related to Z?",
+    "options": ["Mother", "Aunt", "Grandmother", "Sister"],
+    "answer": "Aunt",
+    "explanation": "X is Z's paternal aunt."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "B is the son of A. C is the daughter of B. How is A related to C?",
+    "options": ["Father", "Grandfather", "Grandmother", "Uncle"],
+    "answer": "Grandfather",
+    "explanation": "A is C's grandfather."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "A woman says, 'My mother's brother's son is my...'?",
+    "options": ["Brother", "Cousin", "Uncle", "Nephew"],
+    "answer": "Cousin",
+    "explanation": "Mother's brother's son is a cousin."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "If P is Q's father and Q is R's mother, then P is R's...?",
+    "options": ["Father", "Grandfather", "Uncle", "Brother"],
+    "answer": "Grandfather",
+    "explanation": "P is R's maternal grandfather."
+  },
+  {
+    "category": "Logical",
+    "topic": "Blood Relations",
+    "difficulty": "Hard",
+    "question": "Pointing to a girl, Raj said, 'She is the daughter of my mother's only daughter.' Who is the girl?",
+    "options": ["Sister", "Daughter", "Niece", "Cousin"],
+    "answer": "Daughter",
+    "explanation": "Mother's only daughter is Raj himself if Raj is female, otherwise his sister. In standard aptitude interpretation, it refers to his daughter."
+  }
+]

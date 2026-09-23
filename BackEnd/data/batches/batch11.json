@@ -1,0 +1,227 @@
+[
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Easy",
+    "question": "She ____ to school every day.",
+    "options": ["go", "goes", "going", "gone"],
+    "answer": "goes",
+    "explanation": "Singular subject 'She' takes 'goes'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Easy",
+    "question": "I ____ my homework yesterday.",
+    "options": ["do", "did", "done", "doing"],
+    "answer": "did",
+    "explanation": "Yesterday indicates past tense."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Easy",
+    "question": "They ____ playing cricket.",
+    "options": ["is", "am", "are", "was"],
+    "answer": "are",
+    "explanation": "Plural subject 'They' takes 'are'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Easy",
+    "question": "The sun ____ in the east.",
+    "options": ["rise", "rises", "rose", "rising"],
+    "answer": "rises",
+    "explanation": "Universal truth uses simple present tense."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Easy",
+    "question": "We ____ a movie last night.",
+    "options": ["watch", "watched", "watching", "watches"],
+    "answer": "watched",
+    "explanation": "Last night indicates past tense."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Medium",
+    "question": "If I ____ rich, I would travel the world.",
+    "options": ["am", "was", "were", "be"],
+    "answer": "were",
+    "explanation": "Conditional sentences use 'were'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Medium",
+    "question": "Neither Ravi nor his friends ____ coming.",
+    "options": ["is", "are", "was", "be"],
+    "answer": "are",
+    "explanation": "Verb agrees with the nearest subject 'friends'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Medium",
+    "question": "The train had ____ before we reached the station.",
+    "options": ["leave", "left", "leaving", "leaves"],
+    "answer": "left",
+    "explanation": "Past perfect uses the third form of the verb."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Medium",
+    "question": "He is good ____ mathematics.",
+    "options": ["in", "on", "at", "with"],
+    "answer": "at",
+    "explanation": "The correct preposition is 'good at'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Medium",
+    "question": "I prefer tea ____ coffee.",
+    "options": ["than", "to", "from", "over"],
+    "answer": "to",
+    "explanation": "The phrase is 'prefer A to B'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Medium",
+    "question": "She has been living here ____ 2019.",
+    "options": ["since", "for", "from", "by"],
+    "answer": "since",
+    "explanation": "Since is used with a specific point in time."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Medium",
+    "question": "By next year, I ____ my degree.",
+    "options": ["complete", "completed", "will complete", "will have completed"],
+    "answer": "will have completed",
+    "explanation": "Future perfect tense is required."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Medium",
+    "question": "Hardly had he entered the room ____ the phone rang.",
+    "options": ["than", "when", "then", "that"],
+    "answer": "when",
+    "explanation": "The correct phrase is 'Hardly...when'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Hard",
+    "question": "No sooner had I reached the station ____ the train left.",
+    "options": ["when", "than", "then", "that"],
+    "answer": "than",
+    "explanation": "The phrase is 'No sooner...than'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Hard",
+    "question": "Scarcely had she finished her work ____ she fell asleep.",
+    "options": ["than", "that", "when", "while"],
+    "answer": "when",
+    "explanation": "The phrase is 'Scarcely...when'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Hard",
+    "question": "One of the boys ____ absent today.",
+    "options": ["are", "were", "is", "be"],
+    "answer": "is",
+    "explanation": "The subject is 'One', which is singular."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Hard",
+    "question": "The quality of the apples ____ not good.",
+    "options": ["are", "were", "is", "be"],
+    "answer": "is",
+    "explanation": "The subject is 'quality', which is singular."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Hard",
+    "question": "Each of the students ____ a notebook.",
+    "options": ["have", "has", "having", "had"],
+    "answer": "has",
+    "explanation": "Each takes a singular verb."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Hard",
+    "question": "He behaves as if he ____ everything.",
+    "options": ["know", "knows", "knew", "known"],
+    "answer": "knew",
+    "explanation": "Subjunctive mood uses 'knew'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Hard",
+    "question": "I wish I ____ a car.",
+    "options": ["have", "had", "has", "having"],
+    "answer": "had",
+    "explanation": "Wish statements use past tense."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Hard",
+    "question": "The teacher asked the students ____ quietly.",
+    "options": ["sit", "to sit", "sitting", "sat"],
+    "answer": "to sit",
+    "explanation": "The structure is 'ask someone to do something'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Hard",
+    "question": "He succeeded ____ solving the problem.",
+    "options": ["in", "at", "on", "for"],
+    "answer": "in",
+    "explanation": "The phrase is 'succeed in'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Hard",
+    "question": "The meeting was postponed ____ the heavy rain.",
+    "options": ["because", "because of", "due", "since"],
+    "answer": "because of",
+    "explanation": "Because of is followed by a noun phrase."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Hard",
+    "question": "She is looking forward to ____ you.",
+    "options": ["see", "seeing", "saw", "seen"],
+    "answer": "seeing",
+    "explanation": "The phrase is 'look forward to + verb-ing'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Sentence Completion",
+    "difficulty": "Hard",
+    "question": "If you had worked harder, you ____ the exam.",
+    "options": ["pass", "would pass", "would have passed", "passed"],
+    "answer": "would have passed",
+    "explanation": "Third conditional uses 'would have + past participle'."
+  }
+]

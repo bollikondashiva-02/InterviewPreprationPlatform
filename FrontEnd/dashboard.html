@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>PrepConnect Dashboard</title>
+
+    <link rel="stylesheet"
+          href="./css/dashboard.css">
+
+</head>
+
+<body>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="navbar">
+
+
+<div class="logo">
+    🎓 PrepConnect
+</div>
+
+<div class="navbar-actions">
+
+    <button class="profile-btn"
+            onclick="window.location.href='profile.html'">
+        👤 Profile
+    </button>
+
+    <button class="logout-btn"
+            onclick="logout()">
+        🚪 Logout
+    </button>
+
+</div>
+
+
+</header>
+
+
+
+
+<!-- =========================
+     MAIN DASHBOARD
+========================= -->
+
+<main class="dashboard">
+
+
+    <!-- WELCOME SECTION -->
+
+    <section class="welcome-section">
+
+        <div>
+
+            <p class="welcome-label">
+                Welcome back 👋
+            </p>
+
+            <h1 id="welcome">
+                Welcome, User
+            </h1>
+
+            <p id="email"
+               class="user-email">
+            </p>
+
+        </div>
+
+
+        <div class="verified-badge">
+            ✓ Email Verified
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         INTRO
+    ========================= -->
+
+    <section class="intro">
+
+        <h2>
+            Prepare. Practice. Succeed. 🚀
+        </h2>
+
+        <p>
+            Improve your aptitude, coding,
+            communication skills and track
+            your overall preparation progress.
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         FEATURE CARDS
+    ========================= -->
+
+    <section class="cards">
+
+
+        <!-- APTITUDE -->
+
+        <div class="card aptitude-card"
+             onclick="window.location.href='aptitude.html'">
+
+            <div class="card-icon">
+                📚
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Aptitude Questions
+                </h2>
+
+                <p>
+                    Practice quantitative,
+                    logical and verbal aptitude
+                    questions to improve your
+                    problem-solving skills.
+                </p>
+
+                <span class="card-link">
+                    Start Practice →
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CODING -->
+
+        <div class="card coding-card"
+             onclick="window.location.href='coding.html'">
+
+            <div class="card-icon">
+                💻
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Coding Questions
+                </h2>
+
+                <p>
+                    Solve programming problems
+                    and improve your coding skills
+                    using different programming
+                    languages.
+                </p>
+
+                <span class="card-link">
+                    Start Coding →
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- COMMUNICATION -->
+
+        <div class="card communication-card"
+             onclick="window.location.href='communication.html'">
+
+            <div class="card-icon">
+                🎤
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Communication Practice
+                </h2>
+
+                <p>
+                    Prepare for HR interviews,
+                    communication rounds and
+                    improve your interview confidence.
+                </p>
+
+                <span class="card-link">
+                    Practice Now →
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PROGRESS -->
+
+        <div class="card progress-card"
+             onclick="window.location.href='progress.html'">
+
+            <div class="card-icon">
+                📊
+            </div>
+
+            <div class="card-content">
+
+                <h2>
+                    Progress Tracker
+                </h2>
+
+                <p>
+                    Track your scores, completed
+                    questions and overall preparation
+                    progress.
+                </p>
+
+                <span class="card-link">
+                    View Progress →
+                </span>
+
+            </div>
+
+        </div>
+        
+
+    </section>
+
+
+
+    <!-- =========================
+         BOTTOM SECTION
+    ========================= -->
+
+    <section class="bottom-section">
+
+        <div>
+
+            <h2>
+                🚀 Keep Learning
+            </h2>
+
+            <p>
+                Consistent practice is the key
+                to cracking technical and
+                placement interviews.
+            </p>
+
+        </div>
+
+        <div class="stats">
+
+            <div class="stat">
+                <strong>4</strong>
+                <span>Modules</span>
+            </div>
+
+            <div class="stat">
+                <strong>∞</strong>
+                <span>Practice</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<script src="./js/dashboard.js"></script>
+
+</body>
+
+</html>
+

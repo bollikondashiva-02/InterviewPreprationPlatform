@@ -1,0 +1,227 @@
+[
+{
+"category": "Quantitative",
+"topic": "Ratio and Proportion",
+"difficulty": "Easy",
+"question": "Find the ratio of 20 to 25.",
+"options": ["4:5", "5:4", "2:3", "3:5"],
+"answer": "4:5",
+"explanation": "20:25 = 4:5 after dividing by 5."
+},
+{
+"category": "Quantitative",
+"topic": "Ratio and Proportion",
+"difficulty": "Easy",
+"question": "The ratio of boys to girls in a class is 3:2. If there are 30 boys, how many girls are there?",
+"options": ["15", "20", "25", "30"],
+"answer": "20",
+"explanation": "3 parts = 30, so 1 part = 10 and girls = 2 × 10 = 20."
+},
+{
+"category": "Quantitative",
+"topic": "Ratio and Proportion",
+"difficulty": "Easy",
+"question": "Simplify the ratio 18:24.",
+"options": ["2:3", "3:4", "4:5", "1:2"],
+"answer": "3:4",
+"explanation": "Divide both numbers by 6."
+},
+{
+"category": "Quantitative",
+"topic": "Ratio and Proportion",
+"difficulty": "Easy",
+"question": "Find the fourth proportional to 2, 4 and 8.",
+"options": ["12", "14", "16", "18"],
+"answer": "16",
+"explanation": "2:4 = 8:x, therefore x = 16."
+},
+{
+"category": "Quantitative",
+"topic": "Ratio and Proportion",
+"difficulty": "Medium",
+"question": "The ratio of two numbers is 5:7 and their sum is 72. Find the smaller number.",
+"options": ["25", "30", "35", "40"],
+"answer": "30",
+"explanation": "Total parts = 12, one part = 6, smaller number = 5 × 6 = 30."
+},
+{
+"category": "Quantitative",
+"topic": "Ratio and Proportion",
+"difficulty": "Medium",
+"question": "A sum of money is divided between A and B in the ratio 3:5. If the total amount is ₹400, how much does B get?",
+"options": ["₹100", "₹150", "₹200", "₹250"],
+"answer": "₹250",
+"explanation": "B gets 5/8 × 400 = ₹250."
+},
+{
+"category": "Quantitative",
+"topic": "Ratio and Proportion",
+"difficulty": "Medium",
+"question": "If x:y = 2:3 and y:z = 4:5, then x:z is:",
+"options": ["6:10", "8:15", "2:5", "4:15"],
+"answer": "8:15",
+"explanation": "x:y:z = 8:12:15."
+},
+{
+"category": "Quantitative",
+"topic": "Ratio and Proportion",
+"difficulty": "Medium",
+"question": "Two numbers are in the ratio 4:9. If the larger number is 81, find the smaller number.",
+"options": ["24", "30", "36", "42"],
+"answer": "36",
+"explanation": "9 parts = 81, one part = 9, smaller = 4 × 9 = 36."
+},
+{
+"category": "Quantitative",
+"topic": "Ratio and Proportion",
+"difficulty": "Hard",
+"question": "If the ratio of ages of A and B is 2:3 and the sum of their ages is 45, what is B's age?",
+"options": ["18", "24", "27", "30"],
+"answer": "27",
+"explanation": "5 parts = 45, one part = 9, B = 3 × 9 = 27."
+},
+{
+"category": "Quantitative",
+"topic": "Ratio and Proportion",
+"difficulty": "Hard",
+"question": "The ratio of incomes of A and B is 4:5 and their expenses are in the ratio 2:3. If both save ₹1000, find A's income.",
+"options": ["₹4000", "₹5000", "₹6000", "₹7000"],
+"answer": "₹4000",
+"explanation": "By applying savings and ratios, A's income is ₹4000."
+},
+{
+"category": "Quantitative",
+"topic": "Ratio and Proportion",
+"difficulty": "Hard",
+"question": "A and B can do a work in the ratio 3:5. If B takes 15 days, how many days does A take?",
+"options": ["20", "25", "30", "35"],
+"answer": "25",
+"explanation": "Time is inversely proportional to efficiency."
+},
+{
+"category": "Quantitative",
+"topic": "Ratio and Proportion",
+"difficulty": "Hard",
+"question": "If 8 men can complete a work in 12 days, how many men are needed to complete it in 8 days?",
+"options": ["10", "12", "14", "16"],
+"answer": "12",
+"explanation": "Men × Days = constant. 8 × 12 = 96, so men = 96/8 = 12."
+},
+{
+"category": "Quantitative",
+"topic": "Ratio and Proportion",
+"difficulty": "Hard",
+"question": "Find the mean proportional between 4 and 16.",
+"options": ["6", "8", "10", "12"],
+"answer": "8",
+"explanation": "√(4 × 16) = 8."
+},
+{
+"category": "Quantitative",
+"topic": "Average",
+"difficulty": "Easy",
+"question": "Find the average of 2, 4 and 6.",
+"options": ["3", "4", "5", "6"],
+"answer": "4",
+"explanation": "(2 + 4 + 6) / 3 = 4."
+},
+{
+"category": "Quantitative",
+"topic": "Average",
+"difficulty": "Easy",
+"question": "Find the average of 10, 20, 30 and 40.",
+"options": ["20", "25", "30", "35"],
+"answer": "25",
+"explanation": "100 / 4 = 25."
+},
+{
+"category": "Quantitative",
+"topic": "Average",
+"difficulty": "Easy",
+"question": "The average of 5 numbers is 12. Find their sum.",
+"options": ["50", "55", "60", "65"],
+"answer": "60",
+"explanation": "Sum = Average × Number of terms."
+},
+{
+"category": "Quantitative",
+"topic": "Average",
+"difficulty": "Easy",
+"question": "Find the average of the first five natural numbers.",
+"options": ["2", "3", "4", "5"],
+"answer": "3",
+"explanation": "(1+2+3+4+5)/5 = 3."
+},
+{
+"category": "Quantitative",
+"topic": "Average",
+"difficulty": "Medium",
+"question": "The average age of 4 students is 20 years. What is their total age?",
+"options": ["60", "70", "80", "90"],
+"answer": "80",
+"explanation": "Total age = 20 × 4 = 80."
+},
+{
+"category": "Quantitative",
+"topic": "Average",
+"difficulty": "Medium",
+"question": "The average of 6 numbers is 15. If one number is removed, the average becomes 14. Find the removed number.",
+"options": ["18", "19", "20", "21"],
+"answer": "20",
+"explanation": "Original sum = 90, new sum = 70, removed number = 20."
+},
+{
+"category": "Quantitative",
+"topic": "Average",
+"difficulty": "Medium",
+"question": "A batsman scores 40, 50 and 60 runs. Find his average score.",
+"options": ["45", "50", "55", "60"],
+"answer": "50",
+"explanation": "150 / 3 = 50."
+},
+{
+"category": "Quantitative",
+"topic": "Average",
+"difficulty": "Medium",
+"question": "The average of seven consecutive numbers is 18. Find the largest number.",
+"options": ["20", "21", "22", "23"],
+"answer": "21",
+"explanation": "Numbers are 15 to 21."
+},
+{
+"category": "Quantitative",
+"topic": "Average",
+"difficulty": "Hard",
+"question": "The average of 8 numbers is 25. If one number 40 is replaced by 56, find the new average.",
+"options": ["26", "27", "28", "29"],
+"answer": "27",
+"explanation": "Increase in sum = 16, increase in average = 2."
+},
+{
+"category": "Quantitative",
+"topic": "Average",
+"difficulty": "Hard",
+"question": "The average marks of 20 students is 60. A new student with 80 marks joins the class. Find the new average.",
+"options": ["60", "61", "62", "63"],
+"answer": "61",
+"explanation": "New average = (1200 + 80)/21 ≈ 61."
+},
+{
+"category": "Quantitative",
+"topic": "Average",
+"difficulty": "Hard",
+"question": "The average weight of 10 students is 50 kg. If one student weighing 60 kg leaves, what is the new average?",
+"options": ["48", "49", "50", "51"],
+"answer": "49",
+"explanation": "New average = (500 − 60)/9 ≈ 49."
+},
+{
+"category": "Quantitative",
+"topic": "Average",
+"difficulty": "Hard",
+"question": "The average of five numbers is 30. If each number is increased by 5, what is the new average?",
+"options": ["30", "32", "35", "40"],
+"answer": "35",
+"explanation": "Increasing every number by 5 increases the average by 5."
+}
+]

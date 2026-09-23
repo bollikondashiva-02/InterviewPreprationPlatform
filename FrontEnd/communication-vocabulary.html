@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Vocabulary | PrepConnect</title>
+
+<link
+    rel="stylesheet"
+    href="css/communication.css"
+>
+
+<link
+    rel="stylesheet"
+    href="css/communication-vocabulary.css"
+>
+
+
+</head>
+
+<body>
+
+
+<header class="vocabulary-header">
+
+    <div class="header-left">
+
+        <button
+            class="back-btn"
+            onclick="window.location.href='communication.html'"
+        >
+            ← Back to Communication
+        </button>
+
+    </div>
+
+    <div class="header-center">
+
+        <h1>📚 Vocabulary</h1>
+
+        <p>
+            Improve your vocabulary with synonyms,
+            antonyms and word meanings.
+        </p>
+
+    </div>
+
+    <div class="header-right">
+
+        <button
+            class="logout-btn"
+            onclick="logout()"
+        >
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+
+<main class="vocabulary-container">
+
+
+    <section class="vocabulary-info">
+
+        <div class="info-card">
+
+            <span>📚</span>
+
+            <strong>Total Questions</strong>
+
+            <p>50</p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <span>⏱️</span>
+
+            <strong>Time</strong>
+
+            <p>30 Minutes</p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <span>🎯</span>
+
+            <strong>Category</strong>
+
+            <p>Vocabulary</p>
+
+        </div>
+
+    </section>
+
+
+    <section class="progress-section">
+
+        <div class="progress-top">
+
+            <span id="questionNumber">
+                Question 1 of 50
+            </span>
+
+            <span id="answeredCount">
+                Answered: 0 / 50
+            </span>
+
+        </div>
+
+
+        <div class="progress-bar">
+
+            <div id="progressFill"></div>
+
+        </div>
+
+    </section>
+
+
+    <section class="vocabulary-test">
+
+
+        <div class="question-box">
+
+            <div class="question-type" id="questionType">
+                Vocabulary
+            </div>
+
+            <h2 id="questionText">
+                Loading question...
+            </h2>
+
+
+            <div class="options">
+
+                <label class="option">
+
+                    <input
+                        type="radio"
+                        name="answer"
+                        value="A"
+                    >
+
+                    <span id="optionA">
+                        Option A
+                    </span>
+
+                </label>
+
+
+                <label class="option">
+
+                    <input
+                        type="radio"
+                        name="answer"
+                        value="B"
+                    >
+
+                    <span id="optionB">
+                        Option B
+                    </span>
+
+                </label>
+
+
+                <label class="option">
+
+                    <input
+                        type="radio"
+                        name="answer"
+                        value="C"
+                    >
+
+                    <span id="optionC">
+                        Option C
+                    </span>
+
+                </label>
+
+
+                <label class="option">
+
+                    <input
+                        type="radio"
+                        name="answer"
+                        value="D"
+                    >
+
+                    <span id="optionD">
+                        Option D
+                    </span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="navigation-buttons">
+
+            <button
+                id="previousBtn"
+                onclick="previousQuestion()"
+            >
+                ← Previous
+            </button>
+
+
+            <button
+                id="nextBtn"
+                onclick="nextQuestion()"
+            >
+                Next →
+            </button>
+
+
+            <button
+                id="submitBtn"
+                onclick="submitTest()"
+                style="display: none;"
+            >
+                Submit Test
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section class="question-navigator">
+
+        <h2>
+            Question Navigator
+        </h2>
+
+        <div id="questionNumbers">
+            <!-- Question numbers created by JavaScript -->
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="js/communication-vocabulary.js"></script>
+
+
+</body>
+
+</html>

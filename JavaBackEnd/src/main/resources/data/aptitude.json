@@ -1,0 +1,3002 @@
+[
+  {
+    "question": "What is 20% of 150?",
+    "optionA": "20",
+    "optionB": "25",
+    "optionC": "30",
+    "optionD": "35",
+    "answer": "30",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is 15 + 27?",
+    "optionA": "40",
+    "optionB": "42",
+    "optionC": "44",
+    "optionD": "46",
+    "answer": "42",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is 25% of 200?",
+    "optionA": "40",
+    "optionB": "45",
+    "optionC": "50",
+    "optionD": "55",
+    "answer": "50",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A shirt costs ₹800. What is its price after a 10% discount?",
+    "optionA": "₹700",
+    "optionB": "₹720",
+    "optionC": "₹740",
+    "optionD": "₹760",
+    "answer": "₹720",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the average of 10, 20 and 30?",
+    "optionA": "15",
+    "optionB": "20",
+    "optionC": "25",
+    "optionD": "30",
+    "answer": "20",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "If 5 pens cost ₹50, what is the cost of 8 pens?",
+    "optionA": "₹70",
+    "optionB": "₹75",
+    "optionC": "₹80",
+    "optionD": "₹85",
+    "answer": "₹80",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the HCF of 12 and 18?",
+    "optionA": "3",
+    "optionB": "6",
+    "optionC": "9",
+    "optionD": "12",
+    "answer": "6",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the LCM of 4 and 6?",
+    "optionA": "8",
+    "optionB": "10",
+    "optionC": "12",
+    "optionD": "24",
+    "answer": "12",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A car travels 120 km in 3 hours. What is its average speed?",
+    "optionA": "30 km/h",
+    "optionB": "40 km/h",
+    "optionC": "50 km/h",
+    "optionD": "60 km/h",
+    "answer": "40 km/h",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is 3/4 of 80?",
+    "optionA": "40",
+    "optionB": "50",
+    "optionC": "60",
+    "optionD": "70",
+    "answer": "60",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "If a number is increased from 100 to 120, what is the percentage increase?",
+    "optionA": "10%",
+    "optionB": "15%",
+    "optionC": "20%",
+    "optionD": "25%",
+    "answer": "20%",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is 7 × 8?",
+    "optionA": "48",
+    "optionB": "54",
+    "optionC": "56",
+    "optionD": "64",
+    "answer": "56",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A man earns ₹20,000 per month and saves ₹5,000. What percentage of his income does he save?",
+    "optionA": "20%",
+    "optionB": "25%",
+    "optionC": "30%",
+    "optionD": "35%",
+    "answer": "25%",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the simple interest on ₹1,000 at 10% per annum for 2 years?",
+    "optionA": "₹100",
+    "optionB": "₹150",
+    "optionC": "₹200",
+    "optionD": "₹250",
+    "answer": "₹200",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "If 4 workers complete a job in 10 days, assuming equal efficiency, how many worker-days are required?",
+    "optionA": "20",
+    "optionB": "30",
+    "optionC": "40",
+    "optionD": "50",
+    "answer": "40",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the perimeter of a square with side 8 cm?",
+    "optionA": "16 cm",
+    "optionB": "24 cm",
+    "optionC": "32 cm",
+    "optionD": "64 cm",
+    "answer": "32 cm",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the area of a rectangle with length 10 cm and width 5 cm?",
+    "optionA": "15 cm²",
+    "optionB": "30 cm²",
+    "optionC": "50 cm²",
+    "optionD": "60 cm²",
+    "answer": "50 cm²",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A number divided by 5 gives 12. What is the number?",
+    "optionA": "50",
+    "optionB": "55",
+    "optionC": "60",
+    "optionD": "65",
+    "answer": "60",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "If the ratio of boys to girls is 2:3 and there are 10 boys, how many girls are there?",
+    "optionA": "12",
+    "optionB": "15",
+    "optionC": "18",
+    "optionD": "20",
+    "answer": "15",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the next number in the sequence 2, 4, 6, 8, ?",
+    "optionA": "9",
+    "optionB": "10",
+    "optionC": "11",
+    "optionD": "12",
+    "answer": "10",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A product is bought for ₹500 and sold for ₹600. What is the profit?",
+    "optionA": "₹50",
+    "optionB": "₹75",
+    "optionC": "₹100",
+    "optionD": "₹125",
+    "answer": "₹100",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is 2⁵?",
+    "optionA": "16",
+    "optionB": "24",
+    "optionC": "32",
+    "optionD": "64",
+    "answer": "32",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A train travels 300 km in 5 hours. What is its speed?",
+    "optionA": "50 km/h",
+    "optionB": "60 km/h",
+    "optionC": "70 km/h",
+    "optionD": "75 km/h",
+    "answer": "60 km/h",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the value of 100 ÷ 4 + 5?",
+    "optionA": "20",
+    "optionB": "25",
+    "optionC": "30",
+    "optionD": "35",
+    "answer": "30",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A father is 40 years old and his son is 10 years old. What is the ratio of their ages?",
+    "optionA": "2:1",
+    "optionB": "3:1",
+    "optionC": "4:1",
+    "optionD": "5:1",
+    "answer": "4:1",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+    {
+    "question": "What is 35% of 200?",
+    "optionA": "60",
+    "optionB": "65",
+    "optionC": "70",
+    "optionD": "75",
+    "answer": "70",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A number increased from 80 to 100. What is the percentage increase?",
+    "optionA": "20%",
+    "optionB": "25%",
+    "optionC": "30%",
+    "optionD": "35%",
+    "answer": "25%",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the average of 15, 25, 35 and 45?",
+    "optionA": "25",
+    "optionB": "30",
+    "optionC": "35",
+    "optionD": "40",
+    "answer": "30",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "If 6 notebooks cost ₹180, what is the cost of one notebook?",
+    "optionA": "₹20",
+    "optionB": "₹25",
+    "optionC": "₹30",
+    "optionD": "₹35",
+    "answer": "₹30",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the square of 15?",
+    "optionA": "125",
+    "optionB": "200",
+    "optionC": "225",
+    "optionD": "250",
+    "answer": "225",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the cube of 4?",
+    "optionA": "16",
+    "optionB": "32",
+    "optionC": "64",
+    "optionD": "81",
+    "answer": "64",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A shopkeeper buys an item for ₹400 and sells it for ₹500. What is the profit percentage?",
+    "optionA": "20%",
+    "optionB": "25%",
+    "optionC": "30%",
+    "optionD": "35%",
+    "answer": "25%",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is 5/8 of 64?",
+    "optionA": "32",
+    "optionB": "36",
+    "optionC": "40",
+    "optionD": "48",
+    "answer": "40",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "If 12 workers earn ₹3,600 equally, how much does each worker receive?",
+    "optionA": "₹200",
+    "optionB": "₹250",
+    "optionC": "₹300",
+    "optionD": "₹350",
+    "answer": "₹300",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the remainder when 47 is divided by 5?",
+    "optionA": "1",
+    "optionB": "2",
+    "optionC": "3",
+    "optionD": "4",
+    "answer": "2",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A bus covers 240 km in 4 hours. What is its average speed?",
+    "optionA": "50 km/h",
+    "optionB": "60 km/h",
+    "optionC": "70 km/h",
+    "optionD": "80 km/h",
+    "answer": "60 km/h",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the perimeter of a rectangle with length 12 cm and width 8 cm?",
+    "optionA": "30 cm",
+    "optionB": "36 cm",
+    "optionC": "40 cm",
+    "optionD": "48 cm",
+    "answer": "40 cm",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the area of a square with side 9 cm?",
+    "optionA": "18 cm²",
+    "optionB": "36 cm²",
+    "optionC": "72 cm²",
+    "optionD": "81 cm²",
+    "answer": "81 cm²",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "If x + 15 = 40, what is x?",
+    "optionA": "20",
+    "optionB": "25",
+    "optionC": "30",
+    "optionD": "35",
+    "answer": "25",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "If 3x = 27, what is x?",
+    "optionA": "6",
+    "optionB": "7",
+    "optionC": "8",
+    "optionD": "9",
+    "answer": "9",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A ₹1,000 item is sold at a 15% discount. What is the selling price?",
+    "optionA": "₹800",
+    "optionB": "₹850",
+    "optionC": "₹900",
+    "optionD": "₹950",
+    "answer": "₹850",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the simple interest on ₹2,000 at 5% per annum for 2 years?",
+    "optionA": "₹100",
+    "optionB": "₹150",
+    "optionC": "₹200",
+    "optionD": "₹250",
+    "answer": "₹200",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A person walks 5 km in 1 hour. How far will they walk in 4 hours at the same speed?",
+    "optionA": "15 km",
+    "optionB": "20 km",
+    "optionC": "25 km",
+    "optionD": "30 km",
+    "answer": "20 km",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "The ratio of two numbers is 3:5. If the smaller number is 15, what is the larger number?",
+    "optionA": "20",
+    "optionB": "25",
+    "optionC": "30",
+    "optionD": "35",
+    "answer": "25",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is 0.75 expressed as a percentage?",
+    "optionA": "7.5%",
+    "optionB": "25%",
+    "optionC": "75%",
+    "optionD": "750%",
+    "answer": "75%",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is 2.5 + 3.75?",
+    "optionA": "5.25",
+    "optionB": "6.00",
+    "optionC": "6.25",
+    "optionD": "6.50",
+    "answer": "6.25",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A tank contains 80 litres of water. If 25% is used, how much water remains?",
+    "optionA": "50 litres",
+    "optionB": "55 litres",
+    "optionC": "60 litres",
+    "optionD": "65 litres",
+    "answer": "60 litres",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "What is the sum of the first five natural numbers?",
+    "optionA": "10",
+    "optionB": "12",
+    "optionC": "15",
+    "optionD": "20",
+    "answer": "15",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "If 10% of a number is 12, what is the number?",
+    "optionA": "100",
+    "optionB": "110",
+    "optionC": "120",
+    "optionD": "130",
+    "answer": "120",
+    "category": "Quantitative",
+    "difficulty": "Easy"
+  },
+    {
+    "question": "What is 45% of 400?",
+    "optionA": "160",
+    "optionB": "180",
+    "optionC": "200",
+    "optionD": "220",
+    "answer": "180",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "A number is increased by 20% and becomes 360. What was the original number?",
+    "optionA": "280",
+    "optionB": "300",
+    "optionC": "320",
+    "optionD": "340",
+    "answer": "300",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "The average of five numbers is 24. If four of them are 18, 22, 26 and 30, what is the fifth number?",
+    "optionA": "20",
+    "optionB": "24",
+    "optionC": "26",
+    "optionD": "30",
+    "answer": "24",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "A product costs ₹800 and is sold at a profit of 15%. What is the selling price?",
+    "optionA": "₹900",
+    "optionB": "₹920",
+    "optionC": "₹940",
+    "optionD": "₹960",
+    "answer": "₹920",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "A shopkeeper gives a 20% discount on an item marked ₹1,500. What is the selling price?",
+    "optionA": "₹1,100",
+    "optionB": "₹1,200",
+    "optionC": "₹1,250",
+    "optionD": "₹1,300",
+    "answer": "₹1,200",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the compound interest on ₹1,000 at 10% per annum for 2 years?",
+    "optionA": "₹200",
+    "optionB": "₹210",
+    "optionC": "₹220",
+    "optionD": "₹240",
+    "answer": "₹210",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Two numbers are in the ratio 4:7 and their sum is 55. What is the smaller number?",
+    "optionA": "15",
+    "optionB": "20",
+    "optionC": "25",
+    "optionD": "28",
+    "answer": "20",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "If 8 workers complete a job in 15 days, how many days will 12 workers take, assuming equal efficiency?",
+    "optionA": "8 days",
+    "optionB": "10 days",
+    "optionC": "12 days",
+    "optionD": "15 days",
+    "answer": "10 days",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "A train travels 360 km in 4.5 hours. What is its average speed?",
+    "optionA": "70 km/h",
+    "optionB": "75 km/h",
+    "optionC": "80 km/h",
+    "optionD": "90 km/h",
+    "answer": "80 km/h",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "A man travels 60 km at 30 km/h and another 60 km at 60 km/h. What is his average speed for the entire journey?",
+    "optionA": "35 km/h",
+    "optionB": "40 km/h",
+    "optionC": "45 km/h",
+    "optionD": "50 km/h",
+    "answer": "40 km/h",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "A can complete a work in 12 days and B can complete it in 18 days. How many days will they take together?",
+    "optionA": "6.2 days",
+    "optionB": "7.2 days",
+    "optionC": "8.2 days",
+    "optionD": "9.2 days",
+    "answer": "7.2 days",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the HCF of 84 and 126?",
+    "optionA": "21",
+    "optionB": "28",
+    "optionC": "42",
+    "optionD": "63",
+    "answer": "42",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the LCM of 12, 15 and 20?",
+    "optionA": "40",
+    "optionB": "50",
+    "optionC": "60",
+    "optionD": "120",
+    "answer": "60",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "A sum of ₹5,000 is divided between A and B in the ratio 3:2. How much does A receive?",
+    "optionA": "₹2,000",
+    "optionB": "₹2,500",
+    "optionC": "₹3,000",
+    "optionD": "₹3,500",
+    "answer": "₹3,000",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "A person's salary increases from ₹25,000 to ₹30,000. What is the percentage increase?",
+    "optionA": "15%",
+    "optionB": "20%",
+    "optionC": "25%",
+    "optionD": "30%",
+    "answer": "20%",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "A number is decreased by 25% and becomes 150. What was the original number?",
+    "optionA": "180",
+    "optionB": "190",
+    "optionC": "200",
+    "optionD": "225",
+    "answer": "200",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "The perimeter of a rectangle is 60 cm and its length is 20 cm. What is its width?",
+    "optionA": "8 cm",
+    "optionB": "10 cm",
+    "optionC": "12 cm",
+    "optionD": "15 cm",
+    "answer": "10 cm",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "What is the area of a triangle with base 12 cm and height 8 cm?",
+    "optionA": "40 cm²",
+    "optionB": "48 cm²",
+    "optionC": "56 cm²",
+    "optionD": "96 cm²",
+    "answer": "48 cm²",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "If x/5 = 12, what is the value of x?",
+    "optionA": "50",
+    "optionB": "55",
+    "optionC": "60",
+    "optionD": "65",
+    "answer": "60",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "If 2x + 7 = 25, what is x?",
+    "optionA": "7",
+    "optionB": "8",
+    "optionC": "9",
+    "optionD": "10",
+    "answer": "9",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "A mixture contains milk and water in the ratio 5:2. If the total mixture is 35 litres, how much milk is present?",
+    "optionA": "20 litres",
+    "optionB": "25 litres",
+    "optionC": "30 litres",
+    "optionD": "32 litres",
+    "answer": "25 litres",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "A boat travels 24 km downstream in 2 hours. What is its downstream speed?",
+    "optionA": "10 km/h",
+    "optionB": "12 km/h",
+    "optionC": "14 km/h",
+    "optionD": "16 km/h",
+    "answer": "12 km/h",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "A person spends 70% of an income of ₹40,000. How much does the person save?",
+    "optionA": "₹10,000",
+    "optionB": "₹12,000",
+    "optionC": "₹14,000",
+    "optionD": "₹16,000",
+    "answer": "₹12,000",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "A number is divided by 7 and the quotient is 15 with remainder 3. What is the number?",
+    "optionA": "98",
+    "optionB": "105",
+    "optionC": "108",
+    "optionD": "112",
+    "answer": "108",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "The ages of A and B are in the ratio 3:5. If their total age is 40 years, what is B's age?",
+    "optionA": "15 years",
+    "optionB": "20 years",
+    "optionC": "25 years",
+    "optionD": "30 years",
+    "answer": "25 years",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+    {
+    "question": "A sum becomes ₹1,452 in 2 years at 10% compound interest per annum. What was the principal?",
+    "optionA": "₹1,100",
+    "optionB": "₹1,200",
+    "optionC": "₹1,250",
+    "optionD": "₹1,300",
+    "answer": "₹1,200",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "A shopkeeper marks an article 40% above its cost price and gives a 10% discount. What is his profit percentage?",
+    "optionA": "24%",
+    "optionB": "26%",
+    "optionC": "28%",
+    "optionD": "30%",
+    "answer": "26%",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "A train 180 m long crosses a platform 270 m long in 18 seconds. What is the speed of the train?",
+    "optionA": "70 km/h",
+    "optionB": "80 km/h",
+    "optionC": "90 km/h",
+    "optionD": "100 km/h",
+    "answer": "90 km/h",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "A can complete a work in 15 days and B can complete it in 20 days. They work together for 5 days. What fraction of the work remains?",
+    "optionA": "1/4",
+    "optionB": "1/3",
+    "optionC": "1/2",
+    "optionD": "2/3",
+    "answer": "1/2",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "A and B invest ₹40,000 and ₹60,000 respectively for the same period. If the total profit is ₹25,000, what is B's share?",
+    "optionA": "₹10,000",
+    "optionB": "₹12,500",
+    "optionC": "₹15,000",
+    "optionD": "₹18,000",
+    "answer": "₹15,000",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "The average of 8 numbers is 45. If one number 53 is replaced by 69, what is the new average?",
+    "optionA": "46",
+    "optionB": "47",
+    "optionC": "48",
+    "optionD": "49",
+    "answer": "47",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "A number is increased by 20% and then decreased by 20%. What is the overall percentage change?",
+    "optionA": "4% increase",
+    "optionB": "4% decrease",
+    "optionC": "No change",
+    "optionD": "8% decrease",
+    "answer": "4% decrease",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "A man can row 30 km downstream in 2 hours and the same distance upstream in 3 hours. What is the speed of the stream?",
+    "optionA": "2 km/h",
+    "optionB": "2.5 km/h",
+    "optionC": "3 km/h",
+    "optionD": "5 km/h",
+    "answer": "2.5 km/h",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "A sum of money is divided among A, B and C in the ratio 2:3:5. If C receives ₹4,000, what is the total amount?",
+    "optionA": "₹6,000",
+    "optionB": "₹7,000",
+    "optionC": "₹8,000",
+    "optionD": "₹10,000",
+    "answer": "₹8,000",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "A pipe fills a tank in 12 hours while another pipe empties it in 18 hours. If both are opened together, how long will the tank take to fill?",
+    "optionA": "24 hours",
+    "optionB": "30 hours",
+    "optionC": "36 hours",
+    "optionD": "40 hours",
+    "answer": "36 hours",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "A person travels 1/3 of a journey at 30 km/h and the remaining 2/3 at 60 km/h. What is the average speed?",
+    "optionA": "40 km/h",
+    "optionB": "45 km/h",
+    "optionC": "48 km/h",
+    "optionD": "50 km/h",
+    "answer": "45 km/h",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "If the price of a commodity increases by 25%, by what percentage must consumption decrease to keep expenditure unchanged?",
+    "optionA": "15%",
+    "optionB": "20%",
+    "optionC": "25%",
+    "optionD": "30%",
+    "answer": "20%",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "A trader mixes 20 kg of rice costing ₹40 per kg with 30 kg costing ₹60 per kg. What is the average cost per kg?",
+    "optionA": "₹48",
+    "optionB": "₹50",
+    "optionC": "₹52",
+    "optionD": "₹54",
+    "answer": "₹52",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "The difference between compound interest and simple interest on ₹10,000 at 10% per annum for 2 years is:",
+    "optionA": "₹50",
+    "optionB": "₹100",
+    "optionC": "₹150",
+    "optionD": "₹200",
+    "answer": "₹100",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "A person invests ₹5,000 at 8% simple interest for 3 years. What is the total amount?",
+    "optionA": "₹5,800",
+    "optionB": "₹6,000",
+    "optionC": "₹6,200",
+    "optionD": "₹6,400",
+    "answer": "₹6,200",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "If 12 men can complete a work in 16 days, how many men are required to complete the same work in 8 days?",
+    "optionA": "18",
+    "optionB": "20",
+    "optionC": "24",
+    "optionD": "28",
+    "answer": "24",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "A train moving at 72 km/h crosses a man standing on a platform in 10 seconds. What is the length of the train?",
+    "optionA": "180 m",
+    "optionB": "200 m",
+    "optionC": "220 m",
+    "optionD": "240 m",
+    "answer": "200 m",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "The present ages of A and B are in the ratio 4:5. After 6 years, their ages will be in the ratio 5:6. What is A's present age?",
+    "optionA": "18 years",
+    "optionB": "20 years",
+    "optionC": "24 years",
+    "optionD": "30 years",
+    "answer": "24 years",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "A rectangular field has area 1,200 m² and length 40 m. What is its perimeter?",
+    "optionA": "120 m",
+    "optionB": "130 m",
+    "optionC": "140 m",
+    "optionD": "160 m",
+    "answer": "140 m",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "If the radius of a circle is doubled, by what factor does its area increase?",
+    "optionA": "2",
+    "optionB": "3",
+    "optionC": "4",
+    "optionD": "8",
+    "answer": "4",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "A bag contains 5 red, 4 blue and 3 green balls. What is the probability of drawing a red ball?",
+    "optionA": "1/3",
+    "optionB": "5/12",
+    "optionC": "1/2",
+    "optionD": "7/12",
+    "answer": "5/12",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Two dice are thrown together. What is the probability of getting a sum of 8?",
+    "optionA": "1/9",
+    "optionB": "5/36",
+    "optionC": "1/6",
+    "optionD": "7/36",
+    "answer": "5/36",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "How many different arrangements can be made using all the letters of the word 'LEVEL'?",
+    "optionA": "20",
+    "optionB": "30",
+    "optionC": "60",
+    "optionD": "120",
+    "answer": "30",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "A number leaves remainder 5 when divided by 8. What remainder will its square leave when divided by 8?",
+    "optionA": "1",
+    "optionB": "3",
+    "optionC": "5",
+    "optionD": "7",
+    "answer": "1",
+    "category": "Quantitative",
+    "difficulty": "Hard"
+  },
+    {
+    "question": "Find the next number: 2, 4, 6, 8, ?",
+    "optionA": "9",
+    "optionB": "10",
+    "optionC": "11",
+    "optionD": "12",
+    "answer": "10",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Find the next number: 5, 10, 15, 20, ?",
+    "optionA": "22",
+    "optionB": "24",
+    "optionC": "25",
+    "optionD": "30",
+    "answer": "25",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Find the next number: 3, 6, 9, 12, ?",
+    "optionA": "14",
+    "optionB": "15",
+    "optionC": "16",
+    "optionD": "18",
+    "answer": "15",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Find the next number: 1, 4, 9, 16, ?",
+    "optionA": "20",
+    "optionB": "24",
+    "optionC": "25",
+    "optionD": "30",
+    "answer": "25",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Find the odd one out: Apple, Mango, Carrot, Banana",
+    "optionA": "Apple",
+    "optionB": "Mango",
+    "optionC": "Carrot",
+    "optionD": "Banana",
+    "answer": "Carrot",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Find the odd one out: Dog, Cat, Cow, Rose",
+    "optionA": "Dog",
+    "optionB": "Cat",
+    "optionC": "Cow",
+    "optionD": "Rose",
+    "answer": "Rose",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "If CAT is coded as DBU, how is DOG coded?",
+    "optionA": "EPH",
+    "optionB": "EOG",
+    "optionC": "DPH",
+    "optionD": "FPH",
+    "answer": "EPH",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "If A = 1, B = 2, C = 3, what is the value of CAB?",
+    "optionA": "5",
+    "optionB": "6",
+    "optionC": "7",
+    "optionD": "8",
+    "answer": "6",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Book is to Reading as Fork is to:",
+    "optionA": "Writing",
+    "optionB": "Eating",
+    "optionC": "Sleeping",
+    "optionD": "Walking",
+    "answer": "Eating",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Bird is to Nest as Lion is to:",
+    "optionA": "Den",
+    "optionB": "Cage",
+    "optionC": "Stable",
+    "optionD": "Kennel",
+    "answer": "Den",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Find the missing number: 10, 20, 30, 40, ?",
+    "optionA": "45",
+    "optionB": "50",
+    "optionC": "55",
+    "optionD": "60",
+    "answer": "50",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Find the next number: 100, 90, 80, 70, ?",
+    "optionA": "50",
+    "optionB": "55",
+    "optionC": "60",
+    "optionD": "65",
+    "answer": "60",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "If today is Monday, what day will it be after 3 days?",
+    "optionA": "Tuesday",
+    "optionB": "Wednesday",
+    "optionC": "Thursday",
+    "optionD": "Friday",
+    "answer": "Thursday",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "If yesterday was Sunday, what day is today?",
+    "optionA": "Monday",
+    "optionB": "Tuesday",
+    "optionC": "Saturday",
+    "optionD": "Friday",
+    "answer": "Monday",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which word does not belong to the group?",
+    "optionA": "January",
+    "optionB": "March",
+    "optionC": "Monday",
+    "optionD": "June",
+    "answer": "Monday",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Complete the analogy: Hand : Glove :: Foot : ?",
+    "optionA": "Shoe",
+    "optionB": "Hat",
+    "optionC": "Shirt",
+    "optionD": "Belt",
+    "answer": "Shoe",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Complete the analogy: Fish : Water :: Bird : ?",
+    "optionA": "Ground",
+    "optionB": "Air",
+    "optionC": "Tree",
+    "optionD": "Nest",
+    "answer": "Air",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Find the next letter: A, C, E, G, ?",
+    "optionA": "H",
+    "optionB": "I",
+    "optionC": "J",
+    "optionD": "K",
+    "answer": "I",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Find the next letter: B, D, F, H, ?",
+    "optionA": "I",
+    "optionB": "J",
+    "optionC": "K",
+    "optionD": "L",
+    "answer": "J",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "If PEN is coded as QFO, how is BOOK coded?",
+    "optionA": "CPPL",
+    "optionB": "CQPL",
+    "optionC": "CPPK",
+    "optionD": "BPPL",
+    "answer": "CPPL",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A is taller than B. B is taller than C. Who is the shortest?",
+    "optionA": "A",
+    "optionB": "B",
+    "optionC": "C",
+    "optionD": "Cannot determine",
+    "answer": "C",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Ravi is older than Sita. Sita is older than Tina. Who is the youngest?",
+    "optionA": "Ravi",
+    "optionB": "Sita",
+    "optionC": "Tina",
+    "optionD": "Cannot determine",
+    "answer": "Tina",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A man walks 5 km north and then turns right. Which direction is he facing?",
+    "optionA": "North",
+    "optionB": "South",
+    "optionC": "East",
+    "optionD": "West",
+    "answer": "East",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A person is facing east. He turns left. Which direction is he facing now?",
+    "optionA": "North",
+    "optionB": "South",
+    "optionC": "East",
+    "optionD": "West",
+    "answer": "North",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Find the missing number: 2, 6, 12, 20, ?",
+    "optionA": "28",
+    "optionB": "30",
+    "optionC": "32",
+    "optionD": "36",
+    "answer": "30",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },  {
+    "question": "Find the next number: 4, 8, 16, 32, ?",
+    "optionA": "48",
+    "optionB": "56",
+    "optionC": "64",
+    "optionD": "72",
+    "answer": "64",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Find the next number: 81, 27, 9, 3, ?",
+    "optionA": "0",
+    "optionB": "1",
+    "optionC": "2",
+    "optionD": "6",
+    "answer": "1",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Find the next number: 7, 14, 28, 56, ?",
+    "optionA": "84",
+    "optionB": "98",
+    "optionC": "112",
+    "optionD": "120",
+    "answer": "112",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Find the next number: 20, 18, 16, 14, ?",
+    "optionA": "10",
+    "optionB": "11",
+    "optionC": "12",
+    "optionD": "13",
+    "answer": "12",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Find the odd one out: 2, 4, 6, 9, 10",
+    "optionA": "2",
+    "optionB": "6",
+    "optionC": "9",
+    "optionD": "10",
+    "answer": "9",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Find the odd one out: Square, Triangle, Circle, Rectangle",
+    "optionA": "Square",
+    "optionB": "Triangle",
+    "optionC": "Circle",
+    "optionD": "Rectangle",
+    "answer": "Circle",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Complete the analogy: Doctor : Hospital :: Teacher : ?",
+    "optionA": "Office",
+    "optionB": "School",
+    "optionC": "Market",
+    "optionD": "Bank",
+    "answer": "School",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Complete the analogy: Pen : Write :: Knife : ?",
+    "optionA": "Cut",
+    "optionB": "Draw",
+    "optionC": "Read",
+    "optionD": "Speak",
+    "answer": "Cut",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "If CAT is coded as 3120 using A=1, B=2, ..., Z=26, what is DOG?",
+    "optionA": "4157",
+    "optionB": "4617",
+    "optionC": "4715",
+    "optionD": "4158",
+    "answer": "4157",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "If SUN is coded as TVO, how is MOON coded?",
+    "optionA": "NPPO",
+    "optionB": "NPPM",
+    "optionC": "MPPO",
+    "optionD": "NOPO",
+    "answer": "NPPO",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "If today is Wednesday, what day will it be after 10 days?",
+    "optionA": "Friday",
+    "optionB": "Saturday",
+    "optionC": "Sunday",
+    "optionD": "Monday",
+    "answer": "Saturday",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "If the day before yesterday was Friday, what day is today?",
+    "optionA": "Saturday",
+    "optionB": "Sunday",
+    "optionC": "Monday",
+    "optionD": "Tuesday",
+    "answer": "Sunday",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Rahul is facing north. He turns right, then right again. Which direction is he facing?",
+    "optionA": "North",
+    "optionB": "South",
+    "optionC": "East",
+    "optionD": "West",
+    "answer": "South",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A person walks east and then turns left. Which direction is he facing?",
+    "optionA": "North",
+    "optionB": "South",
+    "optionC": "East",
+    "optionD": "West",
+    "answer": "North",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A is the brother of B. B is the sister of C. How is A related to C?",
+    "optionA": "Brother",
+    "optionB": "Sister",
+    "optionC": "Father",
+    "optionD": "Uncle",
+    "answer": "Brother",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "P is the father of Q. Q is the mother of R. How is P related to R?",
+    "optionA": "Father",
+    "optionB": "Grandfather",
+    "optionC": "Uncle",
+    "optionD": "Brother",
+    "answer": "Grandfather",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A is older than B, and B is older than C. Which statement is definitely true?",
+    "optionA": "C is older than A",
+    "optionB": "A is older than C",
+    "optionC": "B is younger than C",
+    "optionD": "A and C are the same age",
+    "answer": "A is older than C",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Five people are standing in a line. Ravi is before Sita, and Sita is before Arun. Who must be before Arun?",
+    "optionA": "Ravi",
+    "optionB": "Arun",
+    "optionC": "Sita only",
+    "optionD": "Nobody",
+    "answer": "Ravi",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Find the missing letter: A, D, G, J, ?",
+    "optionA": "K",
+    "optionB": "L",
+    "optionC": "M",
+    "optionD": "N",
+    "answer": "M",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Find the missing letter: Z, X, V, T, ?",
+    "optionA": "R",
+    "optionB": "S",
+    "optionC": "Q",
+    "optionD": "P",
+    "answer": "R",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Which number does not belong? 11, 13, 17, 19, 21",
+    "optionA": "11",
+    "optionB": "17",
+    "optionC": "19",
+    "optionD": "21",
+    "answer": "21",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Find the next number: 1, 3, 6, 10, ?",
+    "optionA": "12",
+    "optionB": "14",
+    "optionC": "15",
+    "optionD": "16",
+    "answer": "15",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Find the next number: 2, 5, 10, 17, ?",
+    "optionA": "24",
+    "optionB": "25",
+    "optionC": "26",
+    "optionD": "27",
+    "answer": "26",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A clock shows 3:00. What is the angle between the hour and minute hands?",
+    "optionA": "60°",
+    "optionB": "90°",
+    "optionC": "120°",
+    "optionD": "180°",
+    "answer": "90°",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "A clock shows 6:00. What is the angle between the hour and minute hands?",
+    "optionA": "90°",
+    "optionB": "120°",
+    "optionC": "180°",
+    "optionD": "270°",
+    "answer": "180°",
+    "category": "Logical",
+    "difficulty": "Easy"
+  },
+    {
+    "question": "Find the next number: 6, 12, 24, 48, ?",
+    "optionA": "72",
+    "optionB": "84",
+    "optionC": "96",
+    "optionD": "108",
+    "answer": "96",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Find the next number: 3, 9, 27, 81, ?",
+    "optionA": "162",
+    "optionB": "189",
+    "optionC": "243",
+    "optionD": "324",
+    "answer": "243",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Find the next number: 2, 6, 18, 54, ?",
+    "optionA": "108",
+    "optionB": "126",
+    "optionC": "162",
+    "optionD": "216",
+    "answer": "162",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Find the next number: 121, 144, 169, 196, ?",
+    "optionA": "210",
+    "optionB": "225",
+    "optionC": "230",
+    "optionD": "256",
+    "answer": "225",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Find the next number: 5, 11, 23, 47, ?",
+    "optionA": "91",
+    "optionB": "93",
+    "optionC": "95",
+    "optionD": "97",
+    "answer": "95",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Find the missing number: 8, 16, 32, 64, ?",
+    "optionA": "96",
+    "optionB": "112",
+    "optionC": "128",
+    "optionD": "144",
+    "answer": "128",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "If COMPUTER is coded as DPNQVUFS, how is MOBILE coded?",
+    "optionA": "NPCJMF",
+    "optionB": "NQDJMF",
+    "optionC": "NPCIME",
+    "optionD": "MPCJMF",
+    "answer": "NPCJMF",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "If ROAD is coded as URDG, how is CITY coded?",
+    "optionA": "FLWB",
+    "optionB": "FLWB",
+    "optionC": "EKVZ",
+    "optionD": "FLXZ",
+    "answer": "FLWB",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "If each letter in a word is shifted one position forward, how is APPLE coded?",
+    "optionA": "BQQMF",
+    "optionB": "BPPMF",
+    "optionC": "CQQNG",
+    "optionD": "AQPLE",
+    "answer": "BQQMF",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "If MANGO is written as OGNAM, how is TIGER written?",
+    "optionA": "REGIT",
+    "optionB": "REGTI",
+    "optionC": "RGEIT",
+    "optionD": "TEGIR",
+    "answer": "REGIT",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "A is facing north. He walks 10 m, turns right and walks 5 m, then turns right and walks 10 m. Which direction is he facing?",
+    "optionA": "North",
+    "optionB": "South",
+    "optionC": "East",
+    "optionD": "West",
+    "answer": "South",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "A person walks 8 m east, then 6 m north. What is the shortest distance from the starting point?",
+    "optionA": "10 m",
+    "optionB": "12 m",
+    "optionC": "14 m",
+    "optionD": "16 m",
+    "answer": "10 m",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Ravi walks 5 km south, turns left and walks 4 km. Which direction is he from his starting point?",
+    "optionA": "North-East",
+    "optionB": "North-West",
+    "optionC": "South-East",
+    "optionD": "South-West",
+    "answer": "South-East",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "A man faces west and turns 90° clockwise. Which direction does he face?",
+    "optionA": "North",
+    "optionB": "South",
+    "optionC": "East",
+    "optionD": "West",
+    "answer": "North",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "P is the brother of Q. R is the mother of Q. S is the father of R. How is S related to P?",
+    "optionA": "Father",
+    "optionB": "Grandfather",
+    "optionC": "Uncle",
+    "optionD": "Brother",
+    "answer": "Grandfather",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "A woman says, 'He is the son of my mother's only daughter.' Who is the man to the woman?",
+    "optionA": "Brother",
+    "optionB": "Son",
+    "optionC": "Father",
+    "optionD": "Nephew",
+    "answer": "Son",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "A is the sister of B. B is the father of C. How is A related to C?",
+    "optionA": "Mother",
+    "optionB": "Aunt",
+    "optionC": "Sister",
+    "optionD": "Grandmother",
+    "answer": "Aunt",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Six people are standing in a row. Ravi is taller than Arun but shorter than Kiran. Who is definitely taller than Ravi?",
+    "optionA": "Arun",
+    "optionB": "Kiran",
+    "optionC": "Both Arun and Kiran",
+    "optionD": "Nobody",
+    "answer": "Kiran",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Among five students, Priya ranks higher than Anu but lower than Kavya. Who ranks highest among these three?",
+    "optionA": "Priya",
+    "optionB": "Anu",
+    "optionC": "Kavya",
+    "optionD": "Cannot determine",
+    "answer": "Kavya",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "If all roses are flowers and some flowers are red, which conclusion is definitely true?",
+    "optionA": "All roses are red",
+    "optionB": "Some roses are red",
+    "optionC": "All roses are flowers",
+    "optionD": "No roses are red",
+    "answer": "All roses are flowers",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "If all cats are animals and all animals need food, which conclusion follows?",
+    "optionA": "All cats need food",
+    "optionB": "All food is for cats",
+    "optionC": "Some cats are not animals",
+    "optionD": "No animals need food",
+    "answer": "All cats need food",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Find the missing letter: B, E, H, K, N, ?",
+    "optionA": "O",
+    "optionB": "P",
+    "optionC": "Q",
+    "optionD": "R",
+    "answer": "Q",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Find the missing letter: C, F, J, O, ?",
+    "optionA": "S",
+    "optionB": "T",
+    "optionC": "U",
+    "optionD": "V",
+    "answer": "U",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Find the odd pair: (2,4), (3,9), (4,16), (5,20)",
+    "optionA": "(2,4)",
+    "optionB": "(3,9)",
+    "optionC": "(4,16)",
+    "optionD": "(5,20)",
+    "answer": "(5,20)",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "If 1 January is a Monday, what day will 15 January be?",
+    "optionA": "Sunday",
+    "optionB": "Monday",
+    "optionC": "Tuesday",
+    "optionD": "Wednesday",
+    "answer": "Monday",
+    "category": "Logical",
+    "difficulty": "Medium"
+  },  {
+    "question": "Find the next number: 2, 5, 11, 23, 47, ?",
+    "optionA": "91",
+    "optionB": "93",
+    "optionC": "95",
+    "optionD": "97",
+    "answer": "95",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Find the next number: 1, 2, 6, 24, 120, ?",
+    "optionA": "240",
+    "optionB": "360",
+    "optionC": "600",
+    "optionD": "720",
+    "answer": "720",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Find the next number: 10, 13, 19, 28, 40, ?",
+    "optionA": "52",
+    "optionB": "55",
+    "optionC": "57",
+    "optionD": "60",
+    "answer": "55",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Find the next number: 4, 9, 19, 39, 79, ?",
+    "optionA": "149",
+    "optionB": "157",
+    "optionC": "159",
+    "optionD": "169",
+    "answer": "159",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Find the next number: 3, 8, 15, 24, 35, ?",
+    "optionA": "46",
+    "optionB": "48",
+    "optionC": "50",
+    "optionD": "52",
+    "answer": "48",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Find the missing number: 7, 14, 28, 56, 112, ?",
+    "optionA": "196",
+    "optionB": "204",
+    "optionC": "224",
+    "optionD": "256",
+    "answer": "224",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "If TABLE is coded as UBCMF, how is CHAIR coded?",
+    "optionA": "DIBJS",
+    "optionB": "DIBIR",
+    "optionC": "DHAJS",
+    "optionD": "EIBJS",
+    "answer": "DIBJS",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "If DELHI is coded as 45 using the sum of letter positions, what is the code for INDIA?",
+    "optionA": "35",
+    "optionB": "37",
+    "optionC": "39",
+    "optionD": "41",
+    "answer": "37",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "If MOTHER is coded as REHTOM, how is FATHER coded?",
+    "optionA": "REHTAF",
+    "optionB": "REHTFA",
+    "optionC": "REHFTA",
+    "optionD": "RTEHAF",
+    "answer": "REHTAF",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "If every vowel is replaced by the next vowel and every consonant by the next consonant, how is CAT represented?",
+    "optionA": "DEU",
+    "optionB": "CEU",
+    "optionC": "DBU",
+    "optionD": "DAU",
+    "answer": "DBU",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "A person walks 10 m north, turns right and walks 10 m, then turns right and walks 10 m. How far is he from his starting point?",
+    "optionA": "0 m",
+    "optionB": "5 m",
+    "optionC": "10 m",
+    "optionD": "20 m",
+    "answer": "10 m",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "A man walks 12 m east, 5 m north, 12 m west and 3 m south. How far is he from the starting point?",
+    "optionA": "2 m",
+    "optionB": "3 m",
+    "optionC": "5 m",
+    "optionD": "8 m",
+    "answer": "2 m",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "A person faces south. He turns 135° clockwise. Which direction is he facing approximately?",
+    "optionA": "North-East",
+    "optionB": "North-West",
+    "optionC": "South-East",
+    "optionD": "South-West",
+    "answer": "South-West",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "A person faces east. He turns 225° clockwise. Which direction is he facing?",
+    "optionA": "North",
+    "optionB": "South",
+    "optionC": "North-West",
+    "optionD": "South-West",
+    "answer": "South-West",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Pointing to a woman, Ravi says, 'She is the daughter of the only son of my grandfather.' How is the woman related to Ravi?",
+    "optionA": "Mother",
+    "optionB": "Sister",
+    "optionC": "Daughter",
+    "optionD": "Aunt",
+    "answer": "Sister",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "A is the mother of B. C is the father of A. D is the mother of C. How is D related to B?",
+    "optionA": "Mother",
+    "optionB": "Grandmother",
+    "optionC": "Great-grandmother",
+    "optionD": "Aunt",
+    "answer": "Great-grandmother",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "In a row, Rahul is 8th from the left and 13th from the right. How many people are there in the row?",
+    "optionA": "19",
+    "optionB": "20",
+    "optionC": "21",
+    "optionD": "22",
+    "answer": "20",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "In a class of 40 students, Priya ranks 12th from the top. What is her rank from the bottom?",
+    "optionA": "27th",
+    "optionB": "28th",
+    "optionC": "29th",
+    "optionD": "30th",
+    "answer": "29th",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Five people P, Q, R, S and T sit in a row. P sits left of Q, Q sits left of R, R sits left of S and S sits left of T. Who sits in the middle?",
+    "optionA": "P",
+    "optionB": "Q",
+    "optionC": "R",
+    "optionD": "S",
+    "answer": "R",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Six people A, B, C, D, E and F sit in a row. A is at the extreme left and F at the extreme right. B sits immediately right of A. Who can occupy the third position?",
+    "optionA": "B",
+    "optionB": "C",
+    "optionC": "A",
+    "optionD": "F",
+    "answer": "C",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "All engineers are graduates. Some graduates are managers. Which conclusion is definitely valid?",
+    "optionA": "All managers are engineers",
+    "optionB": "Some engineers are managers",
+    "optionC": "All engineers are graduates",
+    "optionD": "No engineers are managers",
+    "answer": "All engineers are graduates",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Some books are novels. All novels are stories. Which conclusion follows?",
+    "optionA": "All books are stories",
+    "optionB": "Some books are stories",
+    "optionC": "No books are stories",
+    "optionD": "All stories are books",
+    "answer": "Some books are stories",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Find the missing letter: A, C, F, J, O, ?",
+    "optionA": "S",
+    "optionB": "T",
+    "optionC": "U",
+    "optionD": "V",
+    "answer": "U",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Find the missing letter: Z, W, S, N, H, ?",
+    "optionA": "A",
+    "optionB": "B",
+    "optionC": "C",
+    "optionD": "D",
+    "answer": "A",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "If today is Thursday, what day will it be 100 days from today?",
+    "optionA": "Friday",
+    "optionB": "Saturday",
+    "optionC": "Sunday",
+    "optionD": "Monday",
+    "answer": "Saturday",
+    "category": "Logical",
+    "difficulty": "Hard"
+  },
+    {
+    "question": "Choose the synonym of 'Happy'.",
+    "optionA": "Sad",
+    "optionB": "Joyful",
+    "optionC": "Angry",
+    "optionD": "Tired",
+    "answer": "Joyful",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Choose the antonym of 'Hot'.",
+    "optionA": "Warm",
+    "optionB": "Cold",
+    "optionC": "Heat",
+    "optionD": "Boiling",
+    "answer": "Cold",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Choose the synonym of 'Quick'.",
+    "optionA": "Slow",
+    "optionB": "Fast",
+    "optionC": "Late",
+    "optionD": "Weak",
+    "answer": "Fast",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Choose the antonym of 'Begin'.",
+    "optionA": "Start",
+    "optionB": "Open",
+    "optionC": "End",
+    "optionD": "Continue",
+    "answer": "End",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Choose the synonym of 'Big'.",
+    "optionA": "Tiny",
+    "optionB": "Small",
+    "optionC": "Large",
+    "optionD": "Short",
+    "answer": "Large",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Choose the antonym of 'Difficult'.",
+    "optionA": "Hard",
+    "optionB": "Easy",
+    "optionC": "Tough",
+    "optionD": "Complex",
+    "answer": "Easy",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Choose the synonym of 'Brave'.",
+    "optionA": "Cowardly",
+    "optionB": "Fearful",
+    "optionC": "Courageous",
+    "optionD": "Weak",
+    "answer": "Courageous",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Choose the antonym of 'Early'.",
+    "optionA": "Soon",
+    "optionB": "Fast",
+    "optionC": "Late",
+    "optionD": "Quick",
+    "answer": "Late",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Choose the synonym of 'Intelligent'.",
+    "optionA": "Clever",
+    "optionB": "Lazy",
+    "optionC": "Foolish",
+    "optionD": "Weak",
+    "answer": "Clever",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Choose the antonym of 'Ancient'.",
+    "optionA": "Old",
+    "optionB": "Historic",
+    "optionC": "Modern",
+    "optionD": "Past",
+    "answer": "Modern",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Choose the correct spelling.",
+    "optionA": "Beautifull",
+    "optionB": "Beutiful",
+    "optionC": "Beautiful",
+    "optionD": "Beautifal",
+    "answer": "Beautiful",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Choose the correct spelling.",
+    "optionA": "Recieve",
+    "optionB": "Receive",
+    "optionC": "Receeve",
+    "optionD": "Receve",
+    "answer": "Receive",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Choose the correct spelling.",
+    "optionA": "Necessary",
+    "optionB": "Neccessary",
+    "optionC": "Necesary",
+    "optionD": "Nessesary",
+    "answer": "Necessary",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Fill in the blank: She ___ to school every day.",
+    "optionA": "go",
+    "optionB": "goes",
+    "optionC": "going",
+    "optionD": "gone",
+    "answer": "goes",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Fill in the blank: They ___ playing cricket.",
+    "optionA": "is",
+    "optionB": "am",
+    "optionC": "are",
+    "optionD": "was",
+    "answer": "are",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Fill in the blank: I ___ a student.",
+    "optionA": "is",
+    "optionB": "are",
+    "optionC": "am",
+    "optionD": "be",
+    "answer": "am",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Choose the correct article: He is ___ honest man.",
+    "optionA": "a",
+    "optionB": "an",
+    "optionC": "the",
+    "optionD": "no article",
+    "answer": "an",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Choose the correct article: She bought ___ book.",
+    "optionA": "a",
+    "optionB": "an",
+    "optionC": "the",
+    "optionD": "no article",
+    "answer": "a",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Choose the correct preposition: The book is ___ the table.",
+    "optionA": "in",
+    "optionB": "on",
+    "optionC": "at",
+    "optionD": "by",
+    "answer": "on",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Choose the correct preposition: He lives ___ Hyderabad.",
+    "optionA": "at",
+    "optionB": "on",
+    "optionC": "in",
+    "optionD": "by",
+    "answer": "in",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Identify the noun in the sentence: 'The boy is reading a book.'",
+    "optionA": "is",
+    "optionB": "reading",
+    "optionC": "boy",
+    "optionD": "the",
+    "answer": "boy",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Identify the verb in the sentence: 'She sings beautifully.'",
+    "optionA": "She",
+    "optionB": "sings",
+    "optionC": "beautifully",
+    "optionD": "the",
+    "answer": "sings",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Identify the adjective in the sentence: 'It is a beautiful flower.'",
+    "optionA": "It",
+    "optionB": "is",
+    "optionC": "beautiful",
+    "optionD": "flower",
+    "answer": "beautiful",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Choose the correct plural form of 'Child'.",
+    "optionA": "Childs",
+    "optionB": "Childes",
+    "optionC": "Children",
+    "optionD": "Childrens",
+    "answer": "Children",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  },
+  {
+    "question": "Choose the correct plural form of 'Mouse'.",
+    "optionA": "Mouses",
+    "optionB": "Mouse",
+    "optionC": "Mice",
+    "optionD": "Mices",
+    "answer": "Mice",
+    "category": "Verbal",
+    "difficulty": "Easy"
+  }
+,  {
+    "question": "Choose the synonym of 'Abundant'.",
+    "optionA": "Rare",
+    "optionB": "Plentiful",
+    "optionC": "Empty",
+    "optionD": "Limited",
+    "answer": "Plentiful",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Choose the antonym of 'Expand'.",
+    "optionA": "Increase",
+    "optionB": "Extend",
+    "optionC": "Contract",
+    "optionD": "Develop",
+    "answer": "Contract",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Choose the synonym of 'Brief'.",
+    "optionA": "Long",
+    "optionB": "Short",
+    "optionC": "Large",
+    "optionD": "Wide",
+    "answer": "Short",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Choose the antonym of 'Permanent'.",
+    "optionA": "Fixed",
+    "optionB": "Stable",
+    "optionC": "Temporary",
+    "optionD": "Constant",
+    "answer": "Temporary",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Choose the synonym of 'Diligent'.",
+    "optionA": "Lazy",
+    "optionB": "Hardworking",
+    "optionC": "Careless",
+    "optionD": "Weak",
+    "answer": "Hardworking",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Choose the antonym of 'Optimistic'.",
+    "optionA": "Hopeful",
+    "optionB": "Positive",
+    "optionC": "Pessimistic",
+    "optionD": "Confident",
+    "answer": "Pessimistic",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Choose the synonym of 'Accurate'.",
+    "optionA": "Wrong",
+    "optionB": "Precise",
+    "optionC": "Unclear",
+    "optionD": "False",
+    "answer": "Precise",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Choose the antonym of 'Generous'.",
+    "optionA": "Kind",
+    "optionB": "Helpful",
+    "optionC": "Selfish",
+    "optionD": "Friendly",
+    "answer": "Selfish",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Choose the synonym of 'Obvious'.",
+    "optionA": "Hidden",
+    "optionB": "Clear",
+    "optionC": "Difficult",
+    "optionD": "Uncertain",
+    "answer": "Clear",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Choose the antonym of 'Artificial'.",
+    "optionA": "Man-made",
+    "optionB": "Synthetic",
+    "optionC": "Natural",
+    "optionD": "Plastic",
+    "answer": "Natural",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "optionA": "She don't like coffee.",
+    "optionB": "She doesn't likes coffee.",
+    "optionC": "She doesn't like coffee.",
+    "optionD": "She not like coffee.",
+    "answer": "She doesn't like coffee.",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "optionA": "He have completed his work.",
+    "optionB": "He has completed his work.",
+    "optionC": "He having completed his work.",
+    "optionD": "He complete his work.",
+    "answer": "He has completed his work.",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Fill in the blank: Neither Ravi nor his friends ___ present.",
+    "optionA": "was",
+    "optionB": "is",
+    "optionC": "were",
+    "optionD": "has",
+    "answer": "were",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Fill in the blank: Each of the students ___ a book.",
+    "optionA": "have",
+    "optionB": "has",
+    "optionC": "having",
+    "optionD": "are",
+    "answer": "has",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Choose the correct form: If I ___ rich, I would help the poor.",
+    "optionA": "am",
+    "optionB": "was",
+    "optionC": "were",
+    "optionD": "be",
+    "answer": "were",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Choose the correct preposition: She has been working here ___ 2022.",
+    "optionA": "for",
+    "optionB": "since",
+    "optionC": "from",
+    "optionD": "by",
+    "answer": "since",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Choose the correct preposition: He has lived here ___ five years.",
+    "optionA": "since",
+    "optionB": "from",
+    "optionC": "for",
+    "optionD": "at",
+    "answer": "for",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Identify the adverb: 'She completed the task quickly.'",
+    "optionA": "She",
+    "optionB": "completed",
+    "optionC": "task",
+    "optionD": "quickly",
+    "answer": "quickly",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Identify the conjunction: 'Ravi studied hard because he wanted to pass.'",
+    "optionA": "Ravi",
+    "optionB": "studied",
+    "optionC": "because",
+    "optionD": "pass",
+    "answer": "because",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Choose the correctly punctuated sentence.",
+    "optionA": "Where are you going.",
+    "optionB": "Where are you going?",
+    "optionC": "Where are you going!",
+    "optionD": "Where are you going,",
+    "answer": "Where are you going?",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Choose the correct passive voice: 'The boy kicked the ball.'",
+    "optionA": "The ball was kicked by the boy.",
+    "optionB": "The ball is kicked by the boy.",
+    "optionC": "The ball kicked the boy.",
+    "optionD": "The boy was kicked by the ball.",
+    "answer": "The ball was kicked by the boy.",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Choose the correct active voice: 'The letter was written by Ravi.'",
+    "optionA": "Ravi writes the letter.",
+    "optionB": "Ravi wrote the letter.",
+    "optionC": "Ravi is writing the letter.",
+    "optionD": "Ravi had written the letter.",
+    "answer": "Ravi wrote the letter.",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Choose the correct indirect speech: He said, 'I am tired.'",
+    "optionA": "He said that I am tired.",
+    "optionB": "He said that he was tired.",
+    "optionC": "He says that he was tired.",
+    "optionD": "He said that he is tired.",
+    "answer": "He said that he was tired.",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Choose the correct meaning of the idiom 'Break the ice'.",
+    "optionA": "To break something",
+    "optionB": "To start a conversation",
+    "optionC": "To become angry",
+    "optionD": "To stop talking",
+    "answer": "To start a conversation",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "Choose the correct meaning of the idiom 'A piece of cake'.",
+    "optionA": "Something delicious",
+    "optionB": "Something expensive",
+    "optionC": "Something very easy",
+    "optionD": "Something impossible",
+    "answer": "Something very easy",
+    "category": "Verbal",
+    "difficulty": "Medium"
+  }
+,  {
+    "question": "Choose the synonym of 'Eloquent'.",
+    "optionA": "Silent",
+    "optionB": "Fluent",
+    "optionC": "Confused",
+    "optionD": "Rude",
+    "answer": "Fluent",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the antonym of 'Scarce'.",
+    "optionA": "Rare",
+    "optionB": "Limited",
+    "optionC": "Abundant",
+    "optionD": "Insufficient",
+    "answer": "Abundant",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the synonym of 'Meticulous'.",
+    "optionA": "Careless",
+    "optionB": "Careful",
+    "optionC": "Lazy",
+    "optionD": "Rough",
+    "answer": "Careful",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the antonym of 'Hostile'.",
+    "optionA": "Aggressive",
+    "optionB": "Unfriendly",
+    "optionC": "Friendly",
+    "optionD": "Violent",
+    "answer": "Friendly",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the synonym of 'Reluctant'.",
+    "optionA": "Willing",
+    "optionB": "Unwilling",
+    "optionC": "Excited",
+    "optionD": "Confident",
+    "answer": "Unwilling",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the antonym of 'Transparent'.",
+    "optionA": "Clear",
+    "optionB": "Visible",
+    "optionC": "Opaque",
+    "optionD": "Bright",
+    "answer": "Opaque",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the synonym of 'Prudent'.",
+    "optionA": "Careless",
+    "optionB": "Wise",
+    "optionC": "Foolish",
+    "optionD": "Reckless",
+    "answer": "Wise",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the antonym of 'Mandatory'.",
+    "optionA": "Required",
+    "optionB": "Compulsory",
+    "optionC": "Optional",
+    "optionD": "Necessary",
+    "answer": "Optional",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the synonym of 'Inevitable'.",
+    "optionA": "Avoidable",
+    "optionB": "Uncertain",
+    "optionC": "Unavoidable",
+    "optionD": "Optional",
+    "answer": "Unavoidable",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the antonym of 'Rigid'.",
+    "optionA": "Hard",
+    "optionB": "Flexible",
+    "optionC": "Fixed",
+    "optionD": "Strict",
+    "answer": "Flexible",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correctly spelled word.",
+    "optionA": "Accomodation",
+    "optionB": "Acommodation",
+    "optionC": "Accommodation",
+    "optionD": "Accommadation",
+    "answer": "Accommodation",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correctly spelled word.",
+    "optionA": "Entrepreneur",
+    "optionB": "Enterpreneur",
+    "optionC": "Entreprenuer",
+    "optionD": "Entreprenur",
+    "answer": "Entrepreneur",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "optionA": "Neither of the answers are correct.",
+    "optionB": "Neither of the answers is correct.",
+    "optionC": "Neither of the answer are correct.",
+    "optionD": "Neither answers is correct.",
+    "answer": "Neither of the answers is correct.",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "optionA": "The team have completed its work.",
+    "optionB": "The team has completed its work.",
+    "optionC": "The team has complete its work.",
+    "optionD": "The team completing its work.",
+    "answer": "The team has completed its work.",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Fill in the blank: Had I known about the problem, I ___ helped you.",
+    "optionA": "will have",
+    "optionB": "would have",
+    "optionC": "would",
+    "optionD": "will",
+    "answer": "would have",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Fill in the blank: No sooner had he arrived ___ it started raining.",
+    "optionA": "when",
+    "optionB": "than",
+    "optionC": "then",
+    "optionD": "and",
+    "answer": "than",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correct phrase: 'He is good ___ mathematics.'",
+    "optionA": "in",
+    "optionB": "on",
+    "optionC": "at",
+    "optionD": "for",
+    "answer": "at",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correct phrase: 'She is senior ___ me.'",
+    "optionA": "than",
+    "optionB": "to",
+    "optionC": "from",
+    "optionD": "with",
+    "answer": "to",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Identify the error: 'Each student have submitted their assignment.'",
+    "optionA": "Each",
+    "optionB": "student",
+    "optionC": "have",
+    "optionD": "assignment",
+    "answer": "have",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Identify the error: 'She is one of the best student in the class.'",
+    "optionA": "She",
+    "optionB": "one",
+    "optionC": "best student",
+    "optionD": "class",
+    "answer": "best student",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correct passive voice: 'People speak English all over the world.'",
+    "optionA": "English is spoken all over the world.",
+    "optionB": "English was spoken all over the world.",
+    "optionC": "English has spoken all over the world.",
+    "optionD": "English speaks all over the world.",
+    "answer": "English is spoken all over the world.",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correct indirect speech: Ravi said, 'I will complete the work tomorrow.'",
+    "optionA": "Ravi said that I will complete the work tomorrow.",
+    "optionB": "Ravi said that he would complete the work the next day.",
+    "optionC": "Ravi said that he will complete the work tomorrow.",
+    "optionD": "Ravi says that he would complete the work tomorrow.",
+    "answer": "Ravi said that he would complete the work the next day.",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the meaning of the idiom 'Once in a blue moon'.",
+    "optionA": "Very frequently",
+    "optionB": "Very rarely",
+    "optionC": "Every month",
+    "optionD": "At night",
+    "answer": "Very rarely",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the meaning of the idiom 'Hit the nail on the head'.",
+    "optionA": "To make a mistake",
+    "optionB": "To say exactly the right thing",
+    "optionC": "To hurt someone",
+    "optionD": "To avoid a problem",
+    "answer": "To say exactly the right thing",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the meaning of the idiom 'Burn the midnight oil'.",
+    "optionA": "To waste electricity",
+    "optionB": "To work late into the night",
+    "optionC": "To sleep early",
+    "optionD": "To start work early",
+    "answer": "To work late into the night",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+    {
+    "question": "Choose the synonym of 'Benevolent'.",
+    "optionA": "Cruel",
+    "optionB": "Kind",
+    "optionC": "Angry",
+    "optionD": "Selfish",
+    "answer": "Kind",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the antonym of 'Cautious'.",
+    "optionA": "Careful",
+    "optionB": "Alert",
+    "optionC": "Reckless",
+    "optionD": "Watchful",
+    "answer": "Reckless",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the synonym of 'Obsolete'.",
+    "optionA": "Modern",
+    "optionB": "Outdated",
+    "optionC": "Useful",
+    "optionD": "Recent",
+    "answer": "Outdated",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the antonym of 'Conceal'.",
+    "optionA": "Hide",
+    "optionB": "Cover",
+    "optionC": "Reveal",
+    "optionD": "Protect",
+    "answer": "Reveal",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the synonym of 'Magnanimous'.",
+    "optionA": "Generous",
+    "optionB": "Selfish",
+    "optionC": "Angry",
+    "optionD": "Dishonest",
+    "answer": "Generous",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the antonym of 'Vivid'.",
+    "optionA": "Bright",
+    "optionB": "Clear",
+    "optionC": "Dull",
+    "optionD": "Brilliant",
+    "answer": "Dull",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the synonym of 'Impartial'.",
+    "optionA": "Biased",
+    "optionB": "Neutral",
+    "optionC": "Unfair",
+    "optionD": "Partial",
+    "answer": "Neutral",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the antonym of 'Commence'.",
+    "optionA": "Begin",
+    "optionB": "Start",
+    "optionC": "Continue",
+    "optionD": "Conclude",
+    "answer": "Conclude",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the synonym of 'Futile'.",
+    "optionA": "Useful",
+    "optionB": "Successful",
+    "optionC": "Useless",
+    "optionD": "Effective",
+    "answer": "Useless",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the antonym of 'Fragile'.",
+    "optionA": "Weak",
+    "optionB": "Delicate",
+    "optionC": "Strong",
+    "optionD": "Breakable",
+    "answer": "Strong",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "optionA": "Despite of the rain, we went outside.",
+    "optionB": "Despite the rain, we went outside.",
+    "optionC": "Despite it was raining, we went outside.",
+    "optionD": "Despite raining, we went outside.",
+    "answer": "Despite the rain, we went outside.",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "optionA": "He is capable to solve the problem.",
+    "optionB": "He is capable of solving the problem.",
+    "optionC": "He is capable for solving the problem.",
+    "optionD": "He capable of solve the problem.",
+    "answer": "He is capable of solving the problem.",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Fill in the blank: Hardly had the meeting started ___ the manager arrived.",
+    "optionA": "than",
+    "optionB": "when",
+    "optionC": "then",
+    "optionD": "and",
+    "answer": "when",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Fill in the blank: Scarcely had she reached home ___ the phone rang.",
+    "optionA": "than",
+    "optionB": "when",
+    "optionC": "then",
+    "optionD": "and",
+    "answer": "when",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correct word: The new policy will ___ all employees.",
+    "optionA": "effect",
+    "optionB": "affect",
+    "optionC": "accept",
+    "optionD": "except",
+    "answer": "affect",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correct word: The medicine had a positive ___ on the patient.",
+    "optionA": "affect",
+    "optionB": "effect",
+    "optionC": "except",
+    "optionD": "accept",
+    "answer": "effect",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correct word: Everyone was present ___ Ravi.",
+    "optionA": "accept",
+    "optionB": "effect",
+    "optionC": "except",
+    "optionD": "affect",
+    "answer": "except",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correct word: Please ___ my invitation.",
+    "optionA": "except",
+    "optionB": "accept",
+    "optionC": "affect",
+    "optionD": "effect",
+    "answer": "accept",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correct meaning of 'A blessing in disguise'.",
+    "optionA": "A hidden problem",
+    "optionB": "Something that seems bad but turns out beneficial",
+    "optionC": "A religious ceremony",
+    "optionD": "A visible advantage",
+    "answer": "Something that seems bad but turns out beneficial",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correct meaning of 'Beat around the bush'.",
+    "optionA": "To speak directly",
+    "optionB": "To avoid the main topic",
+    "optionC": "To work quickly",
+    "optionD": "To solve a problem",
+    "answer": "To avoid the main topic",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correct meaning of 'Call it a day'.",
+    "optionA": "Start working",
+    "optionB": "Finish working for the day",
+    "optionC": "Make a phone call",
+    "optionD": "Plan tomorrow's work",
+    "answer": "Finish working for the day",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correct meaning of 'Under the weather'.",
+    "optionA": "Feeling unwell",
+    "optionB": "Feeling excited",
+    "optionC": "Working outside",
+    "optionD": "Feeling confident",
+    "answer": "Feeling unwell",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correct meaning of 'A storm in a teacup'.",
+    "optionA": "A dangerous storm",
+    "optionB": "A major disaster",
+    "optionC": "A lot of excitement about a minor issue",
+    "optionD": "A weather forecast",
+    "answer": "A lot of excitement about a minor issue",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correct meaning of 'Bite the bullet'.",
+    "optionA": "Avoid responsibility",
+    "optionB": "Face a difficult situation with courage",
+    "optionC": "Eat quickly",
+    "optionD": "Run away from danger",
+    "answer": "Face a difficult situation with courage",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+  {
+    "question": "Choose the correct meaning of 'The ball is in your court'.",
+    "optionA": "You are playing a sport",
+    "optionB": "It is your responsibility to take the next action",
+    "optionC": "You have lost the game",
+    "optionD": "You should leave immediately",
+    "answer": "It is your responsibility to take the next action",
+    "category": "Verbal",
+    "difficulty": "Hard"
+  },
+    
+  {
+    "question": "A train travels 360 km in 4 hours. What is its average speed?",
+    "optionA": "80 km/h",
+    "optionB": "90 km/h",
+    "optionC": "100 km/h",
+    "optionD": "120 km/h",
+    "answer": "90 km/h",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  },
+  {
+    "question": "If 25% of a number is 80, what is the number?",
+    "optionA": "240",
+    "optionB": "280",
+    "optionC": "320",
+    "optionD": "360",
+    "answer": "320",
+    "category": "Quantitative",
+    "difficulty": "Medium"
+  }
+
+]

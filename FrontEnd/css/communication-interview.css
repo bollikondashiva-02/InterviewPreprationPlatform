@@ -1,0 +1,591 @@
+/* =========================================
+   Interview Header
+========================================= */
+
+.interview-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+
+    padding: 18px 30px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.interview-header .header-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.interview-header .header-center {
+    text-align: center;
+}
+
+.interview-header .header-center h1 {
+    margin: 0;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.interview-header .header-center p {
+    margin: 6px 0 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+.interview-header .header-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* =========================================
+   Logout Button
+========================================= */
+
+.interview-header .logout-btn {
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #dc2626;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.interview-header .logout-btn:hover {
+    background: #b91c1c;
+
+    transform: translateY(-1px);
+}
+
+.interview-header .logout-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   Back Button
+========================================= */
+
+.interview-header .back-btn {
+    padding: 10px 18px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #374151;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.interview-header .back-btn:hover {
+    background: #f3f4f6;
+
+    border-color: #9ca3af;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   Interview Container
+========================================= */
+
+.interview-container {
+    width: min(1100px, 92%);
+
+    margin: 30px auto 50px;
+}
+
+
+/* =========================================
+   Information Cards
+========================================= */
+
+.interview-info {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+.interview-info .info-card {
+    padding: 20px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.interview-info .info-card span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 25px;
+}
+
+.interview-info .info-card strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 14px;
+
+    color: #374151;
+}
+
+.interview-info .info-card p {
+    margin: 0;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: #111827;
+}
+
+
+/* =========================================
+   Progress Section
+========================================= */
+
+.progress-section {
+    margin-bottom: 25px;
+
+    padding: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.progress-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #374151;
+}
+
+.progress-bar {
+    width: 100%;
+
+    height: 9px;
+
+    overflow: hidden;
+
+    background: #e5e7eb;
+
+    border-radius: 10px;
+}
+
+#progressFill {
+    width: 0;
+
+    height: 100%;
+
+    background: #2563eb;
+
+    border-radius: 10px;
+
+    transition: width 0.3s ease;
+}
+
+
+/* =========================================
+   Interview Test
+========================================= */
+
+.interview-test {
+    margin-top: 25px;
+}
+
+.interview-test .question-box {
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================
+   Question Type
+========================================= */
+
+.question-type {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #eef2ff;
+
+    color: #4338ca;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   Question
+========================================= */
+
+.interview-test .question-box h2 {
+    margin: 0 0 25px;
+
+    font-size: 22px;
+
+    line-height: 1.5;
+
+    color: #111827;
+}
+
+
+/* =========================================
+   Answer Options
+========================================= */
+
+.interview-test .options {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+.interview-test .option {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 16px 18px;
+
+    cursor: pointer;
+
+    background: #f9fafb;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.interview-test .option:hover {
+    background: #f3f4f6;
+
+    border-color: #9ca3af;
+
+    transform: translateY(-1px);
+}
+
+.interview-test .option input {
+    width: 18px;
+    height: 18px;
+
+    cursor: pointer;
+}
+
+.interview-test .option span {
+    font-size: 16px;
+
+    color: #374151;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   Navigation Buttons
+========================================= */
+
+.interview-test .navigation-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.interview-test .navigation-buttons button {
+    min-width: 120px;
+
+    padding: 12px 22px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.interview-test .navigation-buttons button:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+.interview-test .navigation-buttons button:active {
+    transform: translateY(0);
+}
+
+.interview-test .navigation-buttons button:disabled {
+    background: #9ca3af;
+
+    cursor: not-allowed;
+
+    opacity: 0.6;
+
+    transform: none;
+}
+
+
+/* =========================================
+   Submit Button
+========================================= */
+
+.interview-test .navigation-buttons #submitBtn {
+    background: #16a34a;
+}
+
+.interview-test .navigation-buttons #submitBtn:hover {
+    background: #15803d;
+}
+
+
+/* =========================================
+   Question Navigator
+========================================= */
+
+.interview-container .question-navigator {
+    margin-top: 35px;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.interview-container .question-navigator h2 {
+    margin: 0 0 18px;
+
+    font-size: 20px;
+
+    color: #111827;
+}
+
+#questionNumbers {
+    display: grid;
+
+    grid-template-columns: repeat(10, 1fr);
+
+    gap: 10px;
+}
+
+#questionNumbers button {
+    min-height: 40px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    background: #f9fafb;
+    color: #374151;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+#questionNumbers button:hover {
+    background: #e5e7eb;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   Answered Question
+========================================= */
+
+#questionNumbers button.answered-question {
+    background: #16a34a;
+
+    border-color: #16a34a;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   Current Question
+========================================= */
+
+#questionNumbers button.current-question {
+    background: #2563eb;
+
+    border: 3px solid #1e3a8a;
+
+    color: #ffffff;
+
+    transform: scale(1.05);
+}
+
+
+/* Current + Answered */
+
+#questionNumbers button.current-question.answered-question {
+    background: #2563eb;
+
+    border-color: #1e3a8a;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   Responsive Design
+========================================= */
+
+@media (max-width: 768px) {
+
+    .interview-header {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+        padding: 15px;
+    }
+
+    .interview-header .header-left,
+    .interview-header .header-right {
+        justify-content: center;
+    }
+
+    .interview-header .header-center {
+        order: -1;
+    }
+
+    .interview-header .header-center h1 {
+        font-size: 23px;
+    }
+
+    .interview-info {
+        grid-template-columns: 1fr;
+    }
+
+    .interview-test .question-box {
+        padding: 20px;
+    }
+
+    .interview-test .question-box h2 {
+        font-size: 18px;
+    }
+
+    .interview-test .navigation-buttons {
+        flex-wrap: wrap;
+    }
+
+    #questionNumbers {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+}

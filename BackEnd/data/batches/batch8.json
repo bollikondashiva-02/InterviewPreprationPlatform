@@ -1,0 +1,227 @@
+[
+  {
+    "category": "Logical",
+    "topic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "Ravi walks 10 m towards North and then turns right and walks 5 m. In which direction is he now?",
+    "options": ["North", "East", "West", "South"],
+    "answer": "East",
+    "explanation": "Right turn from North is East."
+  },
+  {
+    "category": "Logical",
+    "topic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A person faces South. After turning left, which direction is he facing?",
+    "options": ["East", "West", "North", "South"],
+    "answer": "East",
+    "explanation": "Left turn from South is East."
+  },
+  {
+    "category": "Logical",
+    "topic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A man walks towards East. After turning right, he faces?",
+    "options": ["North", "South", "West", "East"],
+    "answer": "South",
+    "explanation": "Right turn from East is South."
+  },
+  {
+    "category": "Logical",
+    "topic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "If you are facing North and turn 180°, which direction will you face?",
+    "options": ["South", "East", "West", "North"],
+    "answer": "South",
+    "explanation": "180° turn reverses the direction."
+  },
+  {
+    "category": "Logical",
+    "topic": "Direction Sense",
+    "difficulty": "Easy",
+    "question": "A person faces West and turns right. Which direction is he facing now?",
+    "options": ["North", "South", "East", "West"],
+    "answer": "North",
+    "explanation": "Right turn from West is North."
+  },
+  {
+    "category": "Logical",
+    "topic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A person walks 5 m North, then 5 m East. How far is he from the starting point?",
+    "options": ["5 m", "10 m", "7.07 m", "15 m"],
+    "answer": "7.07 m",
+    "explanation": "By Pythagoras theorem √(5²+5²)."
+  },
+  {
+    "category": "Logical",
+    "topic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A man walks 8 m East and then 6 m North. How far is he from the starting point?",
+    "options": ["10 m", "12 m", "14 m", "8 m"],
+    "answer": "10 m",
+    "explanation": "√(8²+6²)=10."
+  },
+  {
+    "category": "Logical",
+    "topic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A person walks 10 m North, then 10 m South. Where is he now?",
+    "options": ["10 m North", "10 m South", "Starting Point", "20 m South"],
+    "answer": "Starting Point",
+    "explanation": "He returned to the starting point."
+  },
+  {
+    "category": "Logical",
+    "topic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A boy walks 6 m West and then 8 m South. How far is he from the starting point?",
+    "options": ["10 m", "12 m", "14 m", "8 m"],
+    "answer": "10 m",
+    "explanation": "√(6²+8²)=10."
+  },
+  {
+    "category": "Logical",
+    "topic": "Direction Sense",
+    "difficulty": "Medium",
+    "question": "A person walks 4 m East, 3 m North and 4 m West. Where is he now?",
+    "options": ["3 m North", "3 m South", "Starting Point", "4 m East"],
+    "answer": "3 m North",
+    "explanation": "East and West cancel out."
+  },
+  {
+    "category": "Logical",
+    "topic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "A man walks 10 m North, turns right and walks 10 m, turns right and walks 10 m. Which direction is he facing now?",
+    "options": ["North", "East", "South", "West"],
+    "answer": "South",
+    "explanation": "North → East → South."
+  },
+  {
+    "category": "Logical",
+    "topic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "A person faces East and turns left twice. Which direction is he facing?",
+    "options": ["North", "South", "West", "East"],
+    "answer": "West",
+    "explanation": "East → North → West."
+  },
+  {
+    "category": "Logical",
+    "topic": "Direction Sense",
+    "difficulty": "Hard",
+    "question": "A person faces North and turns right three times. Which direction is he facing?",
+    "options": ["East", "West", "South", "North"],
+    "answer": "West",
+    "explanation": "North → East → South → West."
+  },
+  {
+    "category": "Logical",
+    "topic": "Seating Arrangement",
+    "difficulty": "Easy",
+    "question": "Five friends A, B, C, D and E are sitting in a row. A is to the left of B. Who is to the right of A?",
+    "options": ["B", "C", "D", "E"],
+    "answer": "B",
+    "explanation": "B sits immediately right of A."
+  },
+  {
+    "category": "Logical",
+    "topic": "Seating Arrangement",
+    "difficulty": "Easy",
+    "question": "If P sits to the immediate left of Q, who is to the right of P?",
+    "options": ["Q", "R", "S", "Cannot determine"],
+    "answer": "Q",
+    "explanation": "Q sits immediately right of P."
+  },
+  {
+    "category": "Logical",
+    "topic": "Seating Arrangement",
+    "difficulty": "Easy",
+    "question": "A, B and C sit in a row. B is between A and C. Who sits in the middle?",
+    "options": ["A", "B", "C", "Cannot determine"],
+    "answer": "B",
+    "explanation": "B is between A and C."
+  },
+  {
+    "category": "Logical",
+    "topic": "Seating Arrangement",
+    "difficulty": "Medium",
+    "question": "Five students sit in a row. P is at one end and Q is at the other end. How many students sit between them?",
+    "options": ["2", "3", "4", "1"],
+    "answer": "3",
+    "explanation": "Five seats: P _ _ _ Q."
+  },
+  {
+    "category": "Logical",
+    "topic": "Seating Arrangement",
+    "difficulty": "Medium",
+    "question": "A sits second to the left of B. If B is at one end, where is A?",
+    "options": ["At the other end", "Middle", "Cannot determine", "First left"],
+    "answer": "Cannot determine",
+    "explanation": "The direction of the row is not specified."
+  },
+  {
+    "category": "Logical",
+    "topic": "Seating Arrangement",
+    "difficulty": "Medium",
+    "question": "In a row of five people, R sits in the middle. What is R's position from either end?",
+    "options": ["1st", "2nd", "3rd", "4th"],
+    "answer": "3rd",
+    "explanation": "Middle position in a row of five is third."
+  },
+  {
+    "category": "Logical",
+    "topic": "Seating Arrangement",
+    "difficulty": "Medium",
+    "question": "If A is to the left of B and B is to the left of C, who is on the extreme right?",
+    "options": ["A", "B", "C", "Cannot determine"],
+    "answer": "C",
+    "explanation": "Arrangement: A B C."
+  },
+  {
+    "category": "Logical",
+    "topic": "Seating Arrangement",
+    "difficulty": "Hard",
+    "question": "Six friends sit in a row. P is between Q and R. R is to the left of S. Who is immediately right of Q?",
+    "options": ["P", "R", "S", "Cannot determine"],
+    "answer": "P",
+    "explanation": "Since P is between Q and R."
+  },
+  {
+    "category": "Logical",
+    "topic": "Seating Arrangement",
+    "difficulty": "Hard",
+    "question": "Five people sit in a row. A is second from the left and E is at the extreme right. How many people sit between A and E?",
+    "options": ["1", "2", "3", "4"],
+    "answer": "2",
+    "explanation": "Positions: _ A _ _ E."
+  },
+  {
+    "category": "Logical",
+    "topic": "Seating Arrangement",
+    "difficulty": "Hard",
+    "question": "Seven people sit in a row. The person in the middle is at which position from the left?",
+    "options": ["3rd", "4th", "5th", "6th"],
+    "answer": "4th",
+    "explanation": "Middle position of seven is fourth."
+  },
+  {
+    "category": "Logical",
+    "topic": "Seating Arrangement",
+    "difficulty": "Hard",
+    "question": "If B is second to the right of A and C is to the right of B, who is farthest right?",
+    "options": ["A", "B", "C", "Cannot determine"],
+    "answer": "C",
+    "explanation": "Arrangement: A B C."
+  },
+  {
+    "category": "Logical",
+    "topic": "Seating Arrangement",
+    "difficulty": "Hard",
+    "question": "Eight people sit in a row. Which position is exactly in the middle?",
+    "options": ["4th", "5th", "No single middle position", "6th"],
+    "answer": "No single middle position",
+    "explanation": "For even numbers, there are two middle positions."
+  }
+]

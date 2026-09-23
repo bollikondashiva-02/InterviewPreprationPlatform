@@ -1,0 +1,227 @@
+[
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If CAT is coded as DBU, how is DOG coded?",
+    "options": ["EPH", "EOH", "FPH", "DPH"],
+    "answer": "EPH",
+    "explanation": "Each letter is shifted by +1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If BAT is coded as CBU, how is HEN coded?",
+    "options": ["IFO", "IFP", "JFO", "IGP"],
+    "answer": "IFO",
+    "explanation": "Each letter is shifted by +1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If PEN is coded as QFO, how is BOX coded?",
+    "options": ["CPY", "CPZ", "CQY", "DPY"],
+    "answer": "CPY",
+    "explanation": "Each letter is shifted by +1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If APPLE is coded as BQQMF, how is GRAPE coded?",
+    "options": ["HSBQF", "HSAPE", "HTBQF", "GSBQF"],
+    "answer": "HSBQF",
+    "explanation": "Every letter is shifted by +1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Easy",
+    "question": "If SUN is coded as TVO, how is SKY coded?",
+    "options": ["TLZ", "TKZ", "SLZ", "ULZ"],
+    "answer": "TLZ",
+    "explanation": "Every letter is shifted by +1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If BOY is coded as CPZ, how is GIRL coded?",
+    "options": ["HJSM", "HJSM", "HJTL", "GJSM"],
+    "answer": "HJSM",
+    "explanation": "Every letter is shifted by +1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If PEN is coded as 16-5-14, how is INK coded?",
+    "options": ["9-14-11", "8-14-11", "9-13-11", "9-14-10"],
+    "answer": "9-14-11",
+    "explanation": "Letters are replaced by their alphabetical positions."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If CAT is coded as 3-1-20, how is DOG coded?",
+    "options": ["4-15-7", "4-16-7", "5-15-7", "4-15-8"],
+    "answer": "4-15-7",
+    "explanation": "Replace letters by their positions."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If BAD is coded as 214, how is CAB coded?",
+    "options": ["312", "321", "213", "231"],
+    "answer": "312",
+    "explanation": "Use alphabetical positions and join them."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If EARTH is coded as FBSUI, how is WATER coded?",
+    "options": ["XBUFS", "XATFS", "XBUER", "YBUFS"],
+    "answer": "XBUFS",
+    "explanation": "Each letter is shifted by +1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If BOOK is coded as CPPL, how is NOTE coded?",
+    "options": ["OPUF", "OPVE", "NPUF", "OPTF"],
+    "answer": "OPUF",
+    "explanation": "Each letter is shifted by +1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If RED is coded as SFE, how is BLUE coded?",
+    "options": ["CMVF", "CMUE", "BLVF", "CMVG"],
+    "answer": "CMVF",
+    "explanation": "Each letter is shifted by +1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Medium",
+    "question": "If KING is coded as LJOH, how is QUEEN coded?",
+    "options": ["RVFFO", "RVFEO", "RUFFO", "SVFFO"],
+    "answer": "RVFFO",
+    "explanation": "Each letter is shifted by +1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If DELHI is coded as EFMIJ, how is INDIA coded?",
+    "options": ["JOEJB", "JOEJA", "IPDJB", "KPEJB"],
+    "answer": "JOEJB",
+    "explanation": "Each letter is shifted by +1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If 123 is coded as 234, how is 567 coded?",
+    "options": ["678", "679", "667", "6789"],
+    "answer": "678",
+    "explanation": "Each digit increases by 1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If 246 is coded as 357, how is 135 coded?",
+    "options": ["246", "245", "235", "247"],
+    "answer": "246",
+    "explanation": "Each digit increases by 1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If MOON is coded as NPPQ, how is STAR coded?",
+    "options": ["TUBS", "TUBR", "SUBS", "TVBS"],
+    "answer": "TUBS",
+    "explanation": "Each letter is shifted by +1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If CAR is coded as DBS, how is BUS coded?",
+    "options": ["CVT", "CUT", "CVU", "DVT"],
+    "answer": "CVT",
+    "explanation": "Each letter is shifted by +1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If MANGO is coded as NBOHP, how is APPLE coded?",
+    "options": ["BQQMF", "BPPMF", "CQQMF", "BQQMG"],
+    "answer": "BQQMF",
+    "explanation": "Each letter is shifted by +1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If TIGER is coded as UJHFS, how is LION coded?",
+    "options": ["MJPO", "NKPO", "MJQO", "LKPO"],
+    "answer": "MJPO",
+    "explanation": "Each letter is shifted by +1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If FLOWER is coded as GMPXFS, how is GARDEN coded?",
+    "options": ["HBSEFO", "HBSEFN", "GBSEFO", "IBSEFO"],
+    "answer": "HBSEFO",
+    "explanation": "Each letter is shifted by +1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If MAN is coded as NBO, how is SUN coded?",
+    "options": ["TVO", "TVP", "UVO", "SVP"],
+    "answer": "TVO",
+    "explanation": "Each letter is shifted by +1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If COLD is coded as DPME, how is HEAT coded?",
+    "options": ["IFBU", "IGBU", "JFBU", "IFAT"],
+    "answer": "IFBU",
+    "explanation": "Each letter is shifted by +1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If ROAD is coded as SPBE, how is PATH coded?",
+    "options": ["QBUI", "QBTI", "RBUI", "QATI"],
+    "answer": "QBUI",
+    "explanation": "Each letter is shifted by +1."
+  },
+  {
+    "category": "Logical",
+    "topic": "Coding-Decoding",
+    "difficulty": "Hard",
+    "question": "If FISH is coded as GJTI, how is BIRD coded?",
+    "options": ["CJSE", "CJRD", "DKSE", "CJTD"],
+    "answer": "CJSE",
+    "explanation": "Each letter is shifted by +1."
+  }
+]

@@ -1,0 +1,227 @@
+[
+  {
+    "category": "Verbal",
+    "topic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the incorrect part: 'She don't like coffee.'",
+    "options": ["She", "don't", "like", "coffee"],
+    "answer": "don't",
+    "explanation": "For 'She', the correct verb is 'doesn't'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the incorrect part: 'He go to school every day.'",
+    "options": ["He", "go", "to school", "every day"],
+    "answer": "go",
+    "explanation": "The correct form is 'goes'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the incorrect part: 'They was playing cricket.'",
+    "options": ["They", "was", "playing", "cricket"],
+    "answer": "was",
+    "explanation": "The correct verb is 'were'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the incorrect part: 'I have saw that movie.'",
+    "options": ["I", "have", "saw", "movie"],
+    "answer": "saw",
+    "explanation": "The correct form is 'seen'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Error Spotting",
+    "difficulty": "Easy",
+    "question": "Identify the incorrect part: 'She is senior than me.'",
+    "options": ["She", "is", "senior", "than"],
+    "answer": "than",
+    "explanation": "The correct phrase is 'senior to me'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the incorrect part: 'One of the boys are absent.'",
+    "options": ["One", "boys", "are", "absent"],
+    "answer": "are",
+    "explanation": "The subject 'One' is singular, so 'is' should be used."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the incorrect part: 'Each of the players have a bat.'",
+    "options": ["Each", "players", "have", "bat"],
+    "answer": "have",
+    "explanation": "Each takes a singular verb, so 'has' is correct."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the incorrect part: 'Neither Ravi nor his friends is coming.'",
+    "options": ["Neither", "friends", "is", "coming"],
+    "answer": "is",
+    "explanation": "The verb agrees with 'friends', so 'are' is correct."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the incorrect part: 'He insisted to go there.'",
+    "options": ["He", "insisted", "to go", "there"],
+    "answer": "to go",
+    "explanation": "The correct phrase is 'insisted on going'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Error Spotting",
+    "difficulty": "Medium",
+    "question": "Identify the incorrect part: 'She is good in mathematics.'",
+    "options": ["She", "good", "in", "mathematics"],
+    "answer": "in",
+    "explanation": "The correct phrase is 'good at mathematics'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the incorrect part: 'No sooner did he arrive when it started raining.'",
+    "options": ["No sooner", "arrive", "when", "raining"],
+    "answer": "when",
+    "explanation": "The correct phrase is 'No sooner...than'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Error Spotting",
+    "difficulty": "Hard",
+    "question": "Identify the incorrect part: 'Scarcely had I reached than the bell rang.'",
+    "options": ["Scarcely", "reached", "than", "rang"],
+    "answer": "than",
+    "explanation": "The correct phrase is 'Scarcely...when'."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "Easy",
+    "question": "Passage: The sun is the main source of energy on Earth. Question: What is the main source of energy on Earth?",
+    "options": ["Moon", "Wind", "Sun", "Water"],
+    "answer": "Sun",
+    "explanation": "The passage clearly states that the sun is the main source of energy."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "Easy",
+    "question": "Passage: Trees give us oxygen and help keep the environment clean. Question: Why are trees important?",
+    "options": ["They make noise", "They provide oxygen", "They produce plastic", "They create pollution"],
+    "answer": "They provide oxygen",
+    "explanation": "The passage mentions oxygen and a clean environment."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "Easy",
+    "question": "Passage: Exercise keeps the body fit and healthy. Question: What does exercise do?",
+    "options": ["Makes us weak", "Keeps us fit", "Causes illness", "Makes us tired"],
+    "answer": "Keeps us fit",
+    "explanation": "The passage directly states this."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "Medium",
+    "question": "Passage: Reading books improves vocabulary and knowledge. Question: What is one benefit of reading books?",
+    "options": ["Increases laziness", "Improves vocabulary", "Reduces learning", "Wastes time"],
+    "answer": "Improves vocabulary",
+    "explanation": "The passage clearly mentions improved vocabulary."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "Medium",
+    "question": "Passage: Water is essential for all living beings. Question: Why is water important?",
+    "options": ["It is expensive", "It is essential for life", "It causes disease", "It is rare"],
+    "answer": "It is essential for life",
+    "explanation": "The passage states that water is essential."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "Medium",
+    "question": "Passage: Computers help people perform tasks quickly and accurately. Question: How do computers help people?",
+    "options": ["By slowing work", "By performing tasks quickly", "By creating errors", "By replacing books"],
+    "answer": "By performing tasks quickly",
+    "explanation": "The passage directly states this."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "Medium",
+    "question": "Passage: The Internet has made communication easier across the world. Question: What has the Internet made easier?",
+    "options": ["Travel", "Communication", "Farming", "Cooking"],
+    "answer": "Communication",
+    "explanation": "The passage clearly states this."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "Medium",
+    "question": "Passage: Recycling helps reduce waste and protect natural resources. Question: Why should we recycle?",
+    "options": ["To increase waste", "To reduce waste", "To pollute rivers", "To cut trees"],
+    "answer": "To reduce waste",
+    "explanation": "The passage directly mentions reducing waste."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "Hard",
+    "question": "Passage: Technology has transformed education by making learning accessible online. Question: How has technology changed education?",
+    "options": ["Made learning harder", "Made learning accessible online", "Stopped education", "Reduced knowledge"],
+    "answer": "Made learning accessible online",
+    "explanation": "The passage clearly mentions online accessibility."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "Hard",
+    "question": "Passage: Teamwork helps people achieve goals more effectively. Question: What is a benefit of teamwork?",
+    "options": ["Increases conflict", "Achieves goals effectively", "Reduces productivity", "Creates confusion"],
+    "answer": "Achieves goals effectively",
+    "explanation": "The passage directly states this."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "Hard",
+    "question": "Passage: Good communication skills are essential for career growth. Question: Why are communication skills important?",
+    "options": ["For entertainment", "For career growth", "For sports", "For travel"],
+    "answer": "For career growth",
+    "explanation": "The passage explicitly states this."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "Hard",
+    "question": "Passage: Time management helps individuals complete tasks efficiently. Question: What does time management help with?",
+    "options": ["Delaying tasks", "Completing tasks efficiently", "Increasing confusion", "Reducing productivity"],
+    "answer": "Completing tasks efficiently",
+    "explanation": "The passage directly states this."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "Hard",
+    "question": "Passage: Artificial Intelligence is increasingly used in healthcare to improve diagnosis. Question: Why is AI used in healthcare?",
+    "options": ["To increase costs", "To improve diagnosis", "To replace doctors completely", "To reduce treatment"],
+    "answer": "To improve diagnosis",
+    "explanation": "The passage states that AI improves diagnosis."
+  }
+]

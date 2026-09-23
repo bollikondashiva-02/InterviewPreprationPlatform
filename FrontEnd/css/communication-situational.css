@@ -1,0 +1,668 @@
+/* =========================================================
+   PREPCONNECT - SITUATIONAL COMMUNICATION
+   ========================================================= */
+
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f8fc;
+    color: #222;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+.communication-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.communication-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px 30px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e5e5;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+
+.header-left,
+.header-right {
+    width: 220px;
+}
+
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.header-title {
+    flex: 1;
+    text-align: center;
+}
+
+
+.header-title h1 {
+    margin: 0;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    color: #222;
+}
+
+
+/* =========================================================
+   HEADER BUTTONS
+   ========================================================= */
+
+.communication-header button {
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #ff7a00;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.communication-header button:hover {
+    background: #e96d00;
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   TEST INFORMATION
+   ========================================================= */
+
+.test-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+
+.test-info div {
+    background: #ffffff;
+
+    padding: 18px 22px;
+
+    border-radius: 10px;
+
+    border: 1px solid #eeeeee;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+.test-info strong {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 13px;
+
+    color: #777;
+
+    text-transform: uppercase;
+}
+
+
+.test-info span {
+    font-size: 18px;
+
+    font-weight: 600;
+
+    color: #222;
+}
+
+
+/* =========================================================
+   PROGRESS
+   ========================================================= */
+
+.progress-section {
+    margin-bottom: 25px;
+}
+
+
+.progress-text {
+    margin-bottom: 9px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #444;
+}
+
+
+.progress-bar {
+    width: 100%;
+    height: 9px;
+
+    background: #e6e6e6;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+#progressBar {
+    width: 2%;
+
+    height: 100%;
+
+    background: #ff7a00;
+
+    border-radius: 20px;
+
+    transition: width 0.3s ease;
+}
+
+
+/* =========================================================
+   QUESTION CARD
+   ========================================================= */
+
+.question-section {
+    background: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    border: 1px solid #eeeeee;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+
+.difficulty {
+    display: inline-block;
+
+    padding: 6px 13px;
+
+    border-radius: 20px;
+
+    background: #fff3e8;
+
+    color: #e96d00;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+
+#questionNumber {
+    margin: 18px 0 10px;
+
+    font-size: 20px;
+
+    color: #222;
+}
+
+
+#questionText {
+    margin: 0;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #444;
+}
+
+
+/* =========================================================
+   SPEAKING SECTION
+   ========================================================= */
+
+.speaking-section {
+    margin-top: 25px;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    border: 1px solid #eeeeee;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+
+.speaking-section h3 {
+    margin: 25px 0 10px;
+
+    font-size: 17px;
+
+    color: #222;
+}
+
+
+/* =========================================================
+   SPEAKING BUTTONS
+   ========================================================= */
+
+.speaking-section button {
+    padding: 12px 22px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #ff7a00;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.speaking-section button:hover {
+    background: #e96d00;
+
+    transform: translateY(-1px);
+}
+
+
+#stopSpeakingBtn {
+    margin-left: 10px;
+
+    background: #555555;
+}
+
+
+#stopSpeakingBtn:hover {
+    background: #444444;
+}
+
+
+/* =========================================================
+   TRANSCRIPT
+   ========================================================= */
+
+#transcript {
+    min-height: 110px;
+
+    padding: 18px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 8px;
+
+    background: #fafafa;
+
+    color: #555555;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    box-sizing: border-box;
+}
+
+
+#transcript:focus {
+    outline: none;
+
+    border-color: #ff7a00;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.navigation-buttons {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 25px;
+}
+
+
+.navigation-buttons button {
+    min-width: 120px;
+
+    padding: 11px 20px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #222222;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.navigation-buttons button:hover:not(:disabled) {
+    background: #111111;
+
+    transform: translateY(-1px);
+}
+
+
+.navigation-buttons button:disabled {
+    background: #cccccc;
+
+    color: #777777;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   QUESTION NAVIGATOR
+   ========================================================= */
+
+.question-navigator {
+    margin-top: 25px;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    border: 1px solid #eeeeee;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+
+.question-navigator h3 {
+    margin: 0 0 18px;
+
+    font-size: 17px;
+
+    color: #222;
+}
+
+
+#navigator {
+    display: grid;
+
+    grid-template-columns: repeat(10, 1fr);
+
+    gap: 8px;
+}
+
+
+/* =========================================================
+   NAVIGATOR BUTTON
+   ========================================================= */
+
+.navigator-button {
+    height: 38px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 6px;
+
+    background: #ffffff;
+
+    color: #444444;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.navigator-button:hover {
+    border-color: #ff7a00;
+
+    color: #ff7a00;
+}
+
+
+/* CURRENT QUESTION */
+
+.navigator-button.active {
+    background: #ff7a00;
+
+    border-color: #ff7a00;
+
+    color: #ffffff;
+}
+
+
+/* ANSWERED QUESTION */
+
+.navigator-button.answered {
+    background: #eaf7ee;
+
+    border-color: #35a853;
+
+    color: #247a3a;
+}
+
+
+/* CURRENT + ANSWERED */
+
+.navigator-button.active.answered {
+    background: #ff7a00;
+
+    border-color: #ff7a00;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .communication-header {
+        padding: 13px 15px;
+    }
+
+
+    .header-left,
+    .header-right {
+        width: auto;
+    }
+
+
+    .header-title h1 {
+        font-size: 18px;
+    }
+
+
+    .communication-header button {
+        padding: 9px 12px;
+
+        font-size: 12px;
+    }
+
+
+    .communication-container {
+        width: 92%;
+
+        margin: 20px auto;
+    }
+
+
+    .test-info {
+        grid-template-columns: 1fr;
+    }
+
+
+    .question-section,
+    .speaking-section,
+    .question-navigator {
+        padding: 20px;
+    }
+
+
+    #questionText {
+        font-size: 16px;
+    }
+
+
+    #navigator {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .header-title h1 {
+        font-size: 16px;
+    }
+
+
+    .communication-header button {
+        padding: 8px 9px;
+
+        font-size: 11px;
+    }
+
+
+    .navigation-buttons {
+        gap: 10px;
+    }
+
+
+    .navigation-buttons button {
+        min-width: 100px;
+
+        padding: 10px 12px;
+    }
+
+
+    #navigator {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+}
+/* =========================================================
+   ANALYZE RESPONSE
+   ========================================================= */
+
+#analyzeBtn {
+    margin-top: 20px;
+
+    padding: 12px 22px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #222222;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+#analyzeBtn:hover {
+    background: #111111;
+
+    transform: translateY(-1px);
+}
+
+
+#analysisResult {
+    margin-top: 20px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    background: #fff8f0;
+
+    border: 1px solid #ffd9b3;
+}
+
+
+#analysisResult h3 {
+    margin-top: 0;
+
+    color: #222222;
+}
+
+
+.analysis-score {
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #ff7a00;
+}

@@ -1,0 +1,227 @@
+[
+  {
+    "category": "Quantitative",
+    "topic": "Profit and Loss",
+    "difficulty": "Easy",
+    "question": "A pen is bought for ₹20 and sold for ₹25. Find the profit.",
+    "options": ["₹3", "₹4", "₹5", "₹6"],
+    "answer": "₹5",
+    "explanation": "Profit = 25 − 20 = ₹5."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Profit and Loss",
+    "difficulty": "Easy",
+    "question": "A book is bought for ₹100 and sold for ₹120. Find the profit.",
+    "options": ["₹10", "₹20", "₹30", "₹40"],
+    "answer": "₹20",
+    "explanation": "Profit = 120 − 100 = ₹20."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Profit and Loss",
+    "difficulty": "Easy",
+    "question": "A shirt costing ₹500 is sold for ₹450. Find the loss.",
+    "options": ["₹30", "₹40", "₹50", "₹60"],
+    "answer": "₹50",
+    "explanation": "Loss = 500 − 450 = ₹50."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Profit and Loss",
+    "difficulty": "Easy",
+    "question": "An item costing ₹800 is sold for ₹920. Find the profit.",
+    "options": ["₹100", "₹120", "₹140", "₹160"],
+    "answer": "₹120",
+    "explanation": "Profit = 920 − 800 = ₹120."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Profit and Loss",
+    "difficulty": "Medium",
+    "question": "A watch is purchased for ₹400 and sold at a profit of 25%. Find the selling price.",
+    "options": ["₹450", "₹480", "₹500", "₹520"],
+    "answer": "₹500",
+    "explanation": "Profit = 25% of 400 = ₹100. SP = ₹500."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Profit and Loss",
+    "difficulty": "Medium",
+    "question": "A trader buys a bag for ₹600 and sells it at a loss of 10%. Find the selling price.",
+    "options": ["₹520", "₹530", "₹540", "₹550"],
+    "answer": "₹540",
+    "explanation": "Loss = ₹60. SP = ₹540."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Profit and Loss",
+    "difficulty": "Medium",
+    "question": "A cycle costs ₹2000 and is sold for ₹2400. Find the profit percentage.",
+    "options": ["15%", "20%", "25%", "30%"],
+    "answer": "20%",
+    "explanation": "Profit = ₹400. Profit% = (400/2000)×100 = 20%."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Profit and Loss",
+    "difficulty": "Medium",
+    "question": "An article bought for ₹300 is sold for ₹270. Find the loss percentage.",
+    "options": ["5%", "10%", "15%", "20%"],
+    "answer": "10%",
+    "explanation": "Loss = ₹30. Loss% = (30/300)×100 = 10%."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Profit and Loss",
+    "difficulty": "Hard",
+    "question": "A shopkeeper gains 20% by selling an article for ₹600. Find its cost price.",
+    "options": ["₹400", "₹450", "₹500", "₹550"],
+    "answer": "₹500",
+    "explanation": "CP = 600/1.2 = ₹500."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Profit and Loss",
+    "difficulty": "Hard",
+    "question": "An article is sold for ₹720 at a loss of 10%. Find its cost price.",
+    "options": ["₹760", "₹780", "₹800", "₹820"],
+    "answer": "₹800",
+    "explanation": "CP = 720/0.9 = ₹800."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Profit and Loss",
+    "difficulty": "Hard",
+    "question": "A dealer marks a product at ₹1000 and gives a discount of 10%. Find the selling price.",
+    "options": ["₹850", "₹900", "₹950", "₹1000"],
+    "answer": "₹900",
+    "explanation": "Discount = ₹100. SP = ₹900."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Profit and Loss",
+    "difficulty": "Hard",
+    "question": "A product costing ₹250 is sold for ₹325. Find the profit percentage.",
+    "options": ["20%", "25%", "30%", "35%"],
+    "answer": "30%",
+    "explanation": "Profit = ₹75. Profit% = 30%."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Profit and Loss",
+    "difficulty": "Hard",
+    "question": "A TV costing ₹15,000 is sold for ₹18,000. Find the profit.",
+    "options": ["₹2,000", "₹2,500", "₹3,000", "₹3,500"],
+    "answer": "₹3,000",
+    "explanation": "Profit = 18,000 − 15,000 = ₹3,000."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Simple Interest",
+    "difficulty": "Easy",
+    "question": "Find the simple interest on ₹1000 at 10% per annum for 2 years.",
+    "options": ["₹100", "₹150", "₹200", "₹250"],
+    "answer": "₹200",
+    "explanation": "SI = (1000×10×2)/100 = ₹200."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Simple Interest",
+    "difficulty": "Easy",
+    "question": "Find the simple interest on ₹5000 at 5% per annum for 1 year.",
+    "options": ["₹200", "₹250", "₹300", "₹350"],
+    "answer": "₹250",
+    "explanation": "SI = ₹250."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Simple Interest",
+    "difficulty": "Easy",
+    "question": "What is the amount on ₹2000 at 10% simple interest for 1 year?",
+    "options": ["₹2100", "₹2200", "₹2300", "₹2400"],
+    "answer": "₹2200",
+    "explanation": "SI = ₹200. Amount = ₹2200."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Simple Interest",
+    "difficulty": "Medium",
+    "question": "Find the simple interest on ₹4000 at 8% per annum for 3 years.",
+    "options": ["₹860", "₹900", "₹960", "₹1000"],
+    "answer": "₹960",
+    "explanation": "SI = (4000×8×3)/100 = ₹960."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Simple Interest",
+    "difficulty": "Medium",
+    "question": "At what rate will ₹1000 earn ₹200 as simple interest in 2 years?",
+    "options": ["5%", "10%", "15%", "20%"],
+    "answer": "10%",
+    "explanation": "R = (200×100)/(1000×2)=10%."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Simple Interest",
+    "difficulty": "Medium",
+    "question": "In how many years will ₹2000 earn ₹400 at 10% simple interest?",
+    "options": ["1 year", "2 years", "3 years", "4 years"],
+    "answer": "2 years",
+    "explanation": "T = (400×100)/(2000×10)=2 years."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Simple Interest",
+    "difficulty": "Hard",
+    "question": "Find the compound interest on ₹1000 at 10% for 2 years.",
+    "options": ["₹200", "₹210", "₹220", "₹230"],
+    "answer": "₹210",
+    "explanation": "Amount = 1000×1.1×1.1 = ₹1210. CI = ₹210."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Compound Interest",
+    "difficulty": "Hard",
+    "question": "Find the amount on ₹5000 at 10% compound interest for 2 years.",
+    "options": ["₹6000", "₹6050", "₹6055", "₹6100"],
+    "answer": "₹6050",
+    "explanation": "Amount = 5000×1.1² = ₹6050."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Compound Interest",
+    "difficulty": "Hard",
+    "question": "Find the compound interest on ₹2000 at 5% for 2 years.",
+    "options": ["₹200", "₹205", "₹210", "₹215"],
+    "answer": "₹205",
+    "explanation": "Amount = ₹2205. CI = ₹205."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Compound Interest",
+    "difficulty": "Hard",
+    "question": "What is the amount on ₹10,000 at 10% compound interest for 1 year?",
+    "options": ["₹10,500", "₹11,000", "₹11,500", "₹12,000"],
+    "answer": "₹11,000",
+    "explanation": "Amount = ₹11,000."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Compound Interest",
+    "difficulty": "Hard",
+    "question": "Find the compound interest on ₹8000 at 10% for 2 years.",
+    "options": ["₹1600", "₹1680", "₹1700", "₹1800"],
+    "answer": "₹1680",
+    "explanation": "Amount = ₹9680. CI = ₹1680."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Compound Interest",
+    "difficulty": "Hard",
+    "question": "A sum doubles itself in 10 years at simple interest. In how many years will it become three times?",
+    "options": ["15", "18", "20", "25"],
+    "answer": "20",
+    "explanation": "If it doubles in 10 years, another principal amount takes another 10 years. Total = 20 years."
+  }
+]

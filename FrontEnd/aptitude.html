@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aptitude Test - PrepConnect</title>
+
+  <link rel="stylesheet" href="css/aptitude.css">
+</head>
+
+<body>
+
+  <div class="test-container">
+
+
+<!-- Header -->
+<header class="test-header">
+
+  <div>
+    <h1>PrepConnect</h1>
+    <p>Aptitude Assessment</p>
+  </div>
+
+  <div class="timer-box">
+    <span>Time Remaining</span>
+    <strong id="timer">03:00:00</strong>
+  </div>
+
+</header>
+
+
+<!-- Progress -->
+<div class="progress-section">
+
+  <div class="progress-info">
+
+    <span id="questionNumber">
+      Question 1 of 300
+    </span>
+
+    <span id="answeredCount">
+      Answered: 0
+    </span>
+
+  </div>
+
+  <div class="progress-bar">
+    <div id="progressBar"></div>
+  </div>
+
+</div>
+
+
+<!-- Question Card -->
+<main class="question-card">
+
+  <div id="questionBox">
+
+    <p class="loading">
+      Loading Questions...
+    </p>
+
+  </div>
+
+</main>
+
+
+<!-- Question Navigator -->
+<div class="question-navigator">
+
+  <div class="navigator-header">
+
+    <h3>
+      Question Navigator
+    </h3>
+
+    <div class="legend">
+
+      <span>
+        <i class="legend-dot current-dot"></i>
+        Current
+      </span>
+
+      <span>
+        <i class="legend-dot answered-dot"></i>
+        Answered
+      </span>
+
+      <span>
+        <i class="legend-dot unanswered-dot"></i>
+        Unanswered
+      </span>
+
+    </div>
+
+  </div>
+
+  <div id="questionNavigator"></div>
+
+</div>
+
+
+<!-- Navigation Buttons -->
+<div class="navigation">
+
+  <button
+    id="previousBtn"
+    class="btn secondary"
+    onclick="previousQuestion()"
+  >
+    ← Previous
+  </button>
+
+  <button
+    id="nextBtn"
+    class="btn primary"
+    onclick="nextQuestion()"
+  >
+    Next →
+  </button>
+
+  <button
+    id="submitBtn"
+    class="btn danger"
+    onclick="submitTest()"
+  >
+    Submit Test
+  </button>
+
+</div>
+
+
+  </div>
+
+  <!-- Submit Confirmation Modal -->
+
+  <div id="submitModal" class="modal">
+
+
+<div class="modal-content">
+
+  <h2>
+    Submit Test?
+  </h2>
+
+  <p>
+    Are you sure you want to submit your aptitude test?
+  </p>
+
+  <p id="modalAnswered"></p>
+
+  <div class="modal-buttons">
+
+    <button
+      class="btn secondary"
+      onclick="closeSubmitModal()"
+    >
+      Cancel
+    </button>
+
+    <button
+      class="btn danger"
+      onclick="confirmSubmit()"
+    >
+      Yes, Submit
+    </button>
+
+  </div>
+
+</div>
+
+
+  </div>
+
+  <!-- JavaScript -->
+
+  <script src="js/config.js"></script>
+
+  <script src="js/aptitude.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+min-height: 100vh;
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+background: linear-gradient(
+    135deg,
+    #eef4ff,
+    #f8fbff
+);
+
+color: #1e293b;
+
+
+}
+
+/* =========================
+PROFILE CONTAINER
+========================= */
+
+.profile-container {
+width: 90%;
+max-width: 520px;
+
+
+background: #ffffff;
+
+padding: 40px;
+
+border-radius: 18px;
+
+border: 1px solid #dbe7ff;
+
+box-shadow:
+    0 12px 35px rgba(37, 99, 235, 0.12);
+
+text-align: center;
+
+
+}
+
+/* =========================
+HEADING
+========================= */
+
+.profile-container h1 {
+color: #1d4ed8;
+
+
+font-size: 30px;
+
+margin-bottom: 8px;
+
+
+}
+
+.subtitle {
+color: #64748b;
+
+
+font-size: 15px;
+
+margin-bottom: 28px;
+
+
+}
+
+/* =========================
+PROFILE CARD
+========================= */
+
+.profile-card {
+background: #f8fbff;
+
+
+border: 1px solid #dbe7ff;
+
+border-radius: 12px;
+
+overflow: hidden;
+
+margin-bottom: 25px;
+
+
+}
+
+/* =========================
+PROFILE ROW
+========================= */
+
+.profile-row {
+display: flex;
+
+
+justify-content: space-between;
+
+align-items: center;
+
+padding: 17px 20px;
+
+border-bottom: 1px solid #e2e8f0;
+
+text-align: left;
+
+transition: background 0.2s ease;
+
+
+}
+
+.profile-row:last-child {
+border-bottom: none;
+}
+
+.profile-row:hover {
+background: #eef4ff;
+}
+
+/* Label */
+
+.profile-row span {
+color: #64748b;
+
+
+font-size: 14px;
+
+font-weight: 600;
+
+
+}
+
+/* Value */
+
+.profile-row strong {
+color: #1e293b;
+
+
+font-size: 15px;
+
+font-weight: 600;
+
+text-align: right;
+
+word-break: break-word;
+
+
+}
+
+/* =========================
+MESSAGE
+========================= */
+
+#message {
+color: #dc2626;
+
+
+font-size: 14px;
+
+margin-bottom: 15px;
+
+
+}
+
+/* =========================
+BACK TO DASHBOARD
+========================= */
+
+.profile-container a {
+display: inline-block;
+
+
+padding: 12px 24px;
+
+background: #2563eb;
+
+color: #ffffff;
+
+text-decoration: none;
+
+border-radius: 8px;
+
+font-size: 15px;
+
+font-weight: 600;
+
+transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+
+}
+
+.profile-container a:hover {
+background: #1d4ed8;
+
+
+transform: translateY(-2px);
+
+box-shadow:
+    0 6px 15px rgba(37, 99, 235, 0.25);
+
+
+}
+
+/* =========================
+VERIFIED STATUS
+========================= */
+
+#userVerified {
+color: #16a34a;
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+
+.profile-container {
+    width: 92%;
+
+    padding: 28px 20px;
+}
+
+.profile-container h1 {
+    font-size: 26px;
+}
+
+.profile-row {
+    padding: 15px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 6px;
+}
+
+.profile-row strong {
+    text-align: left;
+}
+
+
+}
+
+/* =========================================================
+   JAVA PROGRESS
+   ========================================================= */
+
+.java-progress-card {
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(30, 64, 175, 0.08);
+    border: 1px solid rgba(37, 99, 235, 0.12);
+    animation: cardAppear 0.8s ease;
+}
+
+.java-progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.java-progress-header h3 {
+    color: #1d4ed8;
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.java-progress-header p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.java-progress-header strong {
+    color: #1d4ed8;
+    font-size: 28px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 14px;
+    background: #e2e8f0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 20px;
+
+    background: linear-gradient(
+        90deg,
+        #2563eb,
+        #60a5fa,
+        #2563eb
+    );
+
+    background-size: 200% 100%;
+
+    animation:
+        progressFill 1.5s ease-out,
+        progressGlow 2s ease-in-out infinite;
+}
+
+@keyframes progressFill {
+    from {
+        width: 0 !important;
+    }
+}
+
+@keyframes progressGlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .java-progress-card {
+        padding: 20px;
+    }
+
+    .java-progress-header h3 {
+        font-size: 18px;
+    }
+
+    .java-progress-header strong {
+        font-size: 23px;
+    }
+}

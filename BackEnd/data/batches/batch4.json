@@ -1,0 +1,227 @@
+[
+{
+"category": "Quantitative",
+"topic": "Time and Work",
+"difficulty": "Easy",
+"question": "If A can complete a work in 10 days, what part of the work can he do in one day?",
+"options": ["1/5", "1/10", "1/15", "1/20"],
+"answer": "1/10",
+"explanation": "One day's work = 1/10."
+},
+{
+"category": "Quantitative",
+"topic": "Time and Work",
+"difficulty": "Easy",
+"question": "A can complete a work in 12 days. How many days will he take to complete half of the work?",
+"options": ["4", "5", "6", "7"],
+"answer": "6",
+"explanation": "Half the work takes half the time."
+},
+{
+"category": "Quantitative",
+"topic": "Time and Work",
+"difficulty": "Easy",
+"question": "If B can complete a work in 20 days, what fraction of the work does he do in one day?",
+"options": ["1/10", "1/15", "1/20", "1/25"],
+"answer": "1/20",
+"explanation": "One day's work = 1/20."
+},
+{
+"category": "Quantitative",
+"topic": "Time and Work",
+"difficulty": "Medium",
+"question": "A can do a work in 10 days and B can do it in 15 days. In how many days can they finish it together?",
+"options": ["5", "6", "7", "8"],
+"answer": "6",
+"explanation": "1/10 + 1/15 = 1/6."
+},
+{
+"category": "Quantitative",
+"topic": "Time and Work",
+"difficulty": "Medium",
+"question": "A can complete a work in 8 days and B in 24 days. How many days will they take together?",
+"options": ["4", "5", "6", "7"],
+"answer": "6",
+"explanation": "1/8 + 1/24 = 1/6."
+},
+{
+"category": "Quantitative",
+"topic": "Time and Work",
+"difficulty": "Medium",
+"question": "If 5 men can complete a work in 12 days, how many man-days are required?",
+"options": ["50", "55", "60", "65"],
+"answer": "60",
+"explanation": "Man-days = 5 × 12 = 60."
+},
+{
+"category": "Quantitative",
+"topic": "Time and Work",
+"difficulty": "Medium",
+"question": "If 10 workers complete a job in 6 days, how many workers are needed to finish it in 3 days?",
+"options": ["15", "20", "25", "30"],
+"answer": "20",
+"explanation": "Workers × Days = constant."
+},
+{
+"category": "Quantitative",
+"topic": "Time and Work",
+"difficulty": "Hard",
+"question": "A can do a work in 12 days and B in 18 days. They work together for 4 days. What fraction of the work is left?",
+"options": ["1/9", "2/9", "1/3", "4/9"],
+"answer": "4/9",
+"explanation": "Completed work = 5/9, remaining = 4/9."
+},
+{
+"category": "Quantitative",
+"topic": "Time and Work",
+"difficulty": "Hard",
+"question": "If 8 men can complete a work in 15 days, how many days will 12 men take?",
+"options": ["8", "10", "12", "15"],
+"answer": "10",
+"explanation": "8 × 15 = 12 × x."
+},
+{
+"category": "Quantitative",
+"topic": "Time and Work",
+"difficulty": "Hard",
+"question": "A is twice as efficient as B. If B can do a work in 12 days, how many days will A take?",
+"options": ["4", "5", "6", "7"],
+"answer": "6",
+"explanation": "Double efficiency means half the time."
+},
+{
+"category": "Quantitative",
+"topic": "Time and Work",
+"difficulty": "Hard",
+"question": "A and B together complete a work in 8 days. If A alone can do it in 12 days, how many days can B alone take?",
+"options": ["20", "24", "28", "32"],
+"answer": "24",
+"explanation": "1/B = 1/8 − 1/12 = 1/24."
+},
+{
+"category": "Quantitative",
+"topic": "Time and Work",
+"difficulty": "Hard",
+"question": "A can finish a work in 15 days and B in 10 days. How long will they take together?",
+"options": ["4", "5", "6", "7"],
+"answer": "6",
+"explanation": "1/15 + 1/10 = 1/6."
+},
+{
+"category": "Quantitative",
+"topic": "Time and Work",
+"difficulty": "Hard",
+"question": "Three workers can complete a job in 9 days. How many worker-days are required?",
+"options": ["18", "21", "24", "27"],
+"answer": "27",
+"explanation": "Worker-days = 3 × 9."
+},
+{
+"category": "Quantitative",
+"topic": "Time, Speed and Distance",
+"difficulty": "Easy",
+"question": "A car travels at 60 km/h for 2 hours. Find the distance travelled.",
+"options": ["100 km", "110 km", "120 km", "130 km"],
+"answer": "120 km",
+"explanation": "Distance = Speed × Time."
+},
+{
+"category": "Quantitative",
+"topic": "Time, Speed and Distance",
+"difficulty": "Easy",
+"question": "A train travels 180 km in 3 hours. Find its speed.",
+"options": ["50 km/h", "60 km/h", "70 km/h", "80 km/h"],
+"answer": "60 km/h",
+"explanation": "Speed = Distance / Time."
+},
+{
+"category": "Quantitative",
+"topic": "Time, Speed and Distance",
+"difficulty": "Easy",
+"question": "A bike travels 90 km at 45 km/h. Find the time taken.",
+"options": ["1 hour", "2 hours", "3 hours", "4 hours"],
+"answer": "2 hours",
+"explanation": "Time = Distance / Speed."
+},
+{
+"category": "Quantitative",
+"topic": "Time, Speed and Distance",
+"difficulty": "Medium",
+"question": "A man walks at 5 km/h. How far does he walk in 4 hours?",
+"options": ["15 km", "20 km", "25 km", "30 km"],
+"answer": "20 km",
+"explanation": "Distance = 5 × 4."
+},
+{
+"category": "Quantitative",
+"topic": "Time, Speed and Distance",
+"difficulty": "Medium",
+"question": "A car covers 150 km in 3 hours. Find its speed.",
+"options": ["40 km/h", "50 km/h", "60 km/h", "70 km/h"],
+"answer": "50 km/h",
+"explanation": "150 ÷ 3 = 50."
+},
+{
+"category": "Quantitative",
+"topic": "Time, Speed and Distance",
+"difficulty": "Medium",
+"question": "A train moves at 80 km/h for 5 hours. Find the distance.",
+"options": ["300 km", "350 km", "400 km", "450 km"],
+"answer": "400 km",
+"explanation": "Distance = 80 × 5."
+},
+{
+"category": "Quantitative",
+"topic": "Time, Speed and Distance",
+"difficulty": "Medium",
+"question": "A runner covers 24 km in 3 hours. Find the speed.",
+"options": ["6 km/h", "7 km/h", "8 km/h", "9 km/h"],
+"answer": "8 km/h",
+"explanation": "24 ÷ 3 = 8."
+},
+{
+"category": "Quantitative",
+"topic": "Time, Speed and Distance",
+"difficulty": "Hard",
+"question": "A train travels 240 km in 4 hours and another 180 km in 3 hours. Find the average speed.",
+"options": ["50 km/h", "55 km/h", "60 km/h", "65 km/h"],
+"answer": "60 km/h",
+"explanation": "Total distance = 420 km, total time = 7 hours."
+},
+{
+"category": "Quantitative",
+"topic": "Time, Speed and Distance",
+"difficulty": "Hard",
+"question": "A person walks at 6 km/h and reaches office in 30 minutes. Find the distance.",
+"options": ["2 km", "3 km", "4 km", "5 km"],
+"answer": "3 km",
+"explanation": "Distance = 6 × 0.5."
+},
+{
+"category": "Quantitative",
+"topic": "Time, Speed and Distance",
+"difficulty": "Hard",
+"question": "A bus travels 300 km in 5 hours. Find its speed.",
+"options": ["50 km/h", "55 km/h", "60 km/h", "65 km/h"],
+"answer": "60 km/h",
+"explanation": "300 ÷ 5 = 60."
+},
+{
+"category": "Quantitative",
+"topic": "Time, Speed and Distance",
+"difficulty": "Hard",
+"question": "A cyclist travels 72 km at 18 km/h. Find the time taken.",
+"options": ["2 hours", "3 hours", "4 hours", "5 hours"],
+"answer": "4 hours",
+"explanation": "72 ÷ 18 = 4."
+},
+{
+"category": "Quantitative",
+"topic": "Time, Speed and Distance",
+"difficulty": "Hard",
+"question": "A train running at 90 km/h covers a distance in 2 hours. Find the distance travelled.",
+"options": ["150 km", "160 km", "170 km", "180 km"],
+"answer": "180 km",
+"explanation": "Distance = 90 × 2."
+}
+]

@@ -1,0 +1,450 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Speaking Practice</title>
+
+    <link
+        rel="stylesheet"
+        href="./css/communication.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="./css/communication-speaking.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="speaking-header">
+
+        <div class="header-left">
+
+            <button
+                type="button"
+                onclick="goToCommunication()"
+                class="back-btn"
+            >
+                ← Back to Communication
+            </button>
+
+        </div>
+
+
+        <div class="header-title">
+
+            <h1>
+                🎤 Speaking Practice
+            </h1>
+
+        </div>
+
+
+        <div class="header-right">
+
+            <button
+                type="button"
+                onclick="logout()"
+                class="logout-btn"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="speaking-container">
+
+
+        <!-- =================================================
+             TEST INFORMATION
+        ================================================== -->
+
+        <section class="test-info-card">
+
+            <div class="info-item">
+
+                <span class="info-label">
+                    Total Topics
+                </span>
+
+                <strong>
+                    50
+                </strong>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span class="info-label">
+                    Category
+                </span>
+
+                <strong>
+                    Speaking
+                </strong>
+
+            </div>
+
+
+            <div class="info-item">
+
+                <span class="info-label">
+                    Time
+                </span>
+
+                <strong>
+                    60 Minutes
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PROGRESS
+        ================================================== -->
+
+        <section class="progress-section">
+
+            <div class="progress-text">
+
+                <span>
+                    Topic
+                </span>
+
+                <span id="topicNumber">
+                    1 / 50
+                </span>
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                <div
+                    id="progressFill"
+                    class="progress-fill"
+                    style="width: 2%;"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SPEAKING TOPIC
+        ================================================== -->
+
+        <section class="topic-card">
+
+            <div class="topic-label">
+                🗣️ Speaking Topic
+            </div>
+
+
+            <h2 id="topicTitle">
+                Introduce yourself
+            </h2>
+
+
+            <p id="topicDescription">
+
+                Speak about yourself, your education,
+                your technical skills and your career goals.
+
+            </p>
+
+        </section>
+
+
+        <!-- =================================================
+             SPEAKING CONTROLS
+        ================================================== -->
+
+        <section class="speaking-card">
+
+            <h2>
+                🎤 Your Response
+            </h2>
+
+
+            <p class="instruction">
+
+                Click <strong>Start Speaking</strong> and
+                speak clearly. Your browser will convert
+                your speech into text.
+
+            </p>
+
+
+            <div class="speaking-buttons">
+
+                <button
+                    id="startSpeaking"
+                    type="button"
+                    class="start-speaking-btn"
+                >
+                    🎤 Start Speaking
+                </button>
+
+
+                <button
+                    id="stopSpeaking"
+                    type="button"
+                    class="stop-speaking-btn"
+                    disabled
+                >
+                    ⏹️ Stop Speaking
+                </button>
+
+            </div>
+
+
+            <!-- =================================================
+                 SPEECH STATUS
+            ================================================== -->
+
+            <div
+                id="speechStatus"
+                class="speech-status"
+            >
+                Click Start Speaking to begin.
+            </div>
+
+
+            <!-- =================================================
+                 TRANSCRIPT
+            ================================================== -->
+
+            <div class="transcript-section">
+
+                <h3>
+                    📝 Transcript
+                </h3>
+
+
+                <textarea
+                    id="transcript"
+                    class="transcript-box"
+                    placeholder="Your speech will appear here..."
+                    rows="8"
+                    readonly
+                ></textarea>
+
+            </div>
+
+
+            <!-- =================================================
+                 ANALYZE RESPONSE
+            ================================================== -->
+
+            <button
+                id="analyzeResponse"
+                type="button"
+                class="analyze-btn"
+            >
+                🔍 Analyze Response
+            </button>
+
+
+            <!-- =================================================
+                 ANALYSIS RESULT
+            ================================================== -->
+
+            <div
+                id="analysisResult"
+                class="analysis-result"
+                style="display: none;"
+            >
+
+                <h3>
+                    📊 Speaking Analysis
+                </h3>
+
+
+                <div class="analysis-item">
+
+                    <span>
+                        Relevance
+                    </span>
+
+                    <strong id="relevanceScore">
+                        0/20
+                    </strong>
+
+                </div>
+
+
+                <div class="analysis-item">
+
+                    <span>
+                        Clarity
+                    </span>
+
+                    <strong id="clarityScore">
+                        0/20
+                    </strong>
+
+                </div>
+
+
+                <div class="analysis-item">
+
+                    <span>
+                        Grammar
+                    </span>
+
+                    <strong id="grammarScore">
+                        0/20
+                    </strong>
+
+                </div>
+
+
+                <div class="analysis-item">
+
+                    <span>
+                        Vocabulary
+                    </span>
+
+                    <strong id="vocabularyScore">
+                        0/20
+                    </strong>
+
+                </div>
+
+
+                <div class="analysis-item">
+
+                    <span>
+                        Fluency
+                    </span>
+
+                    <strong id="fluencyScore">
+                        0/20
+                    </strong>
+
+                </div>
+
+
+                <!-- TOTAL SCORE -->
+
+                <div class="total-score">
+
+                    <span>
+                        Total Score
+                    </span>
+
+                    <strong id="totalScore">
+                        0/100
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 SAVE RESULT
+            ================================================== -->
+
+            <button
+                id="saveResult"
+                type="button"
+                class="save-result-btn"
+                style="display: none;"
+            >
+                💾 Save Result
+            </button>
+
+        </section>
+
+
+        <!-- =================================================
+             TOPIC NAVIGATION
+        ================================================== -->
+
+        <section class="navigation-section">
+
+            <button
+                id="previousTopic"
+                type="button"
+                class="navigation-btn"
+                disabled
+            >
+                ← Previous
+            </button>
+
+
+            <button
+                id="nextTopic"
+                type="button"
+                class="navigation-btn"
+            >
+                Next →
+            </button>
+
+        </section>
+
+
+        <!-- =================================================
+             TOPIC NAVIGATOR
+        ================================================== -->
+
+        <section class="topic-navigator-section">
+
+            <h3>
+                Topics
+            </h3>
+
+
+            <div
+                id="topicNavigator"
+                class="topic-navigator"
+            >
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         SCRIPTS
+    ====================================================== -->
+
+    <script src="./js/config.js"></script>
+
+    <script src="./js/communication-speaking.js"></script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,227 @@
+[
+  {
+    "category": "Quantitative",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "What is the square of 12?",
+    "options": ["144", "124", "134", "154"],
+    "answer": "144",
+    "explanation": "12 × 12 = 144"
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "What is the cube of 5?",
+    "options": ["125", "100", "150", "225"],
+    "answer": "125",
+    "explanation": "5 × 5 × 5 = 125"
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "Which is the smallest prime number?",
+    "options": ["0", "1", "2", "3"],
+    "answer": "2",
+    "explanation": "2 is the smallest prime number."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "What is the HCF of 12 and 18?",
+    "options": ["3", "6", "9", "12"],
+    "answer": "6",
+    "explanation": "Factors of 12 and 18 have 6 as the highest common factor."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Number System",
+    "difficulty": "Easy",
+    "question": "What is the LCM of 6 and 8?",
+    "options": ["12", "24", "36", "48"],
+    "answer": "24",
+    "explanation": "LCM of 6 and 8 is 24."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "Find the remainder when 35 is divided by 6.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "5",
+    "explanation": "35 = 6 × 5 + 5."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "How many factors does 16 have?",
+    "options": ["3", "4", "5", "6"],
+    "answer": "5",
+    "explanation": "Factors are 1, 2, 4, 8 and 16."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "Which number is divisible by both 3 and 5?",
+    "options": ["25", "30", "35", "40"],
+    "answer": "30",
+    "explanation": "30 is divisible by both 3 and 5."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Number System",
+    "difficulty": "Medium",
+    "question": "What is the sum of the first five natural numbers?",
+    "options": ["10", "15", "20", "25"],
+    "answer": "15",
+    "explanation": "1 + 2 + 3 + 4 + 5 = 15."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Number System",
+    "difficulty": "Hard",
+    "question": "What is the value of 2⁵?",
+    "options": ["16", "32", "64", "128"],
+    "answer": "32",
+    "explanation": "2 × 2 × 2 × 2 × 2 = 32."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Percentage",
+    "difficulty": "Easy",
+    "question": "What is 25% of 400?",
+    "options": ["50", "75", "100", "125"],
+    "answer": "100",
+    "explanation": "25% of 400 = 100."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Percentage",
+    "difficulty": "Easy",
+    "question": "What is 50% of 300?",
+    "options": ["100", "120", "150", "200"],
+    "answer": "150",
+    "explanation": "50% means half."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Percentage",
+    "difficulty": "Easy",
+    "question": "What is 10% of 500?",
+    "options": ["25", "50", "75", "100"],
+    "answer": "50",
+    "explanation": "10% of 500 = 50."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Percentage",
+    "difficulty": "Easy",
+    "question": "What is 20% of 250?",
+    "options": ["25", "50", "75", "100"],
+    "answer": "50",
+    "explanation": "20% of 250 = 50."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Percentage",
+    "difficulty": "Medium",
+    "question": "A student's marks increased from 80 to 100. Find the percentage increase.",
+    "options": ["20%", "25%", "30%", "35%"],
+    "answer": "25%",
+    "explanation": "(20/80) × 100 = 25%."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Percentage",
+    "difficulty": "Medium",
+    "question": "What is 15% of 200?",
+    "options": ["20", "25", "30", "35"],
+    "answer": "30",
+    "explanation": "15% of 200 = 30."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Percentage",
+    "difficulty": "Medium",
+    "question": "What is 75% of 80?",
+    "options": ["40", "50", "60", "70"],
+    "answer": "60",
+    "explanation": "75% of 80 = 60."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Percentage",
+    "difficulty": "Medium",
+    "question": "What is 5% of 600?",
+    "options": ["20", "25", "30", "35"],
+    "answer": "30",
+    "explanation": "5% of 600 = 30."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Percentage",
+    "difficulty": "Hard",
+    "question": "A shirt costing ₹800 is sold at a discount of 10%. Find the selling price.",
+    "options": ["₹700", "₹720", "₹760", "₹780"],
+    "answer": "₹720",
+    "explanation": "Discount = ₹80, SP = ₹720."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Percentage",
+    "difficulty": "Hard",
+    "question": "A number is increased by 20% and becomes 240. Find the original number.",
+    "options": ["180", "190", "200", "220"],
+    "answer": "200",
+    "explanation": "Original number = 240/1.2 = 200."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Percentage",
+    "difficulty": "Hard",
+    "question": "If 40% of a number is 120, find the number.",
+    "options": ["250", "275", "300", "325"],
+    "answer": "300",
+    "explanation": "120 ÷ 0.4 = 300."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Percentage",
+    "difficulty": "Hard",
+    "question": "The price of a book decreases from ₹500 to ₹450. Find the percentage decrease.",
+    "options": ["5%", "10%", "15%", "20%"],
+    "answer": "10%",
+    "explanation": "(50/500) × 100 = 10%."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Percentage",
+    "difficulty": "Hard",
+    "question": "What is 12.5% of 160?",
+    "options": ["10", "15", "20", "25"],
+    "answer": "20",
+    "explanation": "12.5% is 1/8 and 160/8 = 20."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Percentage",
+    "difficulty": "Hard",
+    "question": "If the population of a town increases by 10% from 20,000, what is the new population?",
+    "options": ["21,000", "22,000", "23,000", "24,000"],
+    "answer": "22,000",
+    "explanation": "10% of 20,000 = 2,000."
+  },
+  {
+    "category": "Quantitative",
+    "topic": "Percentage",
+    "difficulty": "Hard",
+    "question": "A salary of ₹40,000 is increased by 15%. Find the new salary.",
+    "options": ["₹44,000", "₹45,000", "₹46,000", "₹47,000"],
+    "answer": "₹46,000",
+    "explanation": "15% of 40,000 = 6,000. New salary = ₹46,000."
+  }
+]

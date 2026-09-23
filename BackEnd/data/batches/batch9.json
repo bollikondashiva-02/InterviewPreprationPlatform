@@ -1,0 +1,227 @@
+[
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Easy",
+    "question": "Choose the synonym of 'Happy'.",
+    "options": ["Sad", "Joyful", "Angry", "Tired"],
+    "answer": "Joyful",
+    "explanation": "Joyful means happy."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Easy",
+    "question": "Choose the synonym of 'Big'.",
+    "options": ["Tiny", "Large", "Short", "Weak"],
+    "answer": "Large",
+    "explanation": "Large means big."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Easy",
+    "question": "Choose the synonym of 'Quick'.",
+    "options": ["Slow", "Fast", "Lazy", "Late"],
+    "answer": "Fast",
+    "explanation": "Fast means quick."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Easy",
+    "question": "Choose the synonym of 'Begin'.",
+    "options": ["Start", "Finish", "Stop", "Close"],
+    "answer": "Start",
+    "explanation": "Start means begin."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Easy",
+    "question": "Choose the synonym of 'Smart'.",
+    "options": ["Intelligent", "Weak", "Slow", "Dull"],
+    "answer": "Intelligent",
+    "explanation": "Intelligent means smart."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Medium",
+    "question": "Choose the synonym of 'Ancient'.",
+    "options": ["Modern", "Old", "Future", "New"],
+    "answer": "Old",
+    "explanation": "Ancient means very old."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Medium",
+    "question": "Choose the synonym of 'Brave'.",
+    "options": ["Cowardly", "Bold", "Shy", "Timid"],
+    "answer": "Bold",
+    "explanation": "Bold means brave."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Medium",
+    "question": "Choose the synonym of 'Calm'.",
+    "options": ["Peaceful", "Angry", "Noisy", "Excited"],
+    "answer": "Peaceful",
+    "explanation": "Peaceful means calm."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Medium",
+    "question": "Choose the synonym of 'Danger'.",
+    "options": ["Safety", "Risk", "Peace", "Comfort"],
+    "answer": "Risk",
+    "explanation": "Risk means danger."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Medium",
+    "question": "Choose the synonym of 'Famous'.",
+    "options": ["Unknown", "Popular", "Hidden", "Silent"],
+    "answer": "Popular",
+    "explanation": "Popular means famous."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Medium",
+    "question": "Choose the synonym of 'Honest'.",
+    "options": ["Truthful", "Dishonest", "Cruel", "Proud"],
+    "answer": "Truthful",
+    "explanation": "Truthful means honest."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Medium",
+    "question": "Choose the synonym of 'Idea'.",
+    "options": ["Thought", "Object", "Problem", "Action"],
+    "answer": "Thought",
+    "explanation": "Thought means idea."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Medium",
+    "question": "Choose the synonym of 'Journey'.",
+    "options": ["Trip", "Stay", "House", "Break"],
+    "answer": "Trip",
+    "explanation": "Trip means journey."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Hard",
+    "question": "Choose the synonym of 'Abundant'.",
+    "options": ["Scarce", "Plentiful", "Little", "Rare"],
+    "answer": "Plentiful",
+    "explanation": "Plentiful means abundant."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Hard",
+    "question": "Choose the synonym of 'Candid'.",
+    "options": ["Secretive", "Frank", "Rude", "Weak"],
+    "answer": "Frank",
+    "explanation": "Frank means candid."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Hard",
+    "question": "Choose the synonym of 'Diligent'.",
+    "options": ["Lazy", "Hardworking", "Weak", "Silent"],
+    "answer": "Hardworking",
+    "explanation": "Hardworking means diligent."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Hard",
+    "question": "Choose the synonym of 'Eminent'.",
+    "options": ["Famous", "Unknown", "Weak", "Poor"],
+    "answer": "Famous",
+    "explanation": "Eminent means famous."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Hard",
+    "question": "Choose the synonym of 'Fragile'.",
+    "options": ["Strong", "Delicate", "Heavy", "Hard"],
+    "answer": "Delicate",
+    "explanation": "Delicate means fragile."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Hard",
+    "question": "Choose the synonym of 'Generous'.",
+    "options": ["Kind", "Greedy", "Cruel", "Poor"],
+    "answer": "Kind",
+    "explanation": "Kind means generous."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Hard",
+    "question": "Choose the synonym of 'Hostile'.",
+    "options": ["Friendly", "Aggressive", "Calm", "Soft"],
+    "answer": "Aggressive",
+    "explanation": "Aggressive means hostile."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Hard",
+    "question": "Choose the synonym of 'Imitate'.",
+    "options": ["Copy", "Create", "Destroy", "Ignore"],
+    "answer": "Copy",
+    "explanation": "Copy means imitate."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Hard",
+    "question": "Choose the synonym of 'Jovial'.",
+    "options": ["Cheerful", "Sad", "Angry", "Weak"],
+    "answer": "Cheerful",
+    "explanation": "Cheerful means jovial."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Hard",
+    "question": "Choose the synonym of 'Keen'.",
+    "options": ["Eager", "Lazy", "Dull", "Weak"],
+    "answer": "Eager",
+    "explanation": "Eager means keen."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Hard",
+    "question": "Choose the synonym of 'Lucid'.",
+    "options": ["Confusing", "Clear", "Dark", "Hard"],
+    "answer": "Clear",
+    "explanation": "Clear means lucid."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Synonyms",
+    "difficulty": "Hard",
+    "question": "Choose the synonym of 'Miser'.",
+    "options": ["Generous person", "Stingy person", "Leader", "Teacher"],
+    "answer": "Stingy person",
+    "explanation": "A miser is a stingy person."
+  }
+]

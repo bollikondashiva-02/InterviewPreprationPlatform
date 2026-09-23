@@ -1,0 +1,227 @@
+[
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Easy",
+    "question": "Choose the antonym of 'Hot'.",
+    "options": ["Warm", "Cold", "Boiling", "Dry"],
+    "answer": "Cold",
+    "explanation": "Cold is the opposite of hot."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Easy",
+    "question": "Choose the antonym of 'Big'.",
+    "options": ["Large", "Huge", "Small", "Wide"],
+    "answer": "Small",
+    "explanation": "Small is the opposite of big."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Easy",
+    "question": "Choose the antonym of 'Happy'.",
+    "options": ["Joyful", "Sad", "Cheerful", "Glad"],
+    "answer": "Sad",
+    "explanation": "Sad is the opposite of happy."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Easy",
+    "question": "Choose the antonym of 'Fast'.",
+    "options": ["Quick", "Rapid", "Slow", "Swift"],
+    "answer": "Slow",
+    "explanation": "Slow is the opposite of fast."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Easy",
+    "question": "Choose the antonym of 'Early'.",
+    "options": ["Late", "Soon", "Quick", "Fast"],
+    "answer": "Late",
+    "explanation": "Late is the opposite of early."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Medium",
+    "question": "Choose the antonym of 'Ancient'.",
+    "options": ["Old", "Historic", "Modern", "Traditional"],
+    "answer": "Modern",
+    "explanation": "Modern is the opposite of ancient."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Medium",
+    "question": "Choose the antonym of 'Brave'.",
+    "options": ["Bold", "Courageous", "Cowardly", "Strong"],
+    "answer": "Cowardly",
+    "explanation": "Cowardly is the opposite of brave."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Medium",
+    "question": "Choose the antonym of 'Accept'.",
+    "options": ["Receive", "Reject", "Allow", "Agree"],
+    "answer": "Reject",
+    "explanation": "Reject is the opposite of accept."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Medium",
+    "question": "Choose the antonym of 'Victory'.",
+    "options": ["Success", "Win", "Defeat", "Triumph"],
+    "answer": "Defeat",
+    "explanation": "Defeat is the opposite of victory."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Medium",
+    "question": "Choose the antonym of 'Expand'.",
+    "options": ["Grow", "Increase", "Contract", "Spread"],
+    "answer": "Contract",
+    "explanation": "Contract means to become smaller."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Medium",
+    "question": "Choose the antonym of 'Include'.",
+    "options": ["Contain", "Add", "Exclude", "Accept"],
+    "answer": "Exclude",
+    "explanation": "Exclude is the opposite of include."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Medium",
+    "question": "Choose the antonym of 'Generous'.",
+    "options": ["Kind", "Helpful", "Stingy", "Friendly"],
+    "answer": "Stingy",
+    "explanation": "Stingy is the opposite of generous."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Medium",
+    "question": "Choose the antonym of 'Permanent'.",
+    "options": ["Fixed", "Temporary", "Stable", "Lasting"],
+    "answer": "Temporary",
+    "explanation": "Temporary is the opposite of permanent."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Hard",
+    "question": "Choose the antonym of 'Abundant'.",
+    "options": ["Plentiful", "Scarce", "Large", "Many"],
+    "answer": "Scarce",
+    "explanation": "Scarce means insufficient."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Hard",
+    "question": "Choose the antonym of 'Artificial'.",
+    "options": ["Synthetic", "Natural", "Fake", "Unreal"],
+    "answer": "Natural",
+    "explanation": "Natural is the opposite of artificial."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Hard",
+    "question": "Choose the antonym of 'Benevolent'.",
+    "options": ["Kind", "Cruel", "Helpful", "Friendly"],
+    "answer": "Cruel",
+    "explanation": "Cruel is the opposite of benevolent."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Hard",
+    "question": "Choose the antonym of 'Conceal'.",
+    "options": ["Hide", "Cover", "Reveal", "Protect"],
+    "answer": "Reveal",
+    "explanation": "Reveal means to make known."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Hard",
+    "question": "Choose the antonym of 'Diligent'.",
+    "options": ["Hardworking", "Careful", "Lazy", "Active"],
+    "answer": "Lazy",
+    "explanation": "Lazy is the opposite of diligent."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Hard",
+    "question": "Choose the antonym of 'Eternal'.",
+    "options": ["Infinite", "Temporary", "Forever", "Endless"],
+    "answer": "Temporary",
+    "explanation": "Temporary is the opposite of eternal."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Hard",
+    "question": "Choose the antonym of 'Flexible'.",
+    "options": ["Soft", "Rigid", "Elastic", "Bendable"],
+    "answer": "Rigid",
+    "explanation": "Rigid means stiff."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Hard",
+    "question": "Choose the antonym of 'Hostile'.",
+    "options": ["Aggressive", "Angry", "Friendly", "Rude"],
+    "answer": "Friendly",
+    "explanation": "Friendly is the opposite of hostile."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Hard",
+    "question": "Choose the antonym of 'Inferior'.",
+    "options": ["Lower", "Superior", "Poor", "Weak"],
+    "answer": "Superior",
+    "explanation": "Superior is the opposite of inferior."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Hard",
+    "question": "Choose the antonym of 'Maximum'.",
+    "options": ["Highest", "Largest", "Minimum", "Greatest"],
+    "answer": "Minimum",
+    "explanation": "Minimum is the opposite of maximum."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Hard",
+    "question": "Choose the antonym of 'Optimistic'.",
+    "options": ["Hopeful", "Positive", "Pessimistic", "Confident"],
+    "answer": "Pessimistic",
+    "explanation": "Pessimistic is the opposite of optimistic."
+  },
+  {
+    "category": "Verbal",
+    "topic": "Antonyms",
+    "difficulty": "Hard",
+    "question": "Choose the antonym of 'Transparent'.",
+    "options": ["Clear", "Visible", "Opaque", "Bright"],
+    "answer": "Opaque",
+    "explanation": "Opaque means not transparent."
+  }
+]

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Situational Communication</title>
+
+    <link rel="stylesheet" href="./css/communication.css">
+    <link rel="stylesheet" href="./css/communication-situational.css">
+</head>
+
+<body>
+
+    <header class="communication-header">
+
+        <div class="header-left">
+            <button onclick="window.location.href='communication.html'">
+                ← Back to Communication
+            </button>
+        </div>
+
+        <div class="header-title">
+            <h1>🗣️ Situational Communication</h1>
+        </div>
+
+        <div class="header-right">
+            <button onclick="logout()">
+                Logout
+            </button>
+        </div>
+
+    </header>
+
+
+    <main class="communication-container">
+
+        <div class="test-info">
+
+            <div>
+                <strong>Total Questions</strong>
+                <span id="totalQuestions">50</span>
+            </div>
+
+            <div>
+                <strong>Category</strong>
+                <span>Situational</span>
+            </div>
+
+        </div>
+
+
+        <div class="progress-section">
+
+            <div class="progress-text">
+                <span id="progressText">Question 1 of 50</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progressBar"></div>
+            </div>
+
+        </div>
+
+
+        <section class="question-section">
+
+            <div class="difficulty" id="difficulty">
+                Easy
+            </div>
+
+            <h2 id="questionNumber">
+                Situation 1
+            </h2>
+
+            <p id="questionText">
+                Loading situation...
+            </p>
+
+        </section>
+
+
+        <section class="speaking-section">
+
+            <button id="startSpeakingBtn">
+                🎤 Start Speaking
+            </button>
+
+            <button id="stopSpeakingBtn" style="display: none;">
+                ⏹ Stop Speaking
+            </button>
+
+            <h3>📝 Your Response</h3>
+
+            <div id="transcript">
+                Your spoken response will appear here...
+            </div>
+
+            <button id="analyzeBtn" type="button">
+                🔍 Analyze Response
+            </button>
+
+            <div id="analysisResult" style="display: none;">
+            </div>
+
+            <button id="saveResultBtn" type="button" style="display: none;">
+                💾 Save Result
+            </button>
+        </section>
+
+
+        <div class="navigation-buttons">
+
+            <button id="previousBtn">
+                ← Previous
+            </button>
+
+            <button id="nextBtn">
+                Next →
+            </button>
+
+        </div>
+
+
+        <div class="question-navigator">
+
+            <h3>Question Navigator</h3>
+
+            <div id="navigator"></div>
+
+        </div>
+
+    </main>
+
+
+    <script src="./js/config.js"></script>
+    <script src="./js/communication-situational.js"></script>
+
+</body>
+
+</html>

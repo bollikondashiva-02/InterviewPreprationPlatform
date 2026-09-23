@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Print Hello World",
+    "description": "Write a Java program to print Hello World.",
+    "language": "Java",
+    "difficulty": "Easy",
+    "solution": "public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello World\");\n    }\n}"
+  },
+  {
+    "title": "Factorial of a Number",
+    "description": "Write a Java program to find the factorial of a number.",
+    "language": "Java",
+    "difficulty": "Easy",
+    "solution": "Use a loop from 1 to n and multiply all numbers."
+  },
+  {
+    "title": "Palindrome Number",
+    "description": "Write a Python program to check whether a number is palindrome.",
+    "language": "Python",
+    "difficulty": "Easy",
+    "solution": "Reverse the number and compare it with the original."
+  },
+  {
+    "title": "Reverse a String",
+    "description": "Write a JavaScript program to reverse a string.",
+    "language": "JavaScript",
+    "difficulty": "Easy",
+    "solution": "const reversed = str.split('').reverse().join('');"
+  },
+  {
+    "title": "Sum of Two Numbers",
+    "description": "Write a C program to add two numbers.",
+    "language": "C",
+    "difficulty": "Easy",
+    "solution": "Read two integers using scanf() and print their sum."
+  },
+  {
+    "title": "Prime Number",
+    "description": "Write a C++ program to check whether a number is prime.",
+    "language": "C++",
+    "difficulty": "Medium",
+    "solution": "Loop from 2 to sqrt(n) and check divisibility."
+  },
+  {
+    "title": "Employee Table",
+    "description": "Write an SQL query to display all employees whose salary is greater than 50000.",
+    "language": "SQL",
+    "difficulty": "Easy",
+    "solution": "SELECT * FROM Employee WHERE salary > 50000;"
+  }
+]

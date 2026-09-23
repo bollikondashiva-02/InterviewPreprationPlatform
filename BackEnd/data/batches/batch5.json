@@ -1,0 +1,227 @@
+[
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Easy",
+"question": "Find the next number: 2, 4, 6, 8, ?",
+"options": ["9", "10", "11", "12"],
+"answer": "10",
+"explanation": "The series increases by 2."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Easy",
+"question": "Find the next number: 5, 10, 15, 20, ?",
+"options": ["22", "25", "30", "35"],
+"answer": "25",
+"explanation": "The series increases by 5."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Easy",
+"question": "Find the next number: 1, 3, 5, 7, ?",
+"options": ["8", "9", "10", "11"],
+"answer": "9",
+"explanation": "The series contains consecutive odd numbers."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Easy",
+"question": "Find the next number: 10, 20, 30, 40, ?",
+"options": ["45", "50", "55", "60"],
+"answer": "50",
+"explanation": "The series increases by 10."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Easy",
+"question": "Find the next number: 3, 6, 9, 12, ?",
+"options": ["13", "14", "15", "16"],
+"answer": "15",
+"explanation": "The series increases by 3."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Medium",
+"question": "Find the next number: 2, 4, 8, 16, ?",
+"options": ["24", "30", "32", "36"],
+"answer": "32",
+"explanation": "Each term is multiplied by 2."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Medium",
+"question": "Find the next number: 1, 4, 9, 16, ?",
+"options": ["20", "24", "25", "30"],
+"answer": "25",
+"explanation": "Series of perfect squares."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Medium",
+"question": "Find the next number: 1, 8, 27, 64, ?",
+"options": ["100", "125", "144", "216"],
+"answer": "125",
+"explanation": "Series of cubes."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Medium",
+"question": "Find the next number: 2, 5, 10, 17, ?",
+"options": ["24", "26", "28", "30"],
+"answer": "26",
+"explanation": "Pattern: n² + 1."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Medium",
+"question": "Find the next number: 1, 2, 4, 7, 11, ?",
+"options": ["14", "15", "16", "17"],
+"answer": "16",
+"explanation": "Differences are +1, +2, +3, +4, +5."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Medium",
+"question": "Find the next number: 5, 9, 17, 33, ?",
+"options": ["49", "57", "65", "69"],
+"answer": "65",
+"explanation": "Differences are 4, 8, 16, 32."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Medium",
+"question": "Find the next number: 3, 6, 12, 24, ?",
+"options": ["36", "42", "48", "50"],
+"answer": "48",
+"explanation": "Each term is doubled."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Medium",
+"question": "Find the next number: 7, 14, 28, 56, ?",
+"options": ["84", "98", "112", "120"],
+"answer": "112",
+"explanation": "Each term is multiplied by 2."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Hard",
+"question": "Find the next number: 1, 1, 2, 3, 5, 8, ?",
+"options": ["11", "12", "13", "14"],
+"answer": "13",
+"explanation": "Fibonacci series."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Hard",
+"question": "Find the next number: 2, 6, 12, 20, ?",
+"options": ["28", "30", "32", "34"],
+"answer": "30",
+"explanation": "Pattern: n(n+1)."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Hard",
+"question": "Find the next number: 1, 3, 7, 15, 31, ?",
+"options": ["47", "55", "63", "65"],
+"answer": "63",
+"explanation": "Pattern: (2ⁿ − 1)."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Hard",
+"question": "Find the next number: 2, 3, 5, 7, 11, ?",
+"options": ["12", "13", "15", "17"],
+"answer": "13",
+"explanation": "Series of prime numbers."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Hard",
+"question": "Find the next number: 100, 90, 81, 73, ?",
+"options": ["64", "66", "68", "70"],
+"answer": "66",
+"explanation": "Differences are -10, -9, -8, -7."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Hard",
+"question": "Find the next number: 8, 16, 24, 32, ?",
+"options": ["36", "38", "40", "42"],
+"answer": "40",
+"explanation": "The series increases by 8."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Hard",
+"question": "Find the next number: 1, 4, 13, 40, ?",
+"options": ["81", "100", "121", "121"],
+"answer": "121",
+"explanation": "Pattern: ×3 + 1."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Hard",
+"question": "Find the next number: 9, 18, 36, 72, ?",
+"options": ["108", "126", "144", "144"],
+"answer": "144",
+"explanation": "Each term is doubled."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Hard",
+"question": "Find the next number: 6, 12, 24, 48, ?",
+"options": ["72", "84", "96", "100"],
+"answer": "96",
+"explanation": "Each term is multiplied by 2."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Hard",
+"question": "Find the next number: 2, 5, 9, 14, 20, ?",
+"options": ["25", "26", "27", "28"],
+"answer": "27",
+"explanation": "Differences are +3, +4, +5, +6, +7."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Hard",
+"question": "Find the next number: 4, 9, 16, 25, ?",
+"options": ["30", "32", "36", "49"],
+"answer": "36",
+"explanation": "Perfect squares: 2², 3², 4², 5², 6²."
+},
+{
+"category": "Logical",
+"topic": "Number Series",
+"difficulty": "Hard",
+"question": "Find the next number: 11, 22, 44, 88, ?",
+"options": ["132", "154", "176", "198"],
+"answer": "176",
+"explanation": "Each term is multiplied by 2."
+}
+]

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coding Test | PrepConnect</title>
+
+    <link rel="stylesheet" href="./css/coding.css">
+
+
+</head>
+
+<body>
+    
+
+
+    <!-- ========================================
+     MAIN CONTAINER
+========================================= -->
+
+    <main class="container">
+       
+
+    <!-- BACK TO DASHBOARD -->
+    <div class="top-navigation">
+        <button type="button" class="back-btn" onclick="goToDashboard()">
+            ← Back to Dashboard
+        </button>
+    </div>
+
+        <!-- ========================================
+         LANGUAGE SELECTION
+    ========================================= -->
+    <section id="languageSection" class="language-section">
+
+
+
+            <div class="page-heading">
+
+                <h1>
+                    💻 Coding Practice
+                </h1>
+
+                <p>
+                    Select a programming language to start your test.
+                </p>
+
+            </div>
+
+
+            <!-- ====================================
+             PROGRAMMING LANGUAGES
+        ===================================== -->
+
+            <div class="languages">
+
+                <button type="button" class="language-card" onclick="startTest('Java')">
+
+                    <span class="language-icon">
+                        ☕
+                    </span>
+
+                    <span>
+                        Java
+                    </span>
+
+                </button>
+
+
+                <button type="button" class="language-card" onclick="startTest('Python')">
+
+                    <span class="language-icon">
+                        🐍
+                    </span>
+
+                    <span>
+                        Python
+                    </span>
+
+                </button>
+
+
+                <button type="button" class="language-card" onclick="startTest('JavaScript')">
+
+                    <span class="language-icon">
+                        🟨
+                    </span>
+
+                    <span>
+                        JavaScript
+                    </span>
+
+                </button>
+
+
+                <button type="button" class="language-card" onclick="startTest('HTML')">
+
+                    <span class="language-icon">
+                        🌐
+                    </span>
+
+                    <span>
+                        HTML
+                    </span>
+
+                </button>
+
+
+                <button type="button" class="language-card" onclick="startTest('CSS')">
+
+                    <span class="language-icon">
+                        🎨
+                    </span>
+
+                    <span>
+                        CSS
+                    </span>
+
+                </button>
+
+
+                <button type="button" class="language-card" onclick="startTest('SQL')">
+
+                    <span class="language-icon">
+                        🗄️
+                    </span>
+
+                    <span>
+                        SQL
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+         TEST SECTION
+    ========================================= -->
+
+        <section id="testSection" class="test-section hidden">
+
+
+            <!-- ====================================
+             TEST HEADER
+        ===================================== -->
+
+            <div class="test-header">
+
+                <div>
+
+                    <h1 id="testTitle">
+                        Coding Test
+                    </h1>
+
+                    <p id="testLanguage">
+                        Java
+                    </p>
+
+                </div>
+
+
+                <div class="test-info">
+
+                    <div class="info-box">
+
+                        <span>
+                            Questions
+                        </span>
+
+                        <strong id="totalQuestions">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-box">
+
+                        <span>
+                            Answered
+                        </span>
+
+                        <strong id="answeredQuestions">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ====================================
+             TEST BODY
+        ===================================== -->
+
+            <div class="test-layout">
+
+
+                <!-- =================================
+                 QUESTION NAVIGATOR
+            ================================== -->
+
+                <aside class="navigator">
+
+                    <h3>
+                        Questions
+                    </h3>
+
+                    <p class="navigator-help">
+                        Select a question
+                    </p>
+
+
+                    <div id="questionNavigator" class="question-navigator">
+
+                    </div>
+
+
+                    <div class="navigator-legend">
+
+                        <div>
+
+                            <span class="legend-box unanswered">
+                            </span>
+
+                            Unanswered
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="legend-box answered">
+                            </span>
+
+                            Answered
+
+                        </div>
+
+                    </div>
+
+                </aside>
+
+
+                <!-- =================================
+                 QUESTION CONTENT
+            ================================== -->
+
+                <section class="question-area">
+
+
+                    <!-- Question -->
+
+                    <div id="questions" class="questions">
+
+                        <div class="question-card">
+
+                            <h2>
+                                Loading question...
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Options -->
+
+                    <div id="options" class="options-section">
+
+                    </div>
+
+
+                    <!-- Question Navigation -->
+
+                    <div class="question-controls">
+
+                        <button type="button" id="previousBtn" class="secondary-btn" onclick="previousQuestion()">
+
+                            ← Previous
+
+                        </button>
+
+
+                        <button type="button" id="nextBtn" class="primary-btn" onclick="nextQuestion()">
+
+                            Next →
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!-- ====================================
+             SUBMIT TEST
+        ===================================== -->
+
+            <div class="submit-test-section">
+
+                <div>
+
+                    <h3>
+                        Finished the test?
+                    </h3>
+
+                    <p>
+                        Review your answers before submitting the test.
+                    </p>
+
+                </div>
+
+
+                <button type="button" id="submitTestBtn" class="submit-test-btn" onclick="submitTest()">
+
+                    ✅ Submit Test
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+         RESULT SECTION
+    ========================================= -->
+
+        <section id="resultSection" class="result-section hidden">
+
+
+            <div class="result-card">
+
+
+                <!-- Result Icon -->
+
+                <div class="result-icon">
+                    🎉
+                </div>
+
+
+                <!-- Result Heading -->
+
+                <h1>
+                    Coding Test Completed!
+                </h1>
+
+
+                <!-- Language -->
+
+                <p id="resultLanguage" class="result-language">
+
+                    Java
+
+                </p>
+
+
+                <!-- =================================
+                 SCORE
+            ================================== -->
+
+                <div class="score-container">
+
+                    <div class="score-circle">
+
+                        <strong id="resultScore">
+                            0
+                        </strong>
+
+                        <span>
+                            Score
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================
+                 RESULT STATISTICS
+            ================================== -->
+
+                <div class="result-stats">
+
+
+                    <div class="result-stat">
+
+                        <span>
+                            Total Questions
+                        </span>
+
+                        <strong id="resultTotal">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="result-stat">
+
+                        <span>
+                            Correct
+                        </span>
+
+                        <strong id="resultCorrect">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="result-stat">
+
+                        <span>
+                            Wrong
+                        </span>
+
+                        <strong id="resultWrong">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="result-stat">
+
+                        <span>
+                            Percentage
+                        </span>
+
+                        <strong id="resultPercentage">
+                            0%
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================
+                 RESULT MESSAGE
+            ================================== -->
+
+                <div id="resultMessage" class="result-message">
+
+                </div>
+
+
+                <!-- =================================
+                 RESULT ACTIONS
+            ================================== -->
+
+                <div class="result-actions">
+
+                    <button type="button" class="dashboard-result-btn" onclick="goToDashboard()">
+
+                        🏠 Back to Dashboard
+
+                    </button>
+
+
+                    <button type="button" class="retry-btn" onclick="restartTest()">
+
+                        🔄 Try Again
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
+     HIDDEN QUESTION ID
+========================================= -->
+
+    <input type="hidden" id="questionId">
+
+
+    <!-- ========================================
+     JAVASCRIPT
+========================================= -->
+
+    <script src="./js/config.js"></script>
+
+    <script src="./js/coding.js"></script>
+
+
+</body>
+
+</html>
