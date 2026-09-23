@@ -1,4 +1,3 @@
-
 package com.prepconnect.prepconnect.security;
 
 import java.nio.charset.StandardCharsets;
@@ -6,6 +5,7 @@ import java.util.Date;
 
 import javax.crypto.SecretKey;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import io.jsonwebtoken.Claims;
@@ -15,13 +15,14 @@ import io.jsonwebtoken.security.Keys;
 @Service
 public class JwtService {
 
-    private final String SECRET_KEY =
-            "PrepConnectSecretKeyForJwtAuthentication2026VerySecureKey";
+    @Value("${JWT_SECRET}")
+    private String secretKey;
 
-    private final SecretKey key =
-            Keys.hmacShaKeyFor(
-                    SECRET_KEY.getBytes(StandardCharsets.UTF_8)
-            );
+    private SecretKey getSecretKey() {
+        return Keys.hmacShaKeyFor(
+                secretKey.getBytes(StandardCharsets.UTF_8)
+        );
+    }
 
     // =========================
     // GENERATE JWT
@@ -39,7 +40,7 @@ public class JwtService {
                                         + 1000 * 60 * 60
                         )
                 )
-                .signWith(key)
+                .signWith(getSecretKey())
                 .compact();
     }
 
@@ -50,7 +51,7 @@ public class JwtService {
     public String extractEmail(String token) {
 
         Claims claims = Jwts.parser()
-                .verifyWith(key)
+                .verifyWith(getSecretKey())
                 .build()
                 .parseSignedClaims(token)
                 .getPayload();
@@ -63,7 +64,6 @@ public class JwtService {
     // =========================
 
     public SecretKey getKey() {
-        return key;
+        return getSecretKey();
     }
 }
-
