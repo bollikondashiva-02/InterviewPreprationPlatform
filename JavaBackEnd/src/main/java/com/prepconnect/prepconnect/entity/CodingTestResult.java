@@ -1,10 +1,13 @@
 package com.prepconnect.prepconnect.entity;
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
 
 @Entity
@@ -33,7 +36,15 @@ public class CodingTestResult {
     @Column(name = "score")
     private int score;
 
+    @Column(name = "test_date", nullable = false)
+    private LocalDateTime testDate;
+
     public CodingTestResult() {
+    }
+
+    @PrePersist
+    protected void onCreate() {
+        testDate = LocalDateTime.now();
     }
 
     public Long getId() {
@@ -86,5 +97,13 @@ public class CodingTestResult {
 
     public void setScore(int score) {
         this.score = score;
+    }
+
+    public LocalDateTime getTestDate() {
+        return testDate;
+    }
+
+    public void setTestDate(LocalDateTime testDate) {
+        this.testDate = testDate;
     }
 }

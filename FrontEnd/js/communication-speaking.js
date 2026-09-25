@@ -7,7 +7,6 @@ if (!token) {
 
 const API_BASE = API;
 
-
 /* =====================================================
    SPEAKING TOPICS - 50
 ===================================================== */
@@ -313,8 +312,8 @@ const topics = [
         description:
             "Explain why a company should give you an opportunity as a fresher."
     }
-];
 
+];
 
 /* =====================================================
    VARIABLES
@@ -332,6 +331,20 @@ let currentInterimTranscript = "";
 
 let currentAnalysisResult = null;
 
+/*
+ * Prevent multiple recognition starts.
+ */
+let recognitionStarting = false;
+
+/*
+ * Prevent restart while recognition is intentionally stopping.
+ */
+let recognitionStopping = false;
+
+/*
+ * Prevent multiple restart timers.
+ */
+let restartTimer = null;
 
 /* =====================================================
    DOM ELEMENTS
@@ -379,7 +392,6 @@ const nextBtn =
 const topicNavigator =
     document.getElementById("topicNavigator");
 
-
 /* =====================================================
    CHECK BROWSER SUPPORT
 ===================================================== */
@@ -388,17 +400,16 @@ const SpeechRecognition =
     window.SpeechRecognition ||
     window.webkitSpeechRecognition;
 
-
 if (!SpeechRecognition) {
 
     speechStatus.textContent =
         "❌ Speech recognition is not supported. Please use Google Chrome.";
 
     startBtn.disabled = true;
+
     stopBtn.disabled = true;
 
 }
-
 
 /* =====================================================
    CREATE SPEECH RECOGNITION
@@ -416,12 +427,15 @@ else {
 
     recognition.maxAlternatives = 1;
 
-
     /* =================================================
        ON START
     ================================================= */
 
     recognition.onstart = function () {
+
+        recognitionStarting = false;
+
+        recognitionStopping = false;
 
         isListening = true;
 
@@ -434,15 +448,13 @@ else {
 
     };
 
-
     /* =================================================
        ON RESULT
     ================================================= */
 
     recognition.onresult = function (event) {
 
-        currentInterimTranscript = "";
-
+        let interimText = "";
 
         for (
             let i = event.resultIndex;
@@ -456,23 +468,32 @@ else {
             const text =
                 result[0].transcript;
 
-
             if (result.isFinal) {
 
-                finalTranscript +=
-                    text.trim() + " ";
+                if (text && text.trim()) {
+
+                    finalTranscript +=
+                        text.trim() + " ";
+
+                }
 
             }
 
             else {
 
-                currentInterimTranscript +=
-                    text;
+                if (text) {
+
+                    interimText +=
+                        text;
+
+                }
 
             }
 
         }
 
+        currentInterimTranscript =
+            interimText;
 
         transcriptBox.value =
             (
@@ -481,7 +502,6 @@ else {
             ).trim();
 
     };
-
 
     /* =================================================
        ON ERROR
@@ -494,47 +514,68 @@ else {
             event.error
         );
 
-
         if (event.error === "no-speech") {
 
             speechStatus.textContent =
-                "🎤 No speech detected. Continue speaking...";
+                "🎤 Still listening... please continue speaking.";
 
+            return;
         }
 
+        if (event.error === "aborted") {
 
-        else if (event.error === "not-allowed") {
+            if (isListening) {
+
+                speechStatus.textContent =
+                    "🎤 Reconnecting microphone...";
+
+            }
+
+            return;
+        }
+
+        if (
+            event.error === "not-allowed" ||
+            event.error === "service-not-allowed"
+        ) {
 
             speechStatus.textContent =
                 "❌ Microphone permission denied. Allow microphone access in Chrome.";
 
             isListening = false;
 
+            recognitionStarting = false;
+
+            recognitionStopping = false;
+
+            if (restartTimer) {
+
+                clearTimeout(restartTimer);
+
+                restartTimer = null;
+
+            }
+
             startBtn.disabled = false;
 
             stopBtn.disabled = true;
 
+            return;
         }
 
-
-        else if (event.error === "network") {
+        if (event.error === "network") {
 
             speechStatus.textContent =
-                "❌ Network error. Check your internet connection.";
+                "❌ Speech recognition network error. Check your internet connection.";
 
+            return;
         }
 
-
-        else {
-
-            speechStatus.textContent =
-                "⚠️ Speech recognition error: " +
-                event.error;
-
-        }
+        speechStatus.textContent =
+            "⚠️ Speech recognition error: " +
+            event.error;
 
     };
-
 
     /* =================================================
        ON END
@@ -542,39 +583,14 @@ else {
 
     recognition.onend = function () {
 
-        if (isListening) {
+        recognitionStarting = false;
 
-            speechStatus.textContent =
-                "🎤 Reconnecting microphone...";
+        /*
+         * If user intentionally stopped recognition,
+         * do not restart it.
+         */
 
-
-            setTimeout(function () {
-
-                if (!isListening) {
-                    return;
-                }
-
-
-                try {
-
-                    recognition.start();
-
-                }
-
-                catch (error) {
-
-                    console.log(
-                        "Recognition restart:",
-                        error
-                    );
-
-                }
-
-            }, 500);
-
-        }
-
-        else {
+        if (!isListening || recognitionStopping) {
 
             startBtn.disabled = false;
 
@@ -583,12 +599,144 @@ else {
             speechStatus.textContent =
                 "⏹️ Speaking stopped.";
 
+            return;
+
         }
+
+        /*
+         * Preserve any current interim transcript before
+         * Chrome closes the recognition session.
+         */
+        if (
+            currentInterimTranscript &&
+            currentInterimTranscript.trim()
+        ) {
+
+            const interim =
+                currentInterimTranscript.trim();
+
+            if (interim) {
+
+                finalTranscript +=
+                    interim + " ";
+
+            }
+
+            currentInterimTranscript = "";
+
+            transcriptBox.value =
+                finalTranscript.trim();
+
+        }
+
+        speechStatus.textContent =
+            "🎤 Reconnecting microphone...";
+
+        /*
+         * Clear an existing timer before creating a new one.
+         */
+
+        if (restartTimer) {
+
+            clearTimeout(restartTimer);
+
+            restartTimer = null;
+
+        }
+
+        restartTimer =
+            setTimeout(
+                function () {
+
+                    restartTimer = null;
+
+                    if (!isListening) {
+                        return;
+                    }
+
+                    if (recognitionStopping) {
+                        return;
+                    }
+
+                    if (recognitionStarting) {
+                        return;
+                    }
+
+                    try {
+
+                        recognitionStarting = true;
+
+                        recognition.start();
+
+                    }
+
+                    catch (error) {
+
+                        recognitionStarting = false;
+
+                        console.log(
+                            "Recognition restart:",
+                            error
+                        );
+
+                        /*
+                         * Chrome may still be changing its
+                         * recognition state. Retry shortly.
+                         */
+
+                        if (isListening) {
+
+                            restartTimer =
+                                setTimeout(
+                                    function () {
+
+                                        restartTimer =
+                                            null;
+
+                                        if (!isListening) {
+                                            return;
+                                        }
+
+                                        if (recognitionStopping) {
+                                            return;
+                                        }
+
+                                        try {
+
+                                            recognitionStarting =
+                                                true;
+
+                                            recognition.start();
+
+                                        }
+
+                                        catch (retryError) {
+
+                                            recognitionStarting =
+                                                false;
+
+                                            console.log(
+                                                "Recognition retry:",
+                                                retryError
+                                            );
+
+                                        }
+
+                                    },
+                                    500
+                                );
+
+                        }
+
+                    }
+
+                },
+                300
+            );
 
     };
 
 }
-
 
 /* =====================================================
    START SPEAKING
@@ -602,6 +750,17 @@ startBtn.addEventListener(
             return;
         }
 
+        /*
+         * Cancel any old restart timer.
+         */
+
+        if (restartTimer) {
+
+            clearTimeout(restartTimer);
+
+            restartTimer = null;
+
+        }
 
         finalTranscript = "";
 
@@ -611,12 +770,13 @@ startBtn.addEventListener(
 
         currentAnalysisResult = null;
 
-        analysisResult.style.display = "none";
+        analysisResult.style.display =
+            "none";
 
-        saveBtn.style.display = "none";
+        saveBtn.style.display =
+            "none";
 
         saveBtn.disabled = false;
-
 
         const oldFeedback =
             document.getElementById(
@@ -624,24 +784,31 @@ startBtn.addEventListener(
             );
 
         if (oldFeedback) {
-            oldFeedback.remove();
-        }
 
+            oldFeedback.remove();
+
+        }
 
         isListening = true;
 
+        recognitionStarting = false;
+
+        recognitionStopping = false;
 
         speechStatus.textContent =
             "🎤 Starting microphone...";
 
-
         try {
+
+            recognitionStarting = true;
 
             recognition.start();
 
         }
 
         catch (error) {
+
+            recognitionStarting = false;
 
             console.log(
                 "Recognition start:",
@@ -652,7 +819,6 @@ startBtn.addEventListener(
 
     }
 );
-
 
 /* =====================================================
    STOP SPEAKING
@@ -666,9 +832,28 @@ stopBtn.addEventListener(
             return;
         }
 
-
         isListening = false;
 
+        recognitionStopping = true;
+
+        recognitionStarting = false;
+
+        if (restartTimer) {
+
+            clearTimeout(restartTimer);
+
+            restartTimer = null;
+
+        }
+
+        /*
+         * Remove interim text from the displayed result
+         * when stopping.
+         */
+        currentInterimTranscript = "";
+
+        transcriptBox.value =
+            finalTranscript.trim();
 
         try {
 
@@ -678,10 +863,12 @@ stopBtn.addEventListener(
 
         catch (error) {
 
-            console.log(error);
+            console.log(
+                "Recognition stop:",
+                error
+            );
 
         }
-
 
         startBtn.disabled = false;
 
@@ -692,7 +879,6 @@ stopBtn.addEventListener(
 
     }
 );
-
 
 /* =====================================================
    ANALYZE RESPONSE
@@ -705,7 +891,6 @@ analyzeBtn.addEventListener(
         const transcript =
             transcriptBox.value.trim();
 
-
         if (!transcript) {
 
             alert(
@@ -716,14 +901,12 @@ analyzeBtn.addEventListener(
 
         }
 
-
         /* =================================================
            BASIC TEXT PROCESSING
         ================================================= */
 
         const lowerText =
             transcript.toLowerCase();
-
 
         const words =
             lowerText
@@ -733,18 +916,14 @@ analyzeBtn.addEventListener(
                     word => word.length > 0
                 );
 
-
         const wordCount =
             words.length;
-
 
         const uniqueWords =
             new Set(words);
 
-
         const uniqueWordCount =
             uniqueWords.size;
-
 
         const sentences =
             transcript
@@ -758,10 +937,8 @@ analyzeBtn.addEventListener(
                         sentence.length > 0
                 );
 
-
         const sentenceCount =
             sentences.length;
-
 
         /* =================================================
            TOPIC-SPECIFIC KEYWORDS
@@ -1308,13 +1485,10 @@ analyzeBtn.addEventListener(
 
         ];
 
-
         const keywords =
             topicKeywords[currentTopic] || [];
 
-
         let matchedKeywords = 0;
-
 
         keywords.forEach(
             function (keyword) {
@@ -1330,33 +1504,27 @@ analyzeBtn.addEventListener(
             }
         );
 
-
         /* =================================================
            RELEVANCE / 20
         ================================================= */
 
         let relevance = 5;
 
-
         if (matchedKeywords >= 2) {
             relevance = 10;
         }
-
 
         if (matchedKeywords >= 4) {
             relevance = 14;
         }
 
-
         if (matchedKeywords >= 6) {
             relevance = 17;
         }
 
-
         if (matchedKeywords >= 8) {
             relevance = 20;
         }
-
 
         if (wordCount < 10) {
 
@@ -1368,54 +1536,44 @@ analyzeBtn.addEventListener(
 
         }
 
-
         /* =================================================
            CLARITY / 20
         ================================================= */
 
         let clarity = 8;
 
-
         if (wordCount >= 20) {
             clarity += 2;
         }
-
 
         if (wordCount >= 40) {
             clarity += 2;
         }
 
-
         if (wordCount >= 60) {
             clarity += 2;
         }
-
 
         if (sentenceCount >= 2) {
             clarity += 2;
         }
 
-
         if (sentenceCount >= 4) {
             clarity += 2;
         }
-
 
         const repetitionRatio =
             wordCount > 0
                 ? uniqueWordCount / wordCount
                 : 0;
 
-
         if (repetitionRatio >= 0.60) {
             clarity += 1;
         }
 
-
         if (repetitionRatio >= 0.75) {
             clarity += 1;
         }
-
 
         clarity =
             Math.min(
@@ -1423,13 +1581,11 @@ analyzeBtn.addEventListener(
                 20
             );
 
-
         /* =================================================
            GRAMMAR / 20
         ================================================= */
 
         let grammar = 20;
-
 
         const grammarErrors = [
 
@@ -1454,16 +1610,13 @@ analyzeBtn.addEventListener(
 
         ];
 
-
         let grammarErrorCount = 0;
-
 
         grammarErrors.forEach(
             function (pattern) {
 
                 const matches =
                     lowerText.match(pattern);
-
 
                 if (matches) {
 
@@ -1475,15 +1628,12 @@ analyzeBtn.addEventListener(
             }
         );
 
-
         grammar -=
             grammarErrorCount * 3;
-
 
         if (wordCount < 15) {
             grammar -= 3;
         }
-
 
         if (
             wordCount >= 40 &&
@@ -1494,7 +1644,6 @@ analyzeBtn.addEventListener(
 
         }
 
-
         grammar =
             Math.max(
                 0,
@@ -1504,33 +1653,27 @@ analyzeBtn.addEventListener(
                 )
             );
 
-
         /* =================================================
            VOCABULARY / 20
         ================================================= */
 
         let vocabulary = 6;
 
-
         if (uniqueWordCount >= 15) {
             vocabulary += 2;
         }
-
 
         if (uniqueWordCount >= 25) {
             vocabulary += 2;
         }
 
-
         if (uniqueWordCount >= 35) {
             vocabulary += 2;
         }
 
-
         if (uniqueWordCount >= 50) {
             vocabulary += 2;
         }
-
 
         const professionalWords = [
 
@@ -1567,9 +1710,7 @@ analyzeBtn.addEventListener(
 
         ];
 
-
         let professionalCount = 0;
-
 
         professionalWords.forEach(
             function (word) {
@@ -1585,13 +1726,11 @@ analyzeBtn.addEventListener(
             }
         );
 
-
         vocabulary +=
             Math.min(
                 professionalCount,
                 6
             );
-
 
         vocabulary =
             Math.min(
@@ -1599,38 +1738,31 @@ analyzeBtn.addEventListener(
                 20
             );
 
-
         /* =================================================
            FLUENCY / 20
         ================================================= */
 
         let fluency = 8;
 
-
         if (wordCount >= 20) {
             fluency += 2;
         }
-
 
         if (wordCount >= 40) {
             fluency += 2;
         }
 
-
         if (wordCount >= 60) {
             fluency += 2;
         }
-
 
         if (wordCount >= 90) {
             fluency += 2;
         }
 
-
         if (wordCount >= 120) {
             fluency += 2;
         }
-
 
         /* =================================================
            FILLER WORD ANALYSIS
@@ -1650,9 +1782,7 @@ analyzeBtn.addEventListener(
 
         ];
 
-
         let fillerCount = 0;
-
 
         fillerWords.forEach(
             function (filler) {
@@ -1663,7 +1793,6 @@ analyzeBtn.addEventListener(
                         "\\$&"
                     );
 
-
                 const regex =
                     new RegExp(
                         "\\b" +
@@ -1672,10 +1801,8 @@ analyzeBtn.addEventListener(
                         "gi"
                     );
 
-
                 const matches =
                     lowerText.match(regex);
-
 
                 if (matches) {
 
@@ -1686,7 +1813,6 @@ analyzeBtn.addEventListener(
 
             }
         );
-
 
         if (fillerCount === 0) {
 
@@ -1706,13 +1832,11 @@ analyzeBtn.addEventListener(
 
         }
 
-
         if (repetitionRatio < 0.45) {
 
             fluency -= 2;
 
         }
-
 
         fluency =
             Math.max(
@@ -1722,7 +1846,6 @@ analyzeBtn.addEventListener(
                     20
                 )
             );
-
 
         /* =================================================
            TOTAL SCORE
@@ -1735,13 +1858,11 @@ analyzeBtn.addEventListener(
             vocabulary +
             fluency;
 
-
         /* =================================================
            FEEDBACK
         ================================================= */
 
         const feedback = [];
-
 
         if (relevance < 14) {
 
@@ -1759,7 +1880,6 @@ analyzeBtn.addEventListener(
 
         }
 
-
         if (clarity < 14) {
 
             feedback.push(
@@ -1775,7 +1895,6 @@ analyzeBtn.addEventListener(
             );
 
         }
-
 
         if (grammar < 14) {
 
@@ -1793,7 +1912,6 @@ analyzeBtn.addEventListener(
 
         }
 
-
         if (vocabulary < 14) {
 
             feedback.push(
@@ -1809,7 +1927,6 @@ analyzeBtn.addEventListener(
             );
 
         }
-
 
         if (fluency < 14) {
 
@@ -1827,7 +1944,6 @@ analyzeBtn.addEventListener(
 
         }
 
-
         if (wordCount < 30) {
 
             feedback.push(
@@ -1835,7 +1951,6 @@ analyzeBtn.addEventListener(
             );
 
         }
-
 
         if (wordCount >= 80) {
 
@@ -1845,7 +1960,6 @@ analyzeBtn.addEventListener(
 
         }
 
-
         if (fillerCount >= 3) {
 
             feedback.push(
@@ -1854,7 +1968,6 @@ analyzeBtn.addEventListener(
 
         }
 
-
         if (matchedKeywords < 3) {
 
             feedback.push(
@@ -1862,7 +1975,6 @@ analyzeBtn.addEventListener(
             );
 
         }
-
 
         /* =================================================
            SAVE ANALYSIS RESULT
@@ -1886,7 +1998,6 @@ analyzeBtn.addEventListener(
 
         };
 
-
         /* =================================================
            DISPLAY SCORES
         ================================================= */
@@ -1894,42 +2005,35 @@ analyzeBtn.addEventListener(
         analysisResult.style.display =
             "block";
 
-
         document.getElementById(
             "relevanceScore"
         ).textContent =
             relevance + "/20";
-
 
         document.getElementById(
             "clarityScore"
         ).textContent =
             clarity + "/20";
 
-
         document.getElementById(
             "grammarScore"
         ).textContent =
             grammar + "/20";
-
 
         document.getElementById(
             "vocabularyScore"
         ).textContent =
             vocabulary + "/20";
 
-
         document.getElementById(
             "fluencyScore"
         ).textContent =
             fluency + "/20";
 
-
         document.getElementById(
             "totalScore"
         ).textContent =
             total + "/100";
-
 
         /* =================================================
            DISPLAY FEEDBACK
@@ -1939,7 +2043,6 @@ analyzeBtn.addEventListener(
             document.getElementById(
                 "speakingFeedback"
             );
-
 
         if (!feedbackElement) {
 
@@ -1970,7 +2073,6 @@ analyzeBtn.addEventListener(
 
         }
 
-
         feedbackElement.innerHTML =
             "<strong>💡 Feedback</strong>" +
             "<ul>" +
@@ -1984,13 +2086,11 @@ analyzeBtn.addEventListener(
                 .join("") +
             "</ul>";
 
-
         saveBtn.style.display =
             "inline-block";
 
     }
 );
-
 
 /* =====================================================
    SAVE RESULT
@@ -2009,7 +2109,6 @@ saveBtn.addEventListener(
             return;
 
         }
-
 
         try {
 
@@ -2046,7 +2145,6 @@ saveBtn.addEventListener(
                     }
                 );
 
-
             if (!response.ok) {
 
                 throw new Error(
@@ -2055,14 +2153,11 @@ saveBtn.addEventListener(
 
             }
 
-
             alert(
                 "Speaking Practice result saved successfully!"
             );
 
-
             saveBtn.disabled = true;
-
 
         }
 
@@ -2079,7 +2174,6 @@ saveBtn.addEventListener(
     }
 );
 
-
 /* =====================================================
    SHOW TOPIC
 ===================================================== */
@@ -2089,35 +2183,27 @@ function showTopic() {
     const topic =
         topics[currentTopic];
 
-
     topicTitle.textContent =
         topic.title;
-
 
     topicDescription.textContent =
         topic.description;
 
-
     topicNumber.textContent =
         `Topic ${currentTopic + 1} / ${topics.length}`;
-
 
     progressFill.style.width =
         `${((currentTopic + 1) / topics.length) * 100}%`;
 
-
     previousBtn.disabled =
         currentTopic === 0;
-
 
     nextBtn.disabled =
         currentTopic === topics.length - 1;
 
-
     createTopicNavigator();
 
 }
-
 
 /* =====================================================
    TOPIC NAVIGATOR
@@ -2127,23 +2213,19 @@ function createTopicNavigator() {
 
     topicNavigator.innerHTML = "";
 
-
     topics.forEach(
         function (topic, index) {
 
             const button =
                 document.createElement("button");
 
-
             button.textContent =
                 index + 1;
-
 
             button.className =
                 index === currentTopic
                     ? "active"
                     : "";
-
 
             button.addEventListener(
                 "click",
@@ -2158,7 +2240,6 @@ function createTopicNavigator() {
                 }
             );
 
-
             topicNavigator.appendChild(
                 button
             );
@@ -2168,7 +2249,6 @@ function createTopicNavigator() {
 
 }
 
-
 /* =====================================================
    RESET SPEAKING
 ===================================================== */
@@ -2176,6 +2256,10 @@ function createTopicNavigator() {
 function resetSpeaking() {
 
     isListening = false;
+
+    recognitionStarting = false;
+
+    recognitionStopping = true;
 
     finalTranscript = "";
 
@@ -2186,17 +2270,16 @@ function resetSpeaking() {
     analysisResult.style.display =
         "none";
 
-
     const feedbackElement =
         document.getElementById(
             "speakingFeedback"
         );
 
-
     if (feedbackElement) {
-        feedbackElement.remove();
-    }
 
+        feedbackElement.remove();
+
+    }
 
     saveBtn.style.display =
         "none";
@@ -2205,6 +2288,13 @@ function resetSpeaking() {
 
     currentAnalysisResult = null;
 
+    if (restartTimer) {
+
+        clearTimeout(restartTimer);
+
+        restartTimer = null;
+
+    }
 
     if (recognition) {
 
@@ -2216,12 +2306,14 @@ function resetSpeaking() {
 
         catch (error) {
 
-            console.log(error);
+            console.log(
+                "Recognition reset:",
+                error
+            );
 
         }
 
     }
-
 
     startBtn.disabled = false;
 
@@ -2230,8 +2322,13 @@ function resetSpeaking() {
     speechStatus.textContent =
         "Ready to speak.";
 
-}
+    /*
+     * Allow the next Start button press to create
+     * a fresh recognition session.
+     */
+    recognitionStopping = false;
 
+}
 
 /* =====================================================
    PREVIOUS TOPIC
@@ -2253,7 +2350,6 @@ previousBtn.addEventListener(
 
     }
 );
-
 
 /* =====================================================
    NEXT TOPIC
@@ -2279,7 +2375,6 @@ nextBtn.addEventListener(
     }
 );
 
-
 /* =====================================================
    NAVIGATION
 ===================================================== */
@@ -2291,7 +2386,6 @@ function goToCommunication() {
 
 }
 
-
 function logout() {
 
     localStorage.removeItem("token");
@@ -2300,7 +2394,6 @@ function logout() {
         "register.html";
 
 }
-
 
 /* =====================================================
    INITIAL LOAD

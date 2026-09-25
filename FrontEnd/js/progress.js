@@ -794,6 +794,11 @@ async function loadProgress() {
                 const score =
                     Number(result.score) || 0;
 
+                const testDate =
+                    result.testDate
+                        ? new Date(result.testDate).toLocaleString()
+                        : "Date not available";
+
 
                 historyHTML += `
 
@@ -850,6 +855,17 @@ async function loadProgress() {
                             </strong>
 
                             ${score}%
+
+                        </p>
+
+
+                        <p>
+
+                            <strong>
+                                Date:
+                            </strong>
+
+                            ${escapeHTML(testDate)}
 
                         </p>
 
