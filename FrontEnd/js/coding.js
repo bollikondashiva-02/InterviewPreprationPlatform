@@ -497,7 +497,7 @@ async function saveTestResult(
 
     const response =
         await fetch(
-            `${API_BASE}/coding/test-result`,
+            `${API_BASE}/api/coding/test-result`,
             {
                 method: "POST",
 
