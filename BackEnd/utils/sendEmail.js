@@ -11,7 +11,7 @@ const sendEmail = async (email, token) => {
     });
 
 const verificationUrl =
-`http://127.0.0.1:3001/api/auth/verify/${token}`;
+`${API}/api/auth/verify/${token}`;
 
     const mailOptions = {
       from: process.env.EMAIL,

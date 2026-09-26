@@ -28,7 +28,7 @@ async function loadDashboard() {
 
     // Call Spring Boot user API
     const response = await fetch(
-      `http://127.0.0.1:3001/api/users/email/${encodeURIComponent(email)}`,
+      `${API}/api/users/email/${encodeURIComponent(email)}`,
       {
         method: "GET",
         headers: {
