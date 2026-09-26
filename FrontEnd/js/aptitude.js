@@ -27,7 +27,7 @@ async function loadQuestions() {
         }
 
         const res = await fetch(
-            `${API}/aptitude/questions`,
+            `${API}/api/aptitude/questions`,
             {
                 method: "GET",
                 headers: {
