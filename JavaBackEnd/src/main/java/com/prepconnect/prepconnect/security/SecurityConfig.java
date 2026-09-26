@@ -29,80 +29,69 @@ public class SecurityConfig {
         http
                 // Disable CSRF
                 .csrf(csrf -> csrf.disable())
-
                 // Enable CORS
                 .cors(cors -> cors.configurationSource(
-                        corsConfigurationSource()
-                ))
-
+                corsConfigurationSource()
+        ))
                 // Stateless authentication
                 .sessionManagement(session -> session
-                        .sessionCreationPolicy(
-                                SessionCreationPolicy.STATELESS
-                        )
+                .sessionCreationPolicy(
+                        SessionCreationPolicy.STATELESS
                 )
-
+                )
                 // =========================
                 // AUTHORIZATION
                 // =========================
                 .authorizeHttpRequests(auth -> auth
-
-                        // =========================
-                        // PUBLIC USER APIs
-                        // =========================
-                        .requestMatchers(
-                                HttpMethod.POST,
-                                "/api/users/register",
-                                "/api/users/login",
-                                "/api/users/forgot-password",
-                                "/api/users/reset-password"
-                        ).permitAll()
-
-                        .requestMatchers(
-                                HttpMethod.GET,
-                                "/api/users/verify"
-                        ).permitAll()
-
-                        // =========================
-                        // PUBLIC APTITUDE APIs
-                        // =========================
-                        .requestMatchers(
-                                HttpMethod.GET,
-                                "/api/aptitude/questions",
-                                "/api/aptitude/questions/**"
-                        ).permitAll()
-
-                        // =========================
-                        // PUBLIC CODING APIs
-                        // =========================
-                        .requestMatchers(
-                                HttpMethod.GET,
-                                "/api/coding/questions",
-                                "/api/coding/questions/**"
-                        ).permitAll()
-
-                        // =========================
-                        // CORS PREFLIGHT
-                        // =========================
-                        .requestMatchers(
-                                HttpMethod.OPTIONS,
-                                "/**"
-                        ).permitAll()
-
-                        // =========================
-                        // RESULT API
-                        // =========================
-                        .requestMatchers(
-                                HttpMethod.POST,
-                                "/api/results"
-                        ).authenticated()
-
-                        // =========================
-                        // EVERYTHING ELSE
                 // =========================
-                        .anyRequest().authenticated()
+                // PUBLIC USER APIs
+                // =========================
+                .requestMatchers(
+                        HttpMethod.POST,
+                        "/api/users/register",
+                        "/api/users/login",
+                        "/api/users/forgot-password",
+                        "/api/users/reset-password"
+                ).permitAll()
+                .requestMatchers(
+                        HttpMethod.GET,
+                        "/api/users/verify"
+                ).permitAll()
+                // =========================
+                // PUBLIC APTITUDE APIs
+                // =========================
+                .requestMatchers(
+                        HttpMethod.GET,
+                        "/api/aptitude/questions",
+                        "/api/aptitude/questions/**"
+                ).permitAll()
+                // =========================
+                // PUBLIC CODING APIs
+                // =========================
+                .requestMatchers(
+                        HttpMethod.GET,
+                        "/api/coding/questions",
+                        "/api/coding/questions/**"
+                ).permitAll()
+                // =========================
+                // CORS PREFLIGHT
+                // =========================
+                .requestMatchers(
+                        HttpMethod.OPTIONS,
+                        "/**"
+                ).permitAll()
+                // =========================
+                // RESULT API
+                // =========================
+                .requestMatchers(
+                        HttpMethod.POST,
+                        "/api/results"
+                ).authenticated()
+                // =========================
+                // EVERYTHING ELSE
+                // =========================
+                .anyRequest().authenticated()
                 )
-
                 // =========================
                 // JWT FILTER
                 // =========================
@@ -120,16 +109,16 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
 
-        CorsConfiguration configuration =
-                new CorsConfiguration();
+        CorsConfiguration configuration
+                = new CorsConfiguration();
 
         configuration.setAllowedOrigins(
                 List.of(
                         "http://127.0.0.1:5500",
-                        "http://localhost:5500"
+                        "http://localhost:5500",
+                        "https://interview-prepration-platform-psi.vercel.app"
                 )
         );
-
         configuration.setAllowedMethods(
                 List.of(
                         "GET",
@@ -146,8 +135,8 @@ public class SecurityConfig {
 
         configuration.setAllowCredentials(true);
 
-        UrlBasedCorsConfigurationSource source =
-                new UrlBasedCorsConfigurationSource();
+        UrlBasedCorsConfigurationSource source
+                = new UrlBasedCorsConfigurationSource();
 
         source.registerCorsConfiguration(
                 "/**",

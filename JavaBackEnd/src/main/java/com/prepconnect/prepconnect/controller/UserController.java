@@ -21,7 +21,10 @@ import com.prepconnect.prepconnect.service.UserService;
 @RequestMapping("/api/users")
 
 @CrossOrigin(
-        origins = "http://127.0.0.1:5500",
+        origins = {
+            "http://127.0.0.1:5500",
+            "https://interview-prepration-platform-psi.vercel.app"
+        },
         allowedHeaders = "*",
         methods = {
             org.springframework.web.bind.annotation.RequestMethod.GET,
@@ -49,11 +52,11 @@ public class UserController {
     public ResponseEntity<UserResponseDTO> register(
             @RequestBody User user) {
 
-        User savedUser =
-                userService.registerUser(user);
+        User savedUser
+                = userService.registerUser(user);
 
-        UserResponseDTO response =
-                new UserResponseDTO(
+        UserResponseDTO response
+                = new UserResponseDTO(
                         savedUser.getId(),
                         savedUser.getName(),
                         savedUser.getEmail(),
@@ -71,20 +74,20 @@ public class UserController {
     public ResponseEntity<LoginResponseDTO> login(
             @RequestBody LoginRequestDTO request) {
 
-        User user =
-                userService.loginUser(
+        User user
+                = userService.loginUser(
                         request.getEmail(),
                         request.getPassword()
                 );
 
-        String token =
-                jwtService.generateToken(
+        String token
+                = jwtService.generateToken(
                         user.getEmail(),
                         user.getRole()
                 );
 
-        UserResponseDTO userResponse =
-                new UserResponseDTO(
+        UserResponseDTO userResponse
+                = new UserResponseDTO(
                         user.getId(),
                         user.getName(),
                         user.getEmail(),
@@ -92,8 +95,8 @@ public class UserController {
                         user.isVerified()
                 );
 
-        LoginResponseDTO response =
-                new LoginResponseDTO(
+        LoginResponseDTO response
+                = new LoginResponseDTO(
                         token,
                         userResponse
                 );
@@ -108,15 +111,15 @@ public class UserController {
     public ResponseEntity<UserResponseDTO> getUserByEmail(
             @PathVariable String email) {
 
-        User user =
-                userService.findByEmail(email);
+        User user
+                = userService.findByEmail(email);
 
         if (user == null) {
             return ResponseEntity.notFound().build();
         }
 
-        UserResponseDTO response =
-                new UserResponseDTO(
+        UserResponseDTO response
+                = new UserResponseDTO(
                         user.getId(),
                         user.getName(),
                         user.getEmail(),
@@ -136,11 +139,11 @@ public class UserController {
 
         try {
 
-            String email =
-                    jwtService.extractEmail(token);
+            String email
+                    = jwtService.extractEmail(token);
 
-            User user =
-                    userService.findByEmail(email);
+            User user
+                    = userService.findByEmail(email);
 
             if (user == null) {
                 return ResponseEntity
@@ -160,7 +163,7 @@ public class UserController {
                 return ResponseEntity
                         .badRequest()
                         .body(
-                            "Invalid verification token"
+                                "Invalid verification token"
                         );
             }
 
@@ -179,7 +182,7 @@ public class UserController {
             return ResponseEntity
                     .badRequest()
                     .body(
-                        "Invalid or expired verification token"
+                            "Invalid or expired verification token"
                     );
         }
     }
@@ -193,8 +196,8 @@ public class UserController {
 
         try {
 
-            String message =
-                    userService.forgotPassword(email);
+            String message
+                    = userService.forgotPassword(email);
 
             return ResponseEntity.ok(message);
 
@@ -209,48 +212,48 @@ public class UserController {
     // =========================
 // RESET PASSWORD
 // =========================
-@PostMapping("/reset-password")
-public ResponseEntity<String> resetPassword(
-        @RequestParam String token,
-        @RequestParam String newPassword) {
+    @PostMapping("/reset-password")
+    public ResponseEntity<String> resetPassword(
+            @RequestParam String token,
+            @RequestParam String newPassword) {
 
-    try {
+        try {
 
-        User user =
-                userService.findByResetPasswordToken(token);
+            User user
+                    = userService.findByResetPasswordToken(token);
 
-        if (user == null) {
+            if (user == null) {
+
+                return ResponseEntity
+                        .badRequest()
+                        .body("Invalid reset token");
+            }
+
+            // Check token expiry
+            if (user.getResetPasswordExpiry() == null
+                    || user.getResetPasswordExpiry()
+                            .isBefore(java.time.LocalDateTime.now())) {
+
+                return ResponseEntity
+                        .badRequest()
+                        .body("Reset token expired");
+            }
+
+            // Reset password
+            userService.resetPassword(
+                    user,
+                    newPassword
+            );
+
+            return ResponseEntity.ok(
+                    "Password reset successfully"
+            );
+
+        } catch (Exception e) {
 
             return ResponseEntity
                     .badRequest()
-                    .body("Invalid reset token");
+                    .body("Password reset failed");
         }
-
-        // Check token expiry
-        if (user.getResetPasswordExpiry() == null
-                || user.getResetPasswordExpiry()
-                        .isBefore(java.time.LocalDateTime.now())) {
-
-            return ResponseEntity
-                    .badRequest()
-                    .body("Reset token expired");
-        }
-
-        // Reset password
-        userService.resetPassword(
-                user,
-                newPassword
-        );
-
-        return ResponseEntity.ok(
-                "Password reset successfully"
-        );
-
-    } catch (Exception e) {
-
-        return ResponseEntity
-                .badRequest()
-                .body("Password reset failed");
     }
-}
 }
