@@ -656,7 +656,7 @@ async function confirmSubmit() {
 
         const res =
             await fetch(
-                `${API}/results`,
+                `${API}/api/results`,
                 {
                     method: "POST",
 
