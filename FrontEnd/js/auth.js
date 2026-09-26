@@ -21,12 +21,12 @@ async function login() {
     }
 
     console.log("Login email:", email);
-    console.log("API URL:", `${API}/users/login`);
+   console.log("API URL:", `${API}/api/users/login`);
 
     try {
 
         const response = await fetch(
-            `${API}/users/login`,
+           `${API}/api/users/login`,
             {
                 method: "POST",
 
