@@ -28,7 +28,7 @@ async function startTest(language) {
     try {
 
         const response = await fetch(
-            `${API_BASE}/coding/questions/category/${encodeURIComponent(language)}`,
+            `${API_BASE}/api/coding/questions/category/${encodeURIComponent(language)}`,
             {
                 method: "GET",
                 headers: {
