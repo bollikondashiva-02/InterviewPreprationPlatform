@@ -1,6 +1,6 @@
 const token = localStorage.getItem("token");
 
-const API_BASE = "http://localhost:3001";
+const API_BASE = "https://interview-preparation-platform-3l2s.onrender.com";
 
 let questions = [];
 
