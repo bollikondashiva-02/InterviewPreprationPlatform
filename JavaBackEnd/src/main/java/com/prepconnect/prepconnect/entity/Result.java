@@ -38,7 +38,7 @@ public class Result {
 
     @PrePersist
     protected void onCreate() {
-        testDate = LocalDateTime.now();
+       testDate = LocalDateTime.now(java.time.ZoneId.of("Asia/Kolkata"));
     }
 
     public Long getId() {
