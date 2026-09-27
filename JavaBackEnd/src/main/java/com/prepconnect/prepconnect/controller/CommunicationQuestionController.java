@@ -17,7 +17,10 @@ import com.prepconnect.prepconnect.service.CommunicationQuestionService;
 @RestController
 @RequestMapping("/api/communication")
 @CrossOrigin(
-        origins = "http://127.0.0.1:5500",
+        origins = {
+        "http://127.0.0.1:5500",
+        "https://interview-prepration-platform-psi.vercel.app"
+},
         allowedHeaders = "*",
         methods = {
                 RequestMethod.GET,
