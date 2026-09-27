@@ -201,14 +201,14 @@ async function register() {
 
     console.log(
         "Register API:",
-        `${API}/users/register`
+        `${API}/api/users/register`
     );
 
 
     try {
 
         const response = await fetch(
-            `${API}/users/register`,
+            `${API}/api/users/register`,
             {
                 method: "POST",
 
