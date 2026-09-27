@@ -18,7 +18,7 @@ async function loadProgress() {
         // =====================================================
 
         const codingResponse = await fetch(
-            `${API}/coding/test-results`,
+            `${API}/api/coding/test-results`,
             {
                 method: "GET",
                 headers: {
@@ -54,7 +54,7 @@ async function loadProgress() {
         // =====================================================
 
         const aptitudeResponse = await fetch(
-            `${API}/results`,
+           `${API}/api/results`,
             {
                 method: "GET",
                 headers: {
@@ -90,7 +90,7 @@ async function loadProgress() {
         // =====================================================
 
         const communicationResponse = await fetch(
-            `${API}/communication/results`,
+           `${API}/api/communication/results`,
             {
                 method: "GET",
                 headers: {
