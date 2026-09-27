@@ -2114,7 +2114,7 @@ saveBtn.addEventListener(
 
             const response =
                 await fetch(
-                    `${API_BASE}/communication/results`,
+                    `${API_BASE}/api/communication/results`,
                     {
                         method: "POST",
 
