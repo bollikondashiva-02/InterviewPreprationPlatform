@@ -62,7 +62,7 @@ async function loadQuestions() {
     try {
 
         const response = await fetch(
-            `${API_BASE}/communication/questions/category/Situational`,
+            `${API_BASE}/api/communication/questions/category/Situational`,
             {
                 headers: {
                     "Authorization": "Bearer " + token
