@@ -919,3 +919,813 @@ body {
 
 }
 
+/* =====================================================
+   PREPCONNECT APTITUDE - ADVANCED ANIMATIONS
+===================================================== */
+
+
+/* =========================
+   ANIMATED BACKGROUND
+========================= */
+
+body {
+    position: relative;
+    overflow-x: hidden;
+
+    background:
+        radial-gradient(
+            circle at 10% 15%,
+            rgba(37, 99, 235, 0.12),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 90% 85%,
+            rgba(124, 58, 237, 0.12),
+            transparent 28%
+        ),
+        linear-gradient(
+            135deg,
+            #f4f7ff,
+            #f8fafc,
+            #eef4ff
+        );
+
+    background-size: 160% 160%;
+
+    animation: aptitudeBackground 15s ease infinite;
+}
+
+@keyframes aptitudeBackground {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* =========================
+   MAIN CONTAINER ENTRANCE
+========================= */
+
+.test-container {
+    animation: testContainerEnter 0.8s ease-out;
+}
+
+@keyframes testContainerEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.test-header {
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.test-header::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    background: rgba(37, 99, 235, 0.10);
+
+    filter: blur(35px);
+
+    top: -100px;
+    right: -50px;
+
+    animation: headerGlow 6s ease-in-out infinite alternate;
+}
+
+@keyframes headerGlow {
+
+    from {
+        transform: translate(0, 0) scale(1);
+    }
+
+    to {
+        transform: translate(-50px, 60px) scale(1.3);
+    }
+}
+
+.test-header:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(37, 99, 235, 0.10);
+}
+
+
+/* =========================
+   HEADER TITLE
+========================= */
+
+.test-header h1 {
+    position: relative;
+
+    animation: titleReveal 0.8s ease-out;
+}
+
+@keyframes titleReveal {
+
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+        letter-spacing: -2px;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        letter-spacing: normal;
+    }
+}
+
+
+/* =========================
+   TIMER
+========================= */
+
+.timer-box {
+    position: relative;
+
+    overflow: hidden;
+
+    animation: timerEnter 0.8s ease-out 0.2s both;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+@keyframes timerEnter {
+
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.timer-box:hover {
+    transform: scale(1.04);
+
+    box-shadow:
+        0 8px 20px rgba(220, 38, 38, 0.12);
+}
+
+.timer-box::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.7),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    animation: timerShine 4s ease-in-out infinite;
+}
+
+@keyframes timerShine {
+
+    0%,
+    65% {
+        left: -120%;
+    }
+
+    100% {
+        left: 140%;
+    }
+}
+
+
+/* =========================
+   TIMER NUMBER PULSE
+========================= */
+
+.timer-box strong {
+    animation: timerPulse 2s ease-in-out infinite;
+}
+
+@keyframes timerPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.04);
+    }
+}
+
+
+/* =========================
+   PROGRESS SECTION
+========================= */
+
+.progress-section {
+    animation: progressEnter 0.7s ease-out 0.3s both;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+@keyframes progressEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.progress-section:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(37, 99, 235, 0.08);
+}
+
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+.progress-bar {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.progress-bar::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 40%;
+    height: 100%;
+
+    background: rgba(255, 255, 255, 0.35);
+
+    transform: skewX(-20deg);
+
+    animation: progressShine 3s ease-in-out infinite;
+}
+
+@keyframes progressShine {
+
+    0%,
+    60% {
+        left: -100%;
+    }
+
+    100% {
+        left: 130%;
+    }
+}
+
+#progressBar {
+    background: linear-gradient(
+        90deg,
+        #2563eb,
+        #4f46e5,
+        #7c3aed
+    );
+
+    background-size: 200% 100%;
+
+    animation: progressGradient 4s linear infinite;
+}
+
+@keyframes progressGradient {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+
+/* =========================
+   QUESTION CARD
+========================= */
+
+.question-card {
+    position: relative;
+    overflow: hidden;
+
+    animation: questionCardEnter 0.7s ease-out 0.4s both;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+@keyframes questionCardEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.question-card:hover {
+    box-shadow:
+        0 12px 35px rgba(37, 99, 235, 0.09);
+}
+
+
+/* =========================
+   QUESTION CARD GLOW
+========================= */
+
+.question-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 160px;
+    height: 160px;
+
+    border-radius: 50%;
+
+    background: rgba(99, 102, 241, 0.08);
+
+    filter: blur(35px);
+
+    right: -70px;
+    bottom: -70px;
+
+    animation: questionGlow 7s ease-in-out infinite alternate;
+}
+
+@keyframes questionGlow {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.4);
+    }
+}
+
+
+/* =========================
+   QUESTION META
+========================= */
+
+.question-category,
+.question-difficulty {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.question-category:hover,
+.question-difficulty:hover {
+    transform: translateY(-3px) scale(1.04);
+
+    box-shadow:
+        0 5px 15px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================
+   QUESTION TITLE
+========================= */
+
+.question-title {
+    animation: questionTitleReveal 0.6s ease-out 0.5s both;
+}
+
+@keyframes questionTitleReveal {
+
+    from {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================
+   OPTIONS ENTRANCE
+========================= */
+
+.option {
+    animation: optionEnter 0.5s ease-out both;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.option:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.option:nth-child(2) {
+    animation-delay: 0.18s;
+}
+
+.option:nth-child(3) {
+    animation-delay: 0.26s;
+}
+
+.option:nth-child(4) {
+    animation-delay: 0.34s;
+}
+
+@keyframes optionEnter {
+
+    from {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================
+   OPTION HOVER
+========================= */
+
+.option:hover {
+    transform: translateX(5px);
+
+    box-shadow:
+        0 6px 18px rgba(37, 99, 235, 0.08);
+}
+
+
+/* =========================
+   SELECTED OPTION
+========================= */
+
+.option:has(input[type="radio"]:checked) {
+    transform: translateX(5px) scale(1.01);
+
+    box-shadow:
+        0 7px 20px rgba(37, 99, 235, 0.12);
+
+    animation: selectedOption 0.35s ease;
+}
+
+@keyframes selectedOption {
+
+    0% {
+        transform: translateX(5px) scale(0.98);
+    }
+
+    60% {
+        transform: translateX(5px) scale(1.02);
+    }
+
+    100% {
+        transform: translateX(5px) scale(1.01);
+    }
+}
+
+
+/* =========================
+   QUESTION NAVIGATOR
+========================= */
+
+.question-navigator {
+    animation: navigatorEnter 0.7s ease-out 0.55s both;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+@keyframes navigatorEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.question-navigator:hover {
+    box-shadow:
+        0 12px 30px rgba(37, 99, 235, 0.08);
+}
+
+
+/* =========================
+   QUESTION NUMBERS
+========================= */
+
+.question-number {
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+.question-number:hover {
+    transform: translateY(-3px) scale(1.08);
+
+    box-shadow:
+        0 5px 12px rgba(37, 99, 235, 0.15);
+}
+
+
+/* =========================
+   CURRENT QUESTION PULSE
+========================= */
+
+.question-number.current {
+    animation: currentQuestionPulse 2s ease-in-out infinite;
+}
+
+@keyframes currentQuestionPulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 0 rgba(37, 99, 235, 0);
+    }
+
+    50% {
+        box-shadow:
+            0 0 15px rgba(37, 99, 235, 0.35);
+    }
+}
+
+
+/* =========================
+   ANSWERED QUESTION
+========================= */
+
+.question-number.answered {
+    animation: answeredPop 0.4s ease;
+}
+
+@keyframes answeredPop {
+
+    0% {
+        transform: scale(0.8);
+    }
+
+    70% {
+        transform: scale(1.12);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* =========================
+   NAVIGATION AREA
+========================= */
+
+.navigation {
+    animation: navigationEnter 0.7s ease-out 0.7s both;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+@keyframes navigationEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navigation:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(37, 99, 235, 0.08);
+}
+
+
+/* =========================
+   BUTTON SHINE
+========================= */
+
+.btn {
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.btn::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.35),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+}
+
+.btn:hover::before {
+    animation: buttonShine 0.7s ease;
+}
+
+@keyframes buttonShine {
+
+    from {
+        left: -120%;
+    }
+
+    to {
+        left: 140%;
+    }
+}
+
+.btn:hover {
+    transform: translateY(-3px) scale(1.02);
+
+    box-shadow:
+        0 7px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.modal-content {
+    animation: modalEnter 0.4s ease-out;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+@keyframes modalEnter {
+
+    from {
+        opacity: 0;
+        transform: scale(0.85) translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+
+/* =========================
+   MODAL ANSWER COUNT
+========================= */
+
+#modalAnswered {
+    animation: modalNumberPulse 2s ease-in-out infinite;
+}
+
+@keyframes modalNumberPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.06);
+    }
+}
+
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+#questionNavigator::-webkit-scrollbar-thumb {
+    transition:
+        background 0.3s ease;
+}
+
+#questionNavigator:hover::-webkit-scrollbar-thumb {
+    background: #6366f1;
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
