@@ -19,7 +19,7 @@ if (!email) {
 try {
 
     const response = await fetch(
-        `${API}/users/forgot-password?email=${encodeURIComponent(email)}`,
+       `${API}/api/users/forgot-password?email=${encodeURIComponent(email)}`,
         {
             method: "POST"
         }

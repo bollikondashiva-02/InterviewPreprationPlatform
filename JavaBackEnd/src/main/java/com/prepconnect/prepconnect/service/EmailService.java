@@ -25,14 +25,14 @@ public class EmailService {
             String email,
             String verificationToken) {
 
-        String verificationLink =
-                "http://127.0.0.1:5500/FrontEnd/verify.html?token="
+        String verificationLink
+                = "http://127.0.0.1:5500/FrontEnd/verify.html?token="
                 + verificationToken;
 
         String subject = "PrepConnect Email Verification";
 
-        String text =
-                "Welcome to PrepConnect!\n\n"
+        String text
+                = "Welcome to PrepConnect!\n\n"
                 + "Please verify your email using the link below:\n\n"
                 + verificationLink
                 + "\n\n"
@@ -49,14 +49,14 @@ public class EmailService {
             String email,
             String resetToken) {
 
-        String resetLink =
-                "http://127.0.0.1:5500/FrontEnd/reset-password.html?token="
+        String resetLink
+                = "https://interview-prepration-platform-psi.vercel.app/reset-password.html?token="
                 + resetToken;
 
         String subject = "PrepConnect Password Reset";
 
-        String text =
-                "Hello!\n\n"
+        String text
+                = "Hello!\n\n"
                 + "We received a request to reset your "
                 + "PrepConnect password.\n\n"
                 + "Click the link below to reset your password:\n\n"
@@ -83,8 +83,8 @@ public class EmailService {
             throw new RuntimeException("BREVO_API_KEY is not configured");
         }
 
-        String json =
-                "{"
+        String json
+                = "{"
                 + "\"sender\":{"
                 + "\"name\":\"PrepConnect\","
                 + "\"email\":\"prepconnect002@gmail.com\""
@@ -105,8 +105,8 @@ public class EmailService {
                     .POST(HttpRequest.BodyPublishers.ofString(json))
                     .build();
 
-            HttpResponse<String> response =
-                    httpClient.send(
+            HttpResponse<String> response
+                    = httpClient.send(
                             request,
                             HttpResponse.BodyHandlers.ofString()
                     );
