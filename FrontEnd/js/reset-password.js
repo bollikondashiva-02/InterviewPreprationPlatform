@@ -68,7 +68,7 @@ async function resetPassword() {
 
         const response =
             await fetch(
-                `${API}/users/reset-password?token=${encodeURIComponent(token)}&newPassword=${encodeURIComponent(password)}`,
+                `${API}/api/users/reset-password?token=${encodeURIComponent(token)}&newPassword=${encodeURIComponent(password)}`,
                 {
                     method: "POST"
                 }
