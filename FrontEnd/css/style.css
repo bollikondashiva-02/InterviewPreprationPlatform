@@ -18,11 +18,59 @@ body {
 
     padding: 20px;
 
-    background: linear-gradient(
-        135deg,
-        #eff6ff,
-        #dbeafe
-    );
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(59, 130, 246, 0.22),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(139, 92, 246, 0.20),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #eef4ff,
+            #e0e7ff,
+            #f5f3ff
+        );
+
+    background-size: 150% 150%;
+
+    animation: backgroundMove 10s ease infinite;
+}
+
+/* =========================
+   PAGE ANIMATION
+========================= */
+
+@keyframes pageEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes backgroundMove {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* =========================
@@ -33,16 +81,34 @@ body {
     width: 100%;
     max-width: 420px;
 
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.88);
 
     padding: 40px;
 
-    border-radius: 16px;
+    border-radius: 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
 
     box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.12);
+        0 25px 60px rgba(30, 64, 175, 0.15),
+        0 8px 25px rgba(0, 0, 0, 0.08);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 
     text-align: center;
+
+    animation: pageEnter 0.7s ease-out;
+}
+
+/* =========================
+   CONTAINER HOVER
+========================= */
+
+.container:hover {
+    box-shadow:
+        0 30px 70px rgba(30, 64, 175, 0.18),
+        0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 /* =========================
@@ -55,6 +121,23 @@ body {
     color: #1e3a8a;
 
     margin-bottom: 10px;
+
+    letter-spacing: -0.5px;
+
+    animation: headingEnter 0.8s ease-out;
+}
+
+@keyframes headingEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* =========================
@@ -84,24 +167,38 @@ input {
 
     border: 1px solid #cbd5e1;
 
-    border-radius: 8px;
+    border-radius: 10px;
 
     font-size: 15px;
 
     outline: none;
 
-    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.95);
+
+    color: #1e293b;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.2s ease;
 }
 
 input::placeholder {
     color: #94a3b8;
 }
 
+input:hover {
+    border-color: #93c5fd;
+}
+
 input:focus {
     border-color: #2563eb;
 
     box-shadow:
-        0 0 0 3px rgba(37, 99, 235, 0.12);
+        0 0 0 4px rgba(37, 99, 235, 0.12),
+        0 5px 15px rgba(37, 99, 235, 0.08);
+
+    transform: translateY(-1px);
 }
 
 /* =========================
@@ -115,13 +212,18 @@ button {
 
     margin-top: 5px;
 
-    background: #2563eb;
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #4f46e5
+        );
 
     color: white;
 
     border: none;
 
-    border-radius: 8px;
+    border-radius: 10px;
 
     font-size: 16px;
 
@@ -129,20 +231,63 @@ button {
 
     cursor: pointer;
 
-    transition: all 0.3s ease;
+    position: relative;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Button shine */
+
+button::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 80%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.25),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.6s ease;
+}
+
+button:hover::before {
+    left: 130%;
 }
 
 button:hover {
-    background: #1d4ed8;
+    background:
+        linear-gradient(
+            135deg,
+            #1d4ed8,
+            #4338ca
+        );
 
-    transform: translateY(-2px);
+    transform: translateY(-3px);
 
     box-shadow:
-        0 5px 15px rgba(37, 99, 235, 0.25);
+        0 10px 25px rgba(37, 99, 235, 0.30);
 }
 
 button:active {
-    transform: translateY(0);
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 5px 12px rgba(37, 99, 235, 0.20);
 }
 
 /* =========================
@@ -167,10 +312,18 @@ a {
     text-decoration: none;
 
     font-weight: 600;
+
+    transition:
+        color 0.25s ease,
+        letter-spacing 0.25s ease;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #4f46e5;
+
+    text-decoration: none;
+
+    letter-spacing: 0.2px;
 }
 
 /* =========================
@@ -186,7 +339,7 @@ a:hover {
     .container {
         padding: 30px 25px;
 
-        border-radius: 12px;
+        border-radius: 15px;
     }
 
     .container h1 {
@@ -204,4 +357,304 @@ a:hover {
     button {
         padding: 13px;
     }
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+/* =========================
+   EXTRA ANIMATIONS
+========================= */
+
+/* Floating card */
+
+@keyframes floatingCard {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation:
+        pageEnter 0.7s ease-out,
+        floatingCard 5s ease-in-out 0.8s infinite;
+}
+
+
+/* Input entrance */
+
+@keyframes inputEnter {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.container input {
+    animation: inputEnter 0.6s ease-out both;
+}
+
+.container input:nth-of-type(1) {
+    animation-delay: 0.2s;
+}
+
+.container input:nth-of-type(2) {
+    animation-delay: 0.35s;
+}
+
+.container input:nth-of-type(3) {
+    animation-delay: 0.5s;
+}
+
+
+/* Button entrance */
+
+@keyframes buttonEnter {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container button {
+    animation: buttonEnter 0.7s ease-out 0.6s both;
+}
+
+
+/* Button breathing glow */
+
+@keyframes buttonGlow {
+
+    0% {
+        box-shadow:
+            0 5px 15px rgba(37, 99, 235, 0.15);
+    }
+
+    50% {
+        box-shadow:
+            0 8px 30px rgba(79, 70, 229, 0.35);
+    }
+
+    100% {
+        box-shadow:
+            0 5px 15px rgba(37, 99, 235, 0.15);
+    }
+}
+
+button {
+    animation:
+        buttonEnter 0.7s ease-out 0.6s both,
+        buttonGlow 3s ease-in-out 1.5s infinite;
+}
+
+
+/* Link hover animation */
+
+a {
+    position: relative;
+}
+
+a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -3px;
+
+    width: 0;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    transition: width 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+
+/* Input focus animation */
+
+@keyframes inputPulse {
+
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(37, 99, 235, 0.20);
+    }
+
+    50% {
+        box-shadow:
+            0 0 0 5px rgba(37, 99, 235, 0.10);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(37, 99, 235, 0);
+    }
+}
+
+input:focus {
+    animation: inputPulse 1.2s ease-in-out infinite;
+}
+
+
+/* Card hover */
+
+.container:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 35px 80px rgba(30, 64, 175, 0.22),
+        0 15px 35px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Button hover scale */
+
+button:hover {
+    transform: translateY(-4px) scale(1.015);
+}
+
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    .container {
+        animation:
+            pageEnter 0.7s ease-out,
+            floatingCard 6s ease-in-out 0.8s infinite;
+    }
+}
+/* =========================
+   GLOWING BACKGROUND LIGHTS
+========================= */
+
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Large glowing light */
+
+body::before {
+    content: "";
+
+    position: fixed;
+
+    width: 280px;
+    height: 280px;
+
+    border-radius: 50%;
+
+    background: rgba(59, 130, 246, 0.18);
+
+    filter: blur(60px);
+
+    top: -80px;
+    left: -80px;
+
+    pointer-events: none;
+
+    animation: glowMoveOne 8s ease-in-out infinite alternate;
+}
+
+/* Second glowing light */
+
+body::after {
+    content: "";
+
+    position: fixed;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    background: rgba(139, 92, 246, 0.18);
+
+    filter: blur(65px);
+
+    bottom: -100px;
+    right: -100px;
+
+    pointer-events: none;
+
+    animation: glowMoveTwo 10s ease-in-out infinite alternate;
+}
+
+/* First light movement */
+
+@keyframes glowMoveOne {
+
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(120px, 100px) scale(1.15);
+    }
+
+    100% {
+        transform: translate(40px, 180px) scale(0.9);
+    }
+}
+
+/* Second light movement */
+
+@keyframes glowMoveTwo {
+
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(-120px, -100px) scale(1.15);
+    }
+
+    100% {
+        transform: translate(-40px, -180px) scale(0.9);
+    }
+}
+
+/* Keep login card above the glowing lights */
+
+.container {
+    position: relative;
+    z-index: 2;
 }
