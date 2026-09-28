@@ -1,3 +1,4 @@
+
 console.log("auth.js loaded");
 
 
@@ -21,12 +22,12 @@ async function login() {
     }
 
     console.log("Login email:", email);
-   console.log("API URL:", `${API}/api/users/login`);
+    console.log("API URL:", `${API}/api/users/login`);
 
     try {
 
         const response = await fetch(
-           `${API}/api/users/login`,
+            `${API}/api/users/login`,
             {
                 method: "POST",
 
@@ -43,7 +44,6 @@ async function login() {
 
         console.log("Login HTTP status:", response.status);
 
-        // Read response as text first
         const text = await response.text();
 
         console.log("Login raw response:", text);
@@ -263,17 +263,26 @@ async function register() {
         );
 
 
+        // =========================
+        // REGISTER SUCCESS
+        // =========================
+
         if (response.ok) {
 
             alert(
                 "Registration successful ✅\n\n" +
-                "A verification email has been sent to:\n" +
-                email +
-                "\n\n" +
-                "Please open your email and click the verification link."
+                "You can now login with your registered email and password."
             );
 
+            // Redirect to login page
+            window.location.href =
+                "index.html";
+
         }
+
+        // =========================
+        // REGISTER FAILED
+        // =========================
 
         else {
 
@@ -298,3 +307,4 @@ async function register() {
         );
     }
 }
+

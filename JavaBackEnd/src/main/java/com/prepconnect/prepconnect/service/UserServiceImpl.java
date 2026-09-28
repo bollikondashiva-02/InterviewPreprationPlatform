@@ -50,30 +50,12 @@ public class UserServiceImpl implements UserService {
                 passwordEncoder.encode(user.getPassword())
         );
 
-        // Generate verification token
-        String verificationToken =
-                jwtService.generateToken(
-                        user.getEmail(),
-                        "verification"
-                );
-
-        // Store verification token
-        user.setVerificationToken(
-                verificationToken
-        );
-
-        // User is not verified yet
-        user.setVerified(false);
+        // Email verification is not required
+        user.setVerified(true);
+        user.setVerificationToken(null);
 
         // Save user
-        User savedUser =
-                userRepository.save(user);
-
-        // Send verification email
-        emailService.sendVerificationEmail(
-                savedUser.getEmail(),
-                verificationToken
-        );
+        User savedUser = userRepository.save(user);
 
         return savedUser;
     }
@@ -115,11 +97,7 @@ public class UserServiceImpl implements UserService {
             );
         }
 
-        if (!user.isVerified()) {
-            throw new RuntimeException(
-                    "Please verify your email before login"
-            );
-        }
+        // Email verification is not required for login
 
         return user;
     }
@@ -144,7 +122,6 @@ public class UserServiceImpl implements UserService {
             }
 
             user.setVerified(true);
-
             user.setVerificationToken(null);
 
             userRepository.save(user);
@@ -170,12 +147,6 @@ public class UserServiceImpl implements UserService {
         if (user == null) {
             throw new RuntimeException(
                     "Email not registered"
-            );
-        }
-
-        if (!user.isVerified()) {
-            throw new RuntimeException(
-                    "Please verify your email first"
             );
         }
 
