@@ -1,17 +1,22 @@
 package com.prepconnect.prepconnect.service;
 
-import org.springframework.mail.SimpleMailMessage;
-import org.springframework.mail.javamail.JavaMailSender;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 @Service
 public class EmailService {
 
-    private final JavaMailSender mailSender;
+    @Value("${BREVO_API_KEY:}")
+    private String brevoApiKey;
 
-    public EmailService(JavaMailSender mailSender) {
-        this.mailSender = mailSender;
-    }
+    private static final String BREVO_URL = "https://api.brevo.com/v3/smtp/email";
+
+    private final HttpClient httpClient = HttpClient.newHttpClient();
 
     // =========================
     // EMAIL VERIFICATION
@@ -20,28 +25,22 @@ public class EmailService {
             String email,
             String verificationToken) {
 
-        SimpleMailMessage message =
-                new SimpleMailMessage();
+        String verificationLink =
+                "http://127.0.0.1:5500/FrontEnd/verify.html?token="
+                + verificationToken;
 
-        message.setFrom("prepconnect05@gmail.com");
-        message.setTo(email);
-        message.setSubject(
-                "PrepConnect Email Verification"
-        );
+        String subject = "PrepConnect Email Verification";
 
-        message.setText(
+        String text =
                 "Welcome to PrepConnect!\n\n"
                 + "Please verify your email using the link below:\n\n"
-                + "http://127.0.0.1:5500/FrontEnd/verify.html?token="
-                + verificationToken
+                + verificationLink
                 + "\n\n"
                 + "Thank you,\n"
-                + "PrepConnect Team"
-        );
+                + "PrepConnect Team";
 
-        mailSender.send(message);
+        sendEmail(email, subject, text);
     }
-
 
     // =========================
     // PASSWORD RESET EMAIL
@@ -50,31 +49,99 @@ public class EmailService {
             String email,
             String resetToken) {
 
-        SimpleMailMessage message =
-                new SimpleMailMessage();
+        String resetLink =
+                "http://127.0.0.1:5500/FrontEnd/reset-password.html?token="
+                + resetToken;
 
-        message.setFrom("prepconnect05@gmail.com");
-        message.setTo(email);
+        String subject = "PrepConnect Password Reset";
 
-        message.setSubject(
-                "PrepConnect Password Reset"
-        );
-
-        message.setText(
+        String text =
                 "Hello!\n\n"
                 + "We received a request to reset your "
                 + "PrepConnect password.\n\n"
                 + "Click the link below to reset your password:\n\n"
-                + "http://127.0.0.1:5500/FrontEnd/reset-password.html?token="
-                + resetToken
+                + resetLink
                 + "\n\n"
                 + "This link will expire in 15 minutes.\n\n"
                 + "If you did not request a password reset, "
                 + "please ignore this email.\n\n"
                 + "Thank you,\n"
-                + "PrepConnect Team"
-        );
+                + "PrepConnect Team";
 
-        mailSender.send(message);
+        sendEmail(email, subject, text);
+    }
+
+    // =========================
+    // BREVO EMAIL SENDER
+    // =========================
+    private void sendEmail(
+            String recipient,
+            String subject,
+            String text) {
+
+        if (brevoApiKey == null || brevoApiKey.isBlank()) {
+            throw new RuntimeException("BREVO_API_KEY is not configured");
+        }
+
+        String json =
+                "{"
+                + "\"sender\":{"
+                + "\"name\":\"PrepConnect\","
+                + "\"email\":\"prepconnect002@gmail.com\""
+                + "},"
+                + "\"to\":[{"
+                + "\"email\":\"" + escapeJson(recipient) + "\""
+                + "}],"
+                + "\"subject\":\"" + escapeJson(subject) + "\","
+                + "\"textContent\":\"" + escapeJson(text) + "\""
+                + "}";
+
+        try {
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(URI.create(BREVO_URL))
+                    .header("accept", "application/json")
+                    .header("api-key", brevoApiKey)
+                    .header("content-type", "application/json")
+                    .POST(HttpRequest.BodyPublishers.ofString(json))
+                    .build();
+
+            HttpResponse<String> response =
+                    httpClient.send(
+                            request,
+                            HttpResponse.BodyHandlers.ofString()
+                    );
+
+            if (response.statusCode() < 200
+                    || response.statusCode() >= 300) {
+
+                throw new RuntimeException(
+                        "Brevo email failed. HTTP "
+                        + response.statusCode()
+                        + ": "
+                        + response.body()
+                );
+            }
+
+            System.out.println(
+                    "Brevo email sent successfully to: "
+                    + recipient
+            );
+
+        } catch (Exception e) {
+            throw new RuntimeException(
+                    "Failed to send email through Brevo: "
+                    + e.getMessage(),
+                    e
+            );
+        }
+    }
+
+    private String escapeJson(String value) {
+        return value
+                .replace("\\", "\\\\")
+                .replace("\"", "\\\"")
+                .replace("\r", "\\r")
+                .replace("\n", "\\n")
+                .replace("\t", "\\t");
     }
 }
