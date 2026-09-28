@@ -951,3 +951,1083 @@ button:disabled {
     }
 
 }
+/* =========================================================
+   PREPCONNECT SPEAKING - PREMIUM ANIMATIONS
+========================================================= */
+
+/* =========================================================
+   ANIMATED BACKGROUND
+========================================================= */
+
+body {
+    position: relative;
+    overflow-x: hidden;
+
+    background:
+        radial-gradient(
+            circle at 12% 18%,
+            rgba(37, 99, 235, 0.18),
+            transparent 27%
+        ),
+        radial-gradient(
+            circle at 88% 22%,
+            rgba(124, 58, 237, 0.17),
+            transparent 27%
+        ),
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(16, 185, 129, 0.12),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #eef4ff,
+            #f8faff,
+            #f2f5ff
+        );
+
+    background-size:
+        100% 100%,
+        100% 100%,
+        100% 100%,
+        300% 300%;
+
+    animation:
+        speakingBackground 14s ease-in-out infinite;
+}
+
+
+@keyframes speakingBackground {
+
+    0% {
+        background-position:
+            0% 0%,
+            100% 0%,
+            50% 100%,
+            0% 50%;
+    }
+
+    25% {
+        background-position:
+            25% 20%,
+            75% 30%,
+            40% 80%,
+            50% 100%;
+    }
+
+    50% {
+        background-position:
+            40% 40%,
+            60% 20%,
+            60% 60%,
+            100% 50%;
+    }
+
+    75% {
+        background-position:
+            20% 60%,
+            80% 50%,
+            30% 90%,
+            50% 0%;
+    }
+
+    100% {
+        background-position:
+            0% 0%,
+            100% 0%,
+            50% 100%,
+            0% 50%;
+    }
+}
+
+
+/* =========================================================
+   FLOATING BACKGROUND GLOW
+========================================================= */
+
+body::before {
+    content: "";
+
+    position: fixed;
+
+    width: 430px;
+    height: 430px;
+
+    top: -150px;
+    left: -120px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(37, 99, 235, 0.24) 0%,
+            rgba(59, 130, 246, 0.12) 35%,
+            transparent 70%
+        );
+
+    filter: blur(25px);
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    animation:
+        speakingOrbOne 10s ease-in-out infinite alternate;
+}
+
+
+body::after {
+    content: "";
+
+    position: fixed;
+
+    width: 450px;
+    height: 450px;
+
+    right: -160px;
+    bottom: -160px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(124, 58, 237, 0.23) 0%,
+            rgba(139, 92, 246, 0.11) 35%,
+            transparent 70%
+        );
+
+    filter: blur(25px);
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    animation:
+        speakingOrbTwo 12s ease-in-out infinite alternate;
+}
+
+
+@keyframes speakingOrbOne {
+
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    30% {
+        transform: translate(180px, 80px) scale(1.15);
+    }
+
+    60% {
+        transform: translate(80px, 230px) scale(0.9);
+    }
+
+    100% {
+        transform: translate(300px, 140px) scale(1.2);
+    }
+}
+
+
+@keyframes speakingOrbTwo {
+
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    30% {
+        transform: translate(-180px, -100px) scale(1.15);
+    }
+
+    60% {
+        transform: translate(-80px, -250px) scale(0.9);
+    }
+
+    100% {
+        transform: translate(-300px, -150px) scale(1.2);
+    }
+}
+
+
+/* =========================================================
+   CONTENT ABOVE BACKGROUND
+========================================================= */
+
+.speaking-header,
+.speaking-container {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.speaking-header {
+    background: rgba(255, 255, 255, 0.82);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    box-shadow:
+        0 8px 30px rgba(15, 23, 42, 0.08);
+
+    animation:
+        speakingHeaderIn 0.8s ease both;
+}
+
+
+@keyframes speakingHeaderIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.header-title h1 {
+    animation:
+        speakingTitleIn 0.9s ease both;
+}
+
+
+@keyframes speakingTitleIn {
+
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+        letter-spacing: 3px;
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+        letter-spacing: normal;
+    }
+}
+
+
+/* =========================================================
+   HEADER BUTTONS
+========================================================= */
+
+.back-btn,
+.logout-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.back-btn::before,
+.logout-btn::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        110deg,
+        transparent,
+        rgba(255, 255, 255, 0.5),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.6s ease;
+}
+
+
+.back-btn:hover::before,
+.logout-btn:hover::before {
+    left: 140%;
+}
+
+
+.back-btn:hover,
+.logout-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+
+    box-shadow:
+        0 8px 20px rgba(15, 23, 42, 0.14);
+}
+
+
+/* =========================================================
+   MAIN CARDS
+========================================================= */
+
+.test-info-card,
+.progress-section,
+.topic-card,
+.speaking-card,
+.topic-navigator-section {
+    background: rgba(255, 255, 255, 0.84);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+
+/* =========================================================
+   TEST INFORMATION
+========================================================= */
+
+.test-info-card {
+    animation:
+        speakingCardIn 0.7s ease both;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+@keyframes speakingCardIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.info-item {
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.info-item:hover {
+    transform: translateY(-5px);
+
+    background: rgba(239, 246, 255, 0.7);
+}
+
+
+.info-item strong {
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease;
+}
+
+
+.info-item:hover strong {
+    color: #2563eb;
+
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.progress-section {
+    animation:
+        speakingProgressIn 0.8s ease both;
+
+    animation-delay: 0.2s;
+}
+
+
+@keyframes speakingProgressIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.progress-bar {
+    position: relative;
+
+    box-shadow:
+        inset 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+
+.progress-fill {
+    position: relative;
+
+    background:
+        linear-gradient(
+            90deg,
+            #2563eb,
+            #4f8df7,
+            #2563eb
+        );
+
+    background-size: 200% 100%;
+
+    animation:
+        progressGradient 2s linear infinite;
+}
+
+
+.progress-fill::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 60%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.7),
+        transparent
+    );
+
+    animation:
+        progressShine 2s ease-in-out infinite;
+}
+
+
+@keyframes progressGradient {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+
+@keyframes progressShine {
+
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 150%;
+    }
+}
+
+
+/* =========================================================
+   TOPIC CARD
+========================================================= */
+
+.topic-card {
+    position: relative;
+    overflow: hidden;
+
+    animation:
+        topicCardIn 0.8s ease both;
+
+    animation-delay: 0.3s;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+@keyframes topicCardIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+.topic-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(37, 99, 235, 0.10);
+}
+
+
+.topic-label {
+    animation:
+        topicLabelPulse 2.5s ease-in-out infinite;
+}
+
+
+@keyframes topicLabelPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.04);
+    }
+}
+
+
+.topic-card h2 {
+    animation:
+        topicTitleIn 0.6s ease both;
+}
+
+
+@keyframes topicTitleIn {
+
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.topic-card p {
+    animation:
+        topicDescriptionIn 0.8s ease both;
+}
+
+
+@keyframes topicDescriptionIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   SPEAKING CARD
+========================================================= */
+
+.speaking-card {
+    position: relative;
+    overflow: hidden;
+
+    animation:
+        speakingCardMainIn 0.8s ease both;
+
+    animation-delay: 0.4s;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+@keyframes speakingCardMainIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.speaking-card:hover {
+    box-shadow:
+        0 16px 38px rgba(15, 23, 42, 0.10);
+}
+
+
+/* =========================================================
+   SPEAKING BUTTONS
+========================================================= */
+
+.start-speaking-btn,
+.stop-speaking-btn,
+.analyze-btn,
+.save-result-btn,
+.navigation-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.start-speaking-btn::before,
+.stop-speaking-btn::before,
+.analyze-btn::before,
+.save-result-btn::before,
+.navigation-btn::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 65%;
+    height: 100%;
+
+    background: linear-gradient(
+        110deg,
+        transparent,
+        rgba(255, 255, 255, 0.45),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.6s ease;
+}
+
+
+.start-speaking-btn:hover::before,
+.stop-speaking-btn:hover::before,
+.analyze-btn:hover::before,
+.save-result-btn:hover::before,
+.navigation-btn:hover::before {
+    left: 140%;
+}
+
+
+.start-speaking-btn:hover:not(:disabled),
+.stop-speaking-btn:hover:not(:disabled),
+.analyze-btn:hover:not(:disabled),
+.save-result-btn:hover:not(:disabled),
+.navigation-btn:hover:not(:disabled) {
+    transform: translateY(-3px) scale(1.02);
+}
+
+
+/* =========================================================
+   START SPEAKING PULSE
+========================================================= */
+
+.start-speaking-btn {
+    animation:
+        speakingButtonPulse 2.5s ease-in-out infinite;
+}
+
+
+@keyframes speakingButtonPulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 5px 12px rgba(37, 99, 235, 0.18);
+    }
+
+    50% {
+        box-shadow:
+            0 8px 25px rgba(37, 99, 235, 0.35);
+    }
+}
+
+
+/* =========================================================
+   SPEECH STATUS
+========================================================= */
+
+.speech-status {
+    animation:
+        statusIn 0.7s ease both;
+
+    transition:
+        border-color 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+@keyframes statusIn {
+
+    from {
+        opacity: 0;
+        transform: scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.speech-status:hover {
+    border-color: #bfdbfe;
+
+    background: #f1f5ff;
+
+    box-shadow:
+        0 6px 18px rgba(37, 99, 235, 0.08);
+}
+
+
+/* =========================================================
+   TRANSCRIPT
+========================================================= */
+
+.transcript-section {
+    animation:
+        transcriptIn 0.7s ease both;
+
+    animation-delay: 0.2s;
+}
+
+
+@keyframes transcriptIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.transcript-box {
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.transcript-box:hover {
+    border-color: #93c5fd;
+
+    background: #ffffff;
+}
+
+
+.transcript-box:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 4px rgba(37, 99, 235, 0.12),
+        0 8px 20px rgba(37, 99, 235, 0.08);
+}
+
+
+/* =========================================================
+   ANALYSIS RESULT
+========================================================= */
+
+.analysis-result {
+    position: relative;
+    overflow: hidden;
+
+    animation:
+        analysisIn 0.6s ease both;
+
+    box-shadow:
+        0 8px 25px rgba(124, 58, 237, 0.07);
+}
+
+
+@keyframes analysisIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(18px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+.analysis-result::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        110deg,
+        transparent,
+        rgba(255, 255, 255, 0.75),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    animation:
+        analysisShine 3s ease-in-out infinite;
+}
+
+
+@keyframes analysisShine {
+
+    0% {
+        left: -100%;
+    }
+
+    45%,
+    100% {
+        left: 150%;
+    }
+}
+
+
+.analysis-item {
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        padding 0.25s ease;
+}
+
+
+.analysis-item:hover {
+    transform: translateX(6px);
+
+    background: rgba(239, 246, 255, 0.55);
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.analysis-item strong {
+    transition:
+        transform 0.25s ease,
+        color 0.25s ease;
+}
+
+
+.analysis-item:hover strong {
+    color: #2563eb;
+
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   TOTAL SCORE
+========================================================= */
+
+.total-score {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.total-score:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(37, 99, 235, 0.10);
+}
+
+
+.total-score strong {
+    animation:
+        totalScorePulse 2s ease-in-out infinite;
+}
+
+
+@keyframes totalScorePulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+
+/* =========================================================
+   TOPIC NAVIGATION
+========================================================= */
+
+.navigation-section {
+    animation:
+        navigationIn 0.7s ease both;
+
+    animation-delay: 0.6s;
+}
+
+
+@keyframes navigationIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.navigation-btn {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.navigation-btn:hover:not(:disabled) {
+    box-shadow:
+        0 8px 20px rgba(15, 23, 42, 0.12);
+}
+
+
+/* =========================================================
+   TOPIC NAVIGATOR
+========================================================= */
+
+.topic-navigator-section {
+    animation:
+        navigatorIn 0.8s ease both;
+
+    animation-delay: 0.7s;
+}
+
+
+@keyframes navigatorIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.topic-navigator button {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.topic-navigator button:hover {
+    transform: translateY(-4px) scale(1.05);
+
+    box-shadow:
+        0 7px 16px rgba(37, 99, 235, 0.12);
+}
+
+
+.topic-navigator button.active {
+    animation:
+        activeTopicPulse 1.8s ease-in-out infinite;
+}
+
+
+@keyframes activeTopicPulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 0 rgba(37, 99, 235, 0);
+    }
+
+    50% {
+        box-shadow:
+            0 0 16px rgba(37, 99, 235, 0.35);
+    }
+}
+
+
+/* =========================================================
+   MOBILE BACKGROUND
+========================================================= */
+
+@media (max-width: 768px) {
+
+    body::before,
+    body::after {
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    body::before,
+    body::after {
+        width: 230px;
+        height: 230px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+
+}

@@ -589,3 +589,1062 @@
     }
 
 }
+/* =========================================================
+   PREPCONNECT INTERVIEW - PREMIUM ANIMATIONS
+========================================================= */
+
+/* =========================================================
+   ANIMATED PAGE BACKGROUND
+========================================================= */
+
+body {
+    position: relative;
+    overflow-x: hidden;
+
+    background:
+        radial-gradient(
+            circle at 10% 15%,
+            rgba(37, 99, 235, 0.18),
+            transparent 27%
+        ),
+        radial-gradient(
+            circle at 90% 25%,
+            rgba(124, 58, 237, 0.16),
+            transparent 27%
+        ),
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(16, 185, 129, 0.12),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #eef4ff,
+            #f8faff,
+            #f1f5ff
+        );
+
+    background-size:
+        100% 100%,
+        100% 100%,
+        100% 100%,
+        300% 300%;
+
+    animation:
+        interviewBackground 14s ease-in-out infinite;
+}
+
+@keyframes interviewBackground {
+
+    0% {
+        background-position:
+            0% 0%,
+            100% 0%,
+            50% 100%,
+            0% 50%;
+    }
+
+    25% {
+        background-position:
+            25% 20%,
+            75% 30%,
+            40% 80%,
+            50% 100%;
+    }
+
+    50% {
+        background-position:
+            45% 40%,
+            55% 20%,
+            60% 60%,
+            100% 50%;
+    }
+
+    75% {
+        background-position:
+            20% 65%,
+            80% 55%,
+            30% 90%,
+            50% 0%;
+    }
+
+    100% {
+        background-position:
+            0% 0%,
+            100% 0%,
+            50% 100%,
+            0% 50%;
+    }
+}
+
+
+/* =========================================================
+   FLOATING BLUE ORB
+========================================================= */
+
+body::before {
+    content: "";
+
+    position: fixed;
+
+    width: 430px;
+    height: 430px;
+
+    top: -160px;
+    left: -130px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(37, 99, 235, 0.26) 0%,
+            rgba(59, 130, 246, 0.12) 38%,
+            transparent 72%
+        );
+
+    filter: blur(25px);
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    animation:
+        interviewBlueOrb 10s ease-in-out infinite alternate;
+}
+
+@keyframes interviewBlueOrb {
+
+    0% {
+        transform:
+            translate(0, 0)
+            scale(1);
+    }
+
+    30% {
+        transform:
+            translate(180px, 80px)
+            scale(1.15);
+    }
+
+    60% {
+        transform:
+            translate(80px, 240px)
+            scale(0.9);
+    }
+
+    100% {
+        transform:
+            translate(320px, 150px)
+            scale(1.2);
+    }
+}
+
+
+/* =========================================================
+   FLOATING PURPLE ORB
+========================================================= */
+
+body::after {
+    content: "";
+
+    position: fixed;
+
+    width: 440px;
+    height: 440px;
+
+    right: -160px;
+    bottom: -160px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(124, 58, 237, 0.24) 0%,
+            rgba(139, 92, 246, 0.11) 38%,
+            transparent 72%
+        );
+
+    filter: blur(25px);
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    animation:
+        interviewPurpleOrb 12s ease-in-out infinite alternate;
+}
+
+@keyframes interviewPurpleOrb {
+
+    0% {
+        transform:
+            translate(0, 0)
+            scale(1);
+    }
+
+    30% {
+        transform:
+            translate(-180px, -100px)
+            scale(1.15);
+    }
+
+    60% {
+        transform:
+            translate(-80px, -250px)
+            scale(0.9);
+    }
+
+    100% {
+        transform:
+            translate(-320px, -150px)
+            scale(1.2);
+    }
+}
+
+
+/* =========================================================
+   KEEP CONTENT ABOVE BACKGROUND
+========================================================= */
+
+.interview-header,
+.interview-container {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================================
+   HEADER GLASS EFFECT
+========================================================= */
+
+.interview-header {
+    background: rgba(255, 255, 255, 0.86);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    box-shadow:
+        0 5px 25px rgba(15, 23, 42, 0.08);
+
+    animation:
+        interviewHeaderEnter 0.7s ease-out;
+}
+
+@keyframes interviewHeaderEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(-18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   HEADER TITLE
+========================================================= */
+
+.interview-header .header-center h1 {
+    animation:
+        interviewTitleEnter 0.8s ease-out 0.15s both;
+}
+
+.interview-header .header-center p {
+    animation:
+        interviewSubtitleEnter 0.8s ease-out 0.3s both;
+}
+
+@keyframes interviewTitleEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes interviewSubtitleEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.interview-header .back-btn {
+    position: relative;
+
+    overflow: hidden;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.interview-header .back-btn::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 65%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.7),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+}
+
+.interview-header .back-btn:hover::after {
+    animation:
+        interviewButtonShine 0.7s ease;
+}
+
+@keyframes interviewButtonShine {
+
+    from {
+        left: -120%;
+    }
+
+    to {
+        left: 140%;
+    }
+}
+
+.interview-header .back-btn:hover {
+    transform:
+        translateY(-2px)
+        translateX(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.15);
+}
+
+
+/* =========================================================
+   LOGOUT BUTTON
+========================================================= */
+
+.interview-header .logout-btn {
+    position: relative;
+
+    overflow: hidden;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.interview-header .logout-btn::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 65%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.45),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+}
+
+.interview-header .logout-btn:hover::after {
+    animation:
+        interviewLogoutShine 0.7s ease;
+}
+
+@keyframes interviewLogoutShine {
+
+    from {
+        left: -120%;
+    }
+
+    to {
+        left: 140%;
+    }
+}
+
+.interview-header .logout-btn:hover {
+    transform:
+        translateY(-2px)
+        scale(1.03);
+
+    box-shadow:
+        0 8px 20px rgba(220, 38, 38, 0.20);
+}
+
+
+/* =========================================================
+   INFORMATION CARDS
+========================================================= */
+
+.interview-info .info-card {
+    position: relative;
+
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.86);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    animation:
+        interviewInfoEnter 0.65s ease-out both;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.interview-info .info-card:nth-child(1) {
+    animation-delay: 0.15s;
+}
+
+.interview-info .info-card:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.interview-info .info-card:nth-child(3) {
+    animation-delay: 0.35s;
+}
+
+@keyframes interviewInfoEnter {
+
+    from {
+        opacity: 0;
+        transform:
+            translateY(20px)
+            scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+.interview-info .info-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #bfdbfe;
+
+    box-shadow:
+        0 14px 30px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================================================
+   INFO CARD ICON
+========================================================= */
+
+.interview-info .info-card span {
+    transition:
+        transform 0.3s ease;
+}
+
+.interview-info .info-card:hover span {
+    transform:
+        scale(1.18)
+        rotate(-5deg);
+
+    animation:
+        infoEmojiFloat 1.5s ease-in-out infinite;
+}
+
+@keyframes infoEmojiFloat {
+
+    0%,
+    100% {
+        transform:
+            scale(1.18)
+            translateY(0)
+            rotate(-5deg);
+    }
+
+    50% {
+        transform:
+            scale(1.18)
+            translateY(-5px)
+            rotate(5deg);
+    }
+}
+
+
+/* =========================================================
+   PROGRESS SECTION
+========================================================= */
+
+.progress-section {
+    background: rgba(255, 255, 255, 0.84);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    animation:
+        progressEnter 0.7s ease-out 0.4s both;
+
+    transition:
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+.progress-section:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 28px rgba(37, 99, 235, 0.10);
+}
+
+@keyframes progressEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   PROGRESS BAR
+========================================================= */
+
+.progress-bar {
+    position: relative;
+
+    box-shadow:
+        inset 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+
+#progressFill {
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            #2563eb,
+            #7c3aed
+        );
+
+    box-shadow:
+        0 0 12px rgba(37, 99, 235, 0.25);
+}
+
+#progressFill::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 60%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.65),
+            transparent
+        );
+
+    animation:
+        progressShine 2s linear infinite;
+}
+
+@keyframes progressShine {
+
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 150%;
+    }
+}
+
+
+/* =========================================================
+   QUESTION BOX
+========================================================= */
+
+.interview-test .question-box {
+    position: relative;
+
+    background: rgba(255, 255, 255, 0.88);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    animation:
+        questionBoxEnter 0.8s ease-out 0.5s both;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+@keyframes questionBoxEnter {
+
+    from {
+        opacity: 0;
+        transform:
+            translateY(25px)
+            scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+.interview-test .question-box:hover {
+    box-shadow:
+        0 15px 35px rgba(37, 99, 235, 0.10);
+}
+
+
+/* =========================================================
+   QUESTION TYPE
+========================================================= */
+
+.question-type {
+    animation:
+        questionTypePulse 2.5s ease-in-out infinite;
+}
+
+@keyframes questionTypePulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 0 rgba(67, 56, 202, 0);
+    }
+
+    50% {
+        box-shadow:
+            0 0 14px rgba(67, 56, 202, 0.15);
+    }
+}
+
+
+/* =========================================================
+   QUESTION TEXT
+========================================================= */
+
+.interview-test .question-box h2 {
+    animation:
+        questionTextEnter 0.6s ease-out 0.65s both;
+}
+
+@keyframes questionTextEnter {
+
+    from {
+        opacity: 0;
+        transform: translateX(-12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================================================
+   ANSWER OPTIONS
+========================================================= */
+
+.interview-test .option {
+    position: relative;
+
+    overflow: hidden;
+
+    animation:
+        optionEnter 0.5s ease-out both;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.interview-test .option:nth-child(1) {
+    animation-delay: 0.7s;
+}
+
+.interview-test .option:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+.interview-test .option:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+.interview-test .option:nth-child(4) {
+    animation-delay: 1s;
+}
+
+@keyframes optionEnter {
+
+    from {
+        opacity: 0;
+        transform:
+            translateX(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateX(0);
+    }
+}
+
+.interview-test .option::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 60%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.55),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+
+    pointer-events: none;
+}
+
+.interview-test .option:hover::after {
+    animation:
+        optionShine 0.7s ease;
+}
+
+@keyframes optionShine {
+
+    from {
+        left: -120%;
+    }
+
+    to {
+        left: 140%;
+    }
+}
+
+.interview-test .option:hover {
+    background: #f5f8ff;
+
+    border-color: #93c5fd;
+
+    transform:
+        translateY(-3px)
+        translateX(3px);
+
+    box-shadow:
+        0 7px 18px rgba(37, 99, 235, 0.09);
+}
+
+
+/* =========================================================
+   RADIO BUTTON
+========================================================= */
+
+.interview-test .option input {
+    accent-color: #2563eb;
+
+    transition:
+        transform 0.2s ease;
+}
+
+.interview-test .option:hover input {
+    transform: scale(1.12);
+}
+
+
+/* =========================================================
+   NAVIGATION BUTTONS
+========================================================= */
+
+.interview-test .navigation-buttons {
+    animation:
+        navigationEnter 0.7s ease-out 1s both;
+}
+
+@keyframes navigationEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.interview-test .navigation-buttons button {
+    position: relative;
+
+    overflow: hidden;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.interview-test .navigation-buttons button::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 60%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.5),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+}
+
+.interview-test .navigation-buttons button:hover::after {
+    animation:
+        navButtonShine 0.7s ease;
+}
+
+@keyframes navButtonShine {
+
+    from {
+        left: -120%;
+    }
+
+    to {
+        left: 140%;
+    }
+}
+
+.interview-test .navigation-buttons button:hover {
+    transform:
+        translateY(-3px)
+        scale(1.02);
+
+    box-shadow:
+        0 8px 18px rgba(37, 99, 235, 0.18);
+}
+
+.interview-test .navigation-buttons #submitBtn:hover {
+    box-shadow:
+        0 8px 18px rgba(22, 163, 74, 0.22);
+}
+
+
+/* =========================================================
+   QUESTION NAVIGATOR
+========================================================= */
+
+.interview-container .question-navigator {
+    background: rgba(255, 255, 255, 0.86);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    animation:
+        navigatorEnter 0.8s ease-out 1.05s both;
+}
+
+@keyframes navigatorEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   QUESTION NUMBER BUTTONS
+========================================================= */
+
+#questionNumbers button {
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+#questionNumbers button:hover {
+    background: #eef4ff;
+
+    border-color: #93c5fd;
+
+    color: #2563eb;
+
+    transform:
+        translateY(-3px)
+        scale(1.05);
+
+    box-shadow:
+        0 5px 12px rgba(37, 99, 235, 0.12);
+}
+
+#questionNumbers button.answered-question {
+    box-shadow:
+        0 4px 10px rgba(22, 163, 74, 0.15);
+
+    animation:
+        answeredPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes answeredPulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 4px 10px rgba(22, 163, 74, 0.12);
+    }
+
+    50% {
+        box-shadow:
+            0 5px 16px rgba(22, 163, 74, 0.25);
+    }
+}
+
+#questionNumbers button.current-question {
+    box-shadow:
+        0 0 0 4px rgba(37, 99, 235, 0.10),
+        0 7px 18px rgba(37, 99, 235, 0.20);
+
+    animation:
+        currentQuestionPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes currentQuestionPulse {
+
+    0%,
+    100% {
+        transform: scale(1.05);
+    }
+
+    50% {
+        transform: scale(1.10);
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE ORBS
+========================================================= */
+
+@media (max-width: 768px) {
+
+    body::before {
+        width: 280px;
+        height: 280px;
+
+        top: -100px;
+        left: -100px;
+    }
+
+    body::after {
+        width: 300px;
+        height: 300px;
+
+        right: -110px;
+        bottom: -110px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}

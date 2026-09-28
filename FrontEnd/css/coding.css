@@ -1513,5 +1513,1263 @@ body {
     }
 }
 
+/* =========================================================
+   PREPCONNECT CODING - ADVANCED UI ANIMATIONS
+========================================================= */
 
+/* =========================
+   ANIMATED BACKGROUND
+========================= */
+
+body {
+    position: relative;
+    overflow-x: hidden;
+
+    background:
+        radial-gradient(
+            circle at 8% 10%,
+            rgba(37, 99, 235, 0.12),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 92% 88%,
+            rgba(124, 58, 237, 0.12),
+            transparent 28%
+        ),
+        linear-gradient(
+            135deg,
+            #f3f6ff,
+            #f8fafc,
+            #eef4ff
+        );
+
+    background-size: 160% 160%;
+
+    animation: codingBackground 16s ease infinite;
+}
+
+@keyframes codingBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* =========================
+   MAIN CONTAINERS
+========================= */
+
+.language-section,
+.test-section,
+.result-section {
+    animation: sectionEnter 0.8s ease-out;
+}
+
+@keyframes sectionEnter {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   PAGE HEADING
+========================= */
+
+.page-heading h1 {
+    animation: codingTitle 0.8s ease-out;
+}
+
+@keyframes codingTitle {
+    from {
+        opacity: 0;
+        transform: translateY(-18px);
+        letter-spacing: -3px;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        letter-spacing: -1px;
+    }
+}
+
+.page-heading p {
+    animation: codingSubtitle 0.8s ease-out 0.15s both;
+}
+
+@keyframes codingSubtitle {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   LANGUAGE CARDS
+========================= */
+
+.language-card {
+    overflow: hidden;
+
+    animation: languageCardEnter 0.6s ease-out both;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease,
+        background 0.35s ease;
+}
+
+.language-card:nth-child(1) {
+    animation-delay: 0.10s;
+}
+
+.language-card:nth-child(2) {
+    animation-delay: 0.18s;
+}
+
+.language-card:nth-child(3) {
+    animation-delay: 0.26s;
+}
+
+.language-card:nth-child(4) {
+    animation-delay: 0.34s;
+}
+
+.language-card:nth-child(5) {
+    animation-delay: 0.42s;
+}
+
+.language-card:nth-child(6) {
+    animation-delay: 0.50s;
+}
+
+@keyframes languageCardEnter {
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.language-card::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.65),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+}
+
+.language-card:hover::after {
+    animation: cardShine 0.8s ease;
+}
+
+@keyframes cardShine {
+    from {
+        left: -120%;
+    }
+
+    to {
+        left: 140%;
+    }
+}
+
+.language-card:hover {
+    transform: translateY(-8px) scale(1.015);
+
+    box-shadow:
+        0 18px 40px rgba(37, 99, 235, 0.15);
+}
+
+.language-card:active {
+    transform: translateY(-2px) scale(0.99);
+}
+
+
+/* =========================
+   LANGUAGE ICON
+========================= */
+
+.language-icon {
+    position: relative;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.language-card:hover .language-icon {
+    transform: scale(1.12) rotate(-3deg);
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.15);
+
+    animation: iconFloat 1.5s ease-in-out infinite;
+}
+
+@keyframes iconFloat {
+    0%,
+    100% {
+        transform: scale(1.12) rotate(-3deg) translateY(0);
+    }
+
+    50% {
+        transform: scale(1.12) rotate(3deg) translateY(-4px);
+    }
+}
+
+
+/* =========================
+   TOP BACK BUTTON
+========================= */
+
+.back-btn {
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.back-btn::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.35),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+}
+
+.back-btn:hover::before {
+    animation: backButtonShine 0.7s ease;
+}
+
+@keyframes backButtonShine {
+    from {
+        left: -120%;
+    }
+
+    to {
+        left: 140%;
+    }
+}
+
+
+/* =========================
+   TEST HEADER
+========================= */
+
+.test-header {
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        box-shadow 0.35s ease,
+        transform 0.35s ease;
+}
+
+.test-header::after {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    background: rgba(37, 99, 235, 0.08);
+
+    filter: blur(35px);
+
+    right: -70px;
+    top: -100px;
+
+    animation: headerGlow 6s ease-in-out infinite alternate;
+}
+
+@keyframes headerGlow {
+    from {
+        transform: translate(0, 0) scale(1);
+    }
+
+    to {
+        transform: translate(-50px, 60px) scale(1.3);
+    }
+}
+
+.test-header:hover {
+    box-shadow:
+        0 10px 30px rgba(37, 99, 235, 0.08);
+}
+
+.test-header h1 {
+    animation: headerTitleEnter 0.7s ease-out;
+}
+
+@keyframes headerTitleEnter {
+    from {
+        opacity: 0;
+        transform: translateX(-18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================
+   TEST INFO BOXES
+========================= */
+
+.info-box {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-4px);
+
+    border-color: #93c5fd;
+
+    box-shadow:
+        0 8px 18px rgba(37, 99, 235, 0.10);
+}
+
+.info-box strong {
+    animation: infoNumberPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes infoNumberPulse {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.04);
+    }
+}
+
+
+/* =========================
+   NAVIGATOR
+========================= */
+
+.navigator {
+    animation: navigatorEnter 0.7s ease-out 0.2s both;
+}
+
+@keyframes navigatorEnter {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.question-navigator button {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.question-navigator button:hover {
+    transform: translateY(-3px) scale(1.06);
+
+    box-shadow:
+        0 5px 14px rgba(37, 99, 235, 0.12);
+}
+
+.question-navigator button.active {
+    animation: activeQuestionPulse 2s ease-in-out infinite;
+}
+
+@keyframes activeQuestionPulse {
+    0%,
+    100% {
+        box-shadow:
+            0 5px 12px rgba(37, 99, 235, 0.25);
+    }
+
+    50% {
+        box-shadow:
+            0 0 18px rgba(37, 99, 235, 0.42);
+    }
+}
+
+.question-navigator button.answered {
+    animation: answeredQuestionPop 0.4s ease;
+}
+
+@keyframes answeredQuestionPop {
+    0% {
+        transform: scale(0.8);
+    }
+
+    70% {
+        transform: scale(1.12);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* =========================
+   QUESTION AREA
+========================= */
+
+.question-area {
+    animation: questionAreaEnter 0.7s ease-out 0.25s both;
+}
+
+@keyframes questionAreaEnter {
+    from {
+        opacity: 0;
+        transform: translateX(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================
+   QUESTION CARD
+========================= */
+
+.question-card {
+    position: relative;
+    overflow: hidden;
+
+    animation: questionCardEnter 0.65s ease-out;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+@keyframes questionCardEnter {
+    from {
+        opacity: 0;
+        transform: translateY(18px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.question-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    right: -90px;
+    bottom: -90px;
+
+    border-radius: 50%;
+
+    background: rgba(37, 99, 235, 0.07);
+
+    filter: blur(35px);
+
+    animation: questionGlow 7s ease-in-out infinite alternate;
+}
+
+@keyframes questionGlow {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.4);
+    }
+}
+
+.question-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(37, 99, 235, 0.09);
+}
+
+.question-card h2 {
+    position: relative;
+    z-index: 1;
+
+    animation: questionTextEnter 0.6s ease-out 0.15s both;
+}
+
+@keyframes questionTextEnter {
+    from {
+        opacity: 0;
+        transform: translateX(-12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================
+   OPTIONS
+========================= */
+
+.options-section label {
+    position: relative;
+    overflow: hidden;
+
+    animation: optionEnter 0.45s ease-out both;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+.options-section label:nth-child(1) {
+    animation-delay: 0.08s;
+}
+
+.options-section label:nth-child(2) {
+    animation-delay: 0.16s;
+}
+
+.options-section label:nth-child(3) {
+    animation-delay: 0.24s;
+}
+
+.options-section label:nth-child(4) {
+    animation-delay: 0.32s;
+}
+
+@keyframes optionEnter {
+    from {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.options-section label::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 60%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.7),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+}
+
+.options-section label:hover::after {
+    animation: optionShine 0.7s ease;
+}
+
+@keyframes optionShine {
+    from {
+        left: -120%;
+    }
+
+    to {
+        left: 140%;
+    }
+}
+
+.options-section label:hover {
+    transform: translateX(6px);
+
+    box-shadow:
+        0 7px 18px rgba(37, 99, 235, 0.09);
+}
+
+.options-section label:has(input[type="radio"]:checked) {
+    background: #eff6ff;
+
+    border-color: #60a5fa;
+
+    transform: translateX(6px) scale(1.01);
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.12);
+
+    animation: selectedOptionPop 0.35s ease;
+}
+
+@keyframes selectedOptionPop {
+    0% {
+        transform: translateX(6px) scale(0.98);
+    }
+
+    60% {
+        transform: translateX(6px) scale(1.02);
+    }
+
+    100% {
+        transform: translateX(6px) scale(1.01);
+    }
+}
+
+
+/* =========================
+   QUESTION BUTTONS
+========================= */
+
+.secondary-btn,
+.primary-btn,
+.submit-test-btn,
+.dashboard-result-btn,
+.retry-btn {
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.primary-btn::before,
+.submit-test-btn::before,
+.dashboard-result-btn::before,
+.retry-btn::before,
+.secondary-btn::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 65%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.35),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+}
+
+.primary-btn:hover::before,
+.submit-test-btn:hover::before,
+.dashboard-result-btn:hover::before,
+.retry-btn:hover::before,
+.secondary-btn:hover::before {
+    animation: buttonShine 0.7s ease;
+}
+
+@keyframes buttonShine {
+    from {
+        left: -120%;
+    }
+
+    to {
+        left: 140%;
+    }
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.submit-test-btn:hover,
+.dashboard-result-btn:hover,
+.retry-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+}
+
+
+/* =========================
+   SUBMIT SECTION
+========================= */
+
+.submit-test-section {
+    position: relative;
+    overflow: hidden;
+
+    animation: submitSectionEnter 0.7s ease-out 0.3s both;
+}
+
+@keyframes submitSectionEnter {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.submit-test-btn {
+    animation: submitButtonPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes submitButtonPulse {
+    0%,
+    100% {
+        box-shadow:
+            0 7px 15px rgba(22, 163, 74, 0.22);
+    }
+
+    50% {
+        box-shadow:
+            0 0 22px rgba(22, 163, 74, 0.35);
+    }
+}
+
+
+/* =========================
+   RESULT SECTION
+========================= */
+
+.result-card {
+    animation: resultCardEnter 0.8s ease-out;
+}
+
+@keyframes resultCardEnter {
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+/* =========================
+   RESULT ICON
+========================= */
+
+.result-icon {
+    animation: resultIconFloat 3s ease-in-out infinite;
+
+    box-shadow:
+        0 8px 25px rgba(37, 99, 235, 0.10);
+}
+
+@keyframes resultIconFloat {
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-6px) scale(1.04);
+    }
+}
+
+
+/* =========================
+   SCORE CIRCLE
+========================= */
+
+.score-circle {
+    animation: scoreCircleGlow 3s ease-in-out infinite;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.score-circle:hover {
+    transform: scale(1.05);
+
+    box-shadow:
+        0 15px 40px rgba(37, 99, 235, 0.20);
+}
+
+@keyframes scoreCircleGlow {
+    0%,
+    100% {
+        box-shadow:
+            0 10px 30px rgba(37, 99, 235, 0.14);
+    }
+
+    50% {
+        box-shadow:
+            0 0 28px rgba(37, 99, 235, 0.28);
+    }
+}
+
+.score-circle strong {
+    animation: scoreNumberPulse 2s ease-in-out infinite;
+}
+
+@keyframes scoreNumberPulse {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.06);
+    }
+}
+
+
+/* =========================
+   RESULT STATS
+========================= */
+
+.result-stat {
+    animation: resultStatEnter 0.5s ease-out both;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.result-stat:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.result-stat:nth-child(2) {
+    animation-delay: 0.18s;
+}
+
+.result-stat:nth-child(3) {
+    animation-delay: 0.26s;
+}
+
+.result-stat:nth-child(4) {
+    animation-delay: 0.34s;
+}
+
+@keyframes resultStatEnter {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.result-stat:hover {
+    transform: translateY(-5px);
+
+    border-color: #93c5fd;
+
+    box-shadow:
+        0 10px 22px rgba(37, 99, 235, 0.10);
+}
+
+.result-stat strong {
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.result-stat:hover strong {
+    color: #2563eb;
+}
+
+
+/* =========================
+   LOGOUT
+========================= */
+
+.logout-btn {
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.logout-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+
+    box-shadow:
+        0 8px 18px rgba(220, 53, 69, 0.28);
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+/* =========================================================
+   PREPCONNECT CODING - PREMIUM ANIMATED BACKGROUND
+========================================================= */
+
+body {
+    position: relative;
+    overflow-x: hidden;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(59, 130, 246, 0.18),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 85% 25%,
+            rgba(139, 92, 246, 0.16),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(14, 165, 233, 0.14),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #eef4ff 0%,
+            #f8faff 45%,
+            #f0f4ff 100%
+        );
+
+    background-size:
+        100% 100%,
+        100% 100%,
+        100% 100%,
+        300% 300%;
+
+    animation: codingBackgroundMove 12s ease-in-out infinite;
+}
+
+@keyframes codingBackgroundMove {
+
+    0% {
+        background-position:
+            0% 0%,
+            100% 0%,
+            50% 100%,
+            0% 50%;
+    }
+
+    25% {
+        background-position:
+            25% 20%,
+            75% 30%,
+            40% 80%,
+            50% 100%;
+    }
+
+    50% {
+        background-position:
+            40% 40%,
+            60% 20%,
+            60% 60%,
+            100% 50%;
+    }
+
+    75% {
+        background-position:
+            20% 60%,
+            80% 50%,
+            30% 90%,
+            50% 0%;
+    }
+
+    100% {
+        background-position:
+            0% 0%,
+            100% 0%,
+            50% 100%,
+            0% 50%;
+    }
+}
+
+
+/* =========================================================
+   LARGE FLOATING GLOW ORBS
+========================================================= */
+
+body::before {
+    content: "";
+
+    position: fixed;
+
+    width: 420px;
+    height: 420px;
+
+    top: -150px;
+    left: -120px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(37, 99, 235, 0.24) 0%,
+            rgba(59, 130, 246, 0.12) 35%,
+            transparent 70%
+        );
+
+    filter: blur(25px);
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    animation:
+        codingOrbOne 10s ease-in-out infinite alternate;
+}
+
+
+body::after {
+    content: "";
+
+    position: fixed;
+
+    width: 430px;
+    height: 430px;
+
+    right: -150px;
+    bottom: -150px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(124, 58, 237, 0.22) 0%,
+            rgba(139, 92, 246, 0.11) 35%,
+            transparent 70%
+        );
+
+    filter: blur(25px);
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    animation:
+        codingOrbTwo 12s ease-in-out infinite alternate;
+}
+
+
+@keyframes codingOrbOne {
+
+    0% {
+        transform:
+            translate(0, 0)
+            scale(1);
+    }
+
+    30% {
+        transform:
+            translate(180px, 80px)
+            scale(1.15);
+    }
+
+    60% {
+        transform:
+            translate(80px, 230px)
+            scale(0.9);
+    }
+
+    100% {
+        transform:
+            translate(300px, 140px)
+            scale(1.2);
+    }
+}
+
+
+@keyframes codingOrbTwo {
+
+    0% {
+        transform:
+            translate(0, 0)
+            scale(1);
+    }
+
+    30% {
+        transform:
+            translate(-180px, -100px)
+            scale(1.15);
+    }
+
+    60% {
+        transform:
+            translate(-80px, -250px)
+            scale(0.9);
+    }
+
+    100% {
+        transform:
+            translate(-300px, -150px)
+            scale(1.2);
+    }
+}
+
+
+/* =========================================================
+   CONTENT ABOVE BACKGROUND
+========================================================= */
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================================
+   GLASS EFFECT
+========================================================= */
+
+.language-section,
+.test-section,
+.result-section {
+    background: rgba(255, 255, 255, 0.86);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    box-shadow:
+        0 15px 45px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =========================================================
+   GLASS NAVIGATOR
+========================================================= */
+
+.navigator {
+    background: rgba(248, 250, 252, 0.78);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
+/* =========================================================
+   GLASS TEST HEADER
+========================================================= */
+
+.test-header {
+    background: rgba(255, 255, 255, 0.78);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    body,
+    body::before,
+    body::after {
+        animation: none !important;
+    }
+}
 

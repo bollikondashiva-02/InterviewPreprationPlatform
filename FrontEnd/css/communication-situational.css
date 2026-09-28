@@ -666,3 +666,1014 @@ body {
 
     color: #ff7a00;
 }
+/* =========================================================
+   PREPCONNECT SITUATIONAL - PREMIUM ANIMATIONS
+========================================================= */
+
+/* =========================================================
+   ANIMATED BACKGROUND
+========================================================= */
+
+body {
+    position: relative;
+    overflow-x: hidden;
+
+    background:
+        radial-gradient(
+            circle at 12% 18%,
+            rgba(255, 122, 0, 0.18),
+            transparent 27%
+        ),
+        radial-gradient(
+            circle at 88% 22%,
+            rgba(124, 58, 237, 0.16),
+            transparent 27%
+        ),
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(37, 99, 235, 0.12),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #fff7ef,
+            #f8faff,
+            #f3f6ff
+        );
+
+    background-size:
+        100% 100%,
+        100% 100%,
+        100% 100%,
+        300% 300%;
+
+    animation: situationalBackground 14s ease-in-out infinite;
+}
+
+@keyframes situationalBackground {
+
+    0% {
+        background-position:
+            0% 0%,
+            100% 0%,
+            50% 100%,
+            0% 50%;
+    }
+
+    25% {
+        background-position:
+            25% 20%,
+            75% 30%,
+            40% 80%,
+            50% 100%;
+    }
+
+    50% {
+        background-position:
+            40% 40%,
+            60% 20%,
+            60% 60%,
+            100% 50%;
+    }
+
+    75% {
+        background-position:
+            20% 60%,
+            80% 50%,
+            30% 90%,
+            50% 0%;
+    }
+
+    100% {
+        background-position:
+            0% 0%,
+            100% 0%,
+            50% 100%,
+            0% 50%;
+    }
+}
+
+
+/* =========================================================
+   FLOATING BACKGROUND ORBS
+========================================================= */
+
+body::before {
+    content: "";
+
+    position: fixed;
+
+    width: 430px;
+    height: 430px;
+
+    top: -160px;
+    left: -120px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 122, 0, 0.25) 0%,
+            rgba(255, 159, 67, 0.12) 35%,
+            transparent 70%
+        );
+
+    filter: blur(25px);
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    animation:
+        situationalOrbOne 10s ease-in-out infinite alternate;
+}
+
+
+body::after {
+    content: "";
+
+    position: fixed;
+
+    width: 450px;
+    height: 450px;
+
+    right: -160px;
+    bottom: -160px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(124, 58, 237, 0.23) 0%,
+            rgba(139, 92, 246, 0.11) 35%,
+            transparent 70%
+        );
+
+    filter: blur(25px);
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    animation:
+        situationalOrbTwo 12s ease-in-out infinite alternate;
+}
+
+
+@keyframes situationalOrbOne {
+
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    30% {
+        transform: translate(180px, 80px) scale(1.15);
+    }
+
+    60% {
+        transform: translate(80px, 230px) scale(0.9);
+    }
+
+    100% {
+        transform: translate(300px, 140px) scale(1.2);
+    }
+}
+
+
+@keyframes situationalOrbTwo {
+
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    30% {
+        transform: translate(-180px, -100px) scale(1.15);
+    }
+
+    60% {
+        transform: translate(-80px, -250px) scale(0.9);
+    }
+
+    100% {
+        transform: translate(-300px, -150px) scale(1.2);
+    }
+}
+
+
+/* =========================================================
+   KEEP CONTENT ABOVE BACKGROUND
+========================================================= */
+
+.communication-header,
+.communication-container {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.communication-header {
+    background: rgba(255, 255, 255, 0.82);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    box-shadow:
+        0 8px 30px rgba(15, 23, 42, 0.08);
+
+    animation: situationalHeaderIn 0.8s ease both;
+}
+
+
+@keyframes situationalHeaderIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.header-title h1 {
+    animation: situationalTitleIn 0.9s ease both;
+}
+
+
+@keyframes situationalTitleIn {
+
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+        letter-spacing: 3px;
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+        letter-spacing: normal;
+    }
+}
+
+
+/* =========================================================
+   HEADER BUTTONS
+========================================================= */
+
+.communication-header button {
+    position: relative;
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 15px rgba(255, 122, 0, 0.18);
+}
+
+
+.communication-header button::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        110deg,
+        transparent,
+        rgba(255, 255, 255, 0.45),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.6s ease;
+}
+
+
+.communication-header button:hover::before {
+    left: 140%;
+}
+
+
+.communication-header button:hover {
+    transform: translateY(-3px) scale(1.03);
+
+    box-shadow:
+        0 8px 22px rgba(255, 122, 0, 0.28);
+}
+
+
+/* =========================================================
+   TEST INFORMATION CARDS
+========================================================= */
+
+.test-info div {
+    position: relative;
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.84);
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    animation: situationalCardIn 0.7s ease both;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.test-info div:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+
+.test-info div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+
+@keyframes situationalCardIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.test-info div::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        110deg,
+        transparent,
+        rgba(255, 255, 255, 0.7),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.7s ease;
+}
+
+
+.test-info div:hover::before {
+    left: 140%;
+}
+
+
+.test-info div:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(255, 122, 0, 0.3);
+
+    box-shadow:
+        0 12px 30px rgba(15, 23, 42, 0.11);
+}
+
+
+.test-info span {
+    transition: color 0.3s ease;
+}
+
+
+.test-info div:hover span {
+    color: #ff7a00;
+}
+
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.progress-section {
+    animation: situationalProgressIn 0.8s ease both;
+    animation-delay: 0.3s;
+}
+
+
+@keyframes situationalProgressIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.progress-bar {
+    position: relative;
+
+    box-shadow:
+        inset 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+
+#progressBar {
+    position: relative;
+
+    background: linear-gradient(
+        90deg,
+        #ff7a00,
+        #ff9d43,
+        #ff7a00
+    );
+
+    background-size: 200% 100%;
+
+    animation:
+        progressGradient 2s linear infinite;
+}
+
+
+#progressBar::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 60%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.7),
+        transparent
+    );
+
+    animation: progressShine 2s ease-in-out infinite;
+}
+
+
+@keyframes progressGradient {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+
+@keyframes progressShine {
+
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 150%;
+    }
+}
+
+
+/* =========================================================
+   QUESTION SECTION
+========================================================= */
+
+.question-section {
+    position: relative;
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.86);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    animation: questionSectionIn 0.8s ease both;
+    animation-delay: 0.4s;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+@keyframes questionSectionIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+.question-section:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 15px 35px rgba(15, 23, 42, 0.10);
+}
+
+
+/* =========================================================
+   DIFFICULTY BADGE
+========================================================= */
+
+.difficulty {
+    animation: difficultyPulse 2.5s ease-in-out infinite;
+
+    box-shadow:
+        0 4px 12px rgba(255, 122, 0, 0.12);
+}
+
+
+@keyframes difficultyPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.04);
+    }
+}
+
+
+/* =========================================================
+   QUESTION TEXT
+========================================================= */
+
+#questionNumber {
+    animation: questionNumberIn 0.5s ease both;
+}
+
+
+@keyframes questionNumberIn {
+
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+#questionText {
+    animation: questionTextIn 0.7s ease both;
+}
+
+
+@keyframes questionTextIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   SPEAKING SECTION
+========================================================= */
+
+.speaking-section {
+    position: relative;
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.86);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    animation: speakingSectionIn 0.8s ease both;
+    animation-delay: 0.5s;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+@keyframes speakingSectionIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.speaking-section:hover {
+    box-shadow:
+        0 15px 35px rgba(15, 23, 42, 0.10);
+}
+
+
+/* =========================================================
+   SPEAKING BUTTONS
+========================================================= */
+
+.speaking-section button,
+#analyzeBtn {
+    position: relative;
+    overflow: hidden;
+
+    box-shadow:
+        0 6px 15px rgba(255, 122, 0, 0.15);
+}
+
+
+.speaking-section button::before,
+#analyzeBtn::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 65%;
+    height: 100%;
+
+    background: linear-gradient(
+        110deg,
+        transparent,
+        rgba(255, 255, 255, 0.45),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.6s ease;
+}
+
+
+.speaking-section button:hover::before,
+#analyzeBtn:hover::before {
+    left: 140%;
+}
+
+
+.speaking-section button:hover,
+#analyzeBtn:hover {
+    transform: translateY(-3px) scale(1.02);
+
+    box-shadow:
+        0 10px 24px rgba(255, 122, 0, 0.25);
+}
+
+
+#stopSpeakingBtn {
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+
+#stopSpeakingBtn:hover {
+    box-shadow:
+        0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================================
+   TRANSCRIPT
+========================================================= */
+
+#transcript {
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+
+#transcript:hover {
+    border-color: #ffb067;
+
+    background: #fffdfb;
+
+    box-shadow:
+        0 6px 18px rgba(255, 122, 0, 0.08);
+}
+
+
+#transcript:focus {
+    border-color: #ff7a00;
+
+    box-shadow:
+        0 0 0 4px rgba(255, 122, 0, 0.12);
+}
+
+
+/* =========================================================
+   ANALYSIS RESULT
+========================================================= */
+
+#analysisResult {
+    position: relative;
+    overflow: hidden;
+
+    animation: analysisResultIn 0.6s ease both;
+
+    box-shadow:
+        0 8px 25px rgba(255, 122, 0, 0.08);
+}
+
+
+@keyframes analysisResultIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+#analysisResult::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        110deg,
+        transparent,
+        rgba(255, 255, 255, 0.7),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    animation: analysisShine 3s ease-in-out infinite;
+}
+
+
+@keyframes analysisShine {
+
+    0% {
+        left: -100%;
+    }
+
+    45%,
+    100% {
+        left: 150%;
+    }
+}
+
+
+.analysis-score {
+    animation: scorePulse 2s ease-in-out infinite;
+}
+
+
+@keyframes scorePulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+
+/* =========================================================
+   NAVIGATION BUTTONS
+========================================================= */
+
+.navigation-buttons {
+    animation: navigationIn 0.7s ease both;
+    animation-delay: 0.6s;
+}
+
+
+@keyframes navigationIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.navigation-buttons button {
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.navigation-buttons button:hover:not(:disabled) {
+    transform: translateY(-3px) scale(1.02);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.navigation-buttons button:disabled {
+    opacity: 0.65;
+}
+
+
+/* =========================================================
+   QUESTION NAVIGATOR
+========================================================= */
+
+.question-navigator {
+    position: relative;
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.84);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    animation: navigatorIn 0.8s ease both;
+    animation-delay: 0.7s;
+}
+
+
+@keyframes navigatorIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.navigator-button {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.navigator-button:hover {
+    transform: translateY(-3px) scale(1.05);
+
+    box-shadow:
+        0 6px 15px rgba(255, 122, 0, 0.12);
+}
+
+
+.navigator-button.active {
+    animation:
+        activeQuestionPulse 1.8s ease-in-out infinite;
+}
+
+
+@keyframes activeQuestionPulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 0 rgba(255, 122, 0, 0);
+    }
+
+    50% {
+        box-shadow:
+            0 0 15px rgba(255, 122, 0, 0.35);
+    }
+}
+
+
+.navigator-button.answered {
+    animation: answeredQuestionPop 0.35s ease both;
+}
+
+
+@keyframes answeredQuestionPop {
+
+    0% {
+        transform: scale(0.85);
+    }
+
+    70% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    body::before,
+    body::after {
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    body::before,
+    body::after {
+        width: 240px;
+        height: 240px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+
+}

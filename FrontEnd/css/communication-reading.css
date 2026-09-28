@@ -358,4 +358,1027 @@ body {
         margin-left: 0;
     }
 }
+/* =========================================================
+   PREPCONNECT READING - PREMIUM ANIMATIONS
+========================================================= */
+
+/* =========================================================
+   ANIMATED BACKGROUND
+========================================================= */
+
+body {
+    position: relative;
+    overflow-x: hidden;
+
+    background:
+        radial-gradient(
+            circle at 12% 18%,
+            rgba(37, 99, 235, 0.18),
+            transparent 27%
+        ),
+        radial-gradient(
+            circle at 88% 25%,
+            rgba(124, 58, 237, 0.16),
+            transparent 27%
+        ),
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(16, 185, 129, 0.12),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #eef4ff,
+            #f8faff,
+            #f1f5ff
+        );
+
+    background-size:
+        100% 100%,
+        100% 100%,
+        100% 100%,
+        300% 300%;
+
+    animation:
+        readingBackground 14s ease-in-out infinite;
+}
+
+@keyframes readingBackground {
+
+    0% {
+        background-position:
+            0% 0%,
+            100% 0%,
+            50% 100%,
+            0% 50%;
+    }
+
+    25% {
+        background-position:
+            25% 20%,
+            75% 30%,
+            40% 80%,
+            50% 100%;
+    }
+
+    50% {
+        background-position:
+            45% 40%,
+            55% 20%,
+            60% 60%,
+            100% 50%;
+    }
+
+    75% {
+        background-position:
+            20% 65%,
+            80% 55%,
+            30% 90%,
+            50% 0%;
+    }
+
+    100% {
+        background-position:
+            0% 0%,
+            100% 0%,
+            50% 100%,
+            0% 50%;
+    }
+}
+
+
+/* =========================================================
+   FLOATING BLUE ORB
+========================================================= */
+
+body::before {
+    content: "";
+
+    position: fixed;
+
+    width: 430px;
+    height: 430px;
+
+    top: -160px;
+    left: -130px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(37, 99, 235, 0.26) 0%,
+            rgba(59, 130, 246, 0.12) 38%,
+            transparent 72%
+        );
+
+    filter: blur(25px);
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    animation:
+        readingBlueOrb 10s ease-in-out infinite alternate;
+}
+
+@keyframes readingBlueOrb {
+
+    0% {
+        transform:
+            translate(0, 0)
+            scale(1);
+    }
+
+    30% {
+        transform:
+            translate(180px, 80px)
+            scale(1.15);
+    }
+
+    60% {
+        transform:
+            translate(80px, 240px)
+            scale(0.9);
+    }
+
+    100% {
+        transform:
+            translate(320px, 150px)
+            scale(1.2);
+    }
+}
+
+
+/* =========================================================
+   FLOATING PURPLE ORB
+========================================================= */
+
+body::after {
+    content: "";
+
+    position: fixed;
+
+    width: 440px;
+    height: 440px;
+
+    right: -160px;
+    bottom: -160px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(124, 58, 237, 0.24) 0%,
+            rgba(139, 92, 246, 0.11) 38%,
+            transparent 72%
+        );
+
+    filter: blur(25px);
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    animation:
+        readingPurpleOrb 12s ease-in-out infinite alternate;
+}
+
+@keyframes readingPurpleOrb {
+
+    0% {
+        transform:
+            translate(0, 0)
+            scale(1);
+    }
+
+    30% {
+        transform:
+            translate(-180px, -100px)
+            scale(1.15);
+    }
+
+    60% {
+        transform:
+            translate(-80px, -250px)
+            scale(0.9);
+    }
+
+    100% {
+        transform:
+            translate(-320px, -150px)
+            scale(1.2);
+    }
+}
+
+
+/* =========================================================
+   CONTENT ABOVE BACKGROUND
+========================================================= */
+
+.reading-header,
+.reading-container {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================================
+   HEADER GLASS EFFECT
+========================================================= */
+
+.reading-header {
+    background: rgba(255, 255, 255, 0.86);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    box-shadow:
+        0 5px 25px rgba(15, 23, 42, 0.08);
+
+    animation:
+        readingHeaderEnter 0.7s ease-out;
+}
+
+@keyframes readingHeaderEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(-18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   HEADER TITLE
+========================================================= */
+
+.header-center h1 {
+    animation:
+        readingTitleEnter 0.8s ease-out 0.15s both;
+}
+
+.header-center p {
+    animation:
+        readingSubtitleEnter 0.8s ease-out 0.3s both;
+}
+
+@keyframes readingTitleEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes readingSubtitleEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.back-btn,
+.logout-btn {
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+.back-btn::after,
+.logout-btn::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 65%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.55),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+}
+
+.back-btn:hover::after,
+.logout-btn:hover::after {
+    animation:
+        readingButtonShine 0.7s ease;
+}
+
+@keyframes readingButtonShine {
+
+    from {
+        left: -120%;
+    }
+
+    to {
+        left: 140%;
+    }
+}
+
+.back-btn:hover {
+    transform:
+        translateY(-2px)
+        translateX(-3px);
+
+    box-shadow:
+        0 8px 18px rgba(37, 99, 235, 0.15);
+}
+
+.logout-btn:hover {
+    transform:
+        translateY(-2px)
+        scale(1.03);
+
+    box-shadow:
+        0 8px 18px rgba(220, 53, 69, 0.20);
+}
+
+
+/* =========================================================
+   INFORMATION CARDS
+========================================================= */
+
+.info-card {
+    position: relative;
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.86);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    animation:
+        readingInfoEnter 0.65s ease-out both;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.info-card:nth-child(1) {
+    animation-delay: 0.15s;
+}
+
+.info-card:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.info-card:nth-child(3) {
+    animation-delay: 0.35s;
+}
+
+@keyframes readingInfoEnter {
+
+    from {
+        opacity: 0;
+        transform:
+            translateY(20px)
+            scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+.info-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 14px 30px rgba(37, 99, 235, 0.12);
+}
+
+.info-card span {
+    transition:
+        transform 0.3s ease;
+}
+
+.info-card:hover span {
+    animation:
+        readingEmojiFloat 1.5s ease-in-out infinite;
+}
+
+@keyframes readingEmojiFloat {
+
+    0%,
+    100% {
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+    50% {
+        transform:
+            translateY(-5px)
+            scale(1.12);
+    }
+}
+
+
+/* =========================================================
+   PROGRESS SECTION
+========================================================= */
+
+.progress-section {
+    background: rgba(255, 255, 255, 0.84);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    animation:
+        readingProgressEnter 0.7s ease-out 0.4s both;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.progress-section:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 28px rgba(37, 99, 235, 0.10);
+}
+
+@keyframes readingProgressEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   PROGRESS BAR
+========================================================= */
+
+.progress-bar {
+    position: relative;
+
+    box-shadow:
+        inset 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+
+#progressFill {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            #4f46e5,
+            #7c3aed
+        );
+
+    box-shadow:
+        0 0 12px rgba(79, 70, 229, 0.25);
+}
+
+#progressFill::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 60%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.65),
+            transparent
+        );
+
+    animation:
+        readingProgressShine 2s linear infinite;
+}
+
+@keyframes readingProgressShine {
+
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 150%;
+    }
+}
+
+
+/* =========================================================
+   READING TEST GLASS
+========================================================= */
+
+.reading-test {
+    background: rgba(255, 255, 255, 0.88);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    animation:
+        readingTestEnter 0.8s ease-out 0.5s both;
+
+    transition:
+        box-shadow 0.35s ease;
+}
+
+.reading-test:hover {
+    box-shadow:
+        0 15px 35px rgba(37, 99, 235, 0.09);
+}
+
+@keyframes readingTestEnter {
+
+    from {
+        opacity: 0;
+        transform:
+            translateY(22px)
+            scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+/* =========================================================
+   PASSAGE BOX
+========================================================= */
+
+.passage-box {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(248, 249, 255, 0.95),
+            rgba(238, 242, 255, 0.92)
+        );
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.passage-box:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(79, 70, 229, 0.10);
+}
+
+.passage-box::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 60%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.65),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+
+    pointer-events: none;
+}
+
+.passage-box:hover::after {
+    animation:
+        passageShine 0.8s ease;
+}
+
+@keyframes passageShine {
+
+    from {
+        left: -120%;
+    }
+
+    to {
+        left: 140%;
+    }
+}
+
+
+/* =========================================================
+   QUESTION
+========================================================= */
+
+.question-box {
+    animation:
+        readingQuestionEnter 0.6s ease-out 0.65s both;
+}
+
+@keyframes readingQuestionEnter {
+
+    from {
+        opacity: 0;
+        transform: translateX(-12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================================================
+   ANSWER OPTIONS
+========================================================= */
+
+.option {
+    position: relative;
+    overflow: hidden;
+
+    animation:
+        readingOptionEnter 0.5s ease-out both;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.option:nth-child(1) {
+    animation-delay: 0.7s;
+}
+
+.option:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+.option:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+.option:nth-child(4) {
+    animation-delay: 1s;
+}
+
+@keyframes readingOptionEnter {
+
+    from {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.option::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 60%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.55),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+
+    pointer-events: none;
+}
+
+.option:hover::after {
+    animation:
+        readingOptionShine 0.7s ease;
+}
+
+@keyframes readingOptionShine {
+
+    from {
+        left: -120%;
+    }
+
+    to {
+        left: 140%;
+    }
+}
+
+.option:hover {
+    background: #f5f7ff;
+
+    border-color: #818cf8;
+
+    transform:
+        translateY(-3px)
+        translateX(3px);
+
+    box-shadow:
+        0 7px 18px rgba(79, 70, 229, 0.10);
+}
+
+.option input {
+    accent-color: #4f46e5;
+
+    transition:
+        transform 0.2s ease;
+}
+
+.option:hover input {
+    transform: scale(1.12);
+}
+
+
+/* =========================================================
+   NAVIGATION BUTTONS
+========================================================= */
+
+.navigation-buttons {
+    animation:
+        readingNavigationEnter 0.7s ease-out 1s both;
+}
+
+@keyframes readingNavigationEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navigation-buttons button {
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.navigation-buttons button::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 60%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.5),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+}
+
+.navigation-buttons button:hover::after {
+    animation:
+        readingNavShine 0.7s ease;
+}
+
+@keyframes readingNavShine {
+
+    from {
+        left: -120%;
+    }
+
+    to {
+        left: 140%;
+    }
+}
+
+.navigation-buttons button:hover {
+    transform:
+        translateY(-3px)
+        scale(1.02);
+
+    box-shadow:
+        0 8px 18px rgba(79, 70, 229, 0.18);
+}
+
+#submitBtn:hover {
+    box-shadow:
+        0 8px 18px rgba(25, 135, 84, 0.22);
+}
+
+
+/* =========================================================
+   QUESTION NAVIGATOR
+========================================================= */
+
+.question-navigator {
+    background: rgba(255, 255, 255, 0.86);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    animation:
+        readingNavigatorEnter 0.8s ease-out 1.05s both;
+}
+
+@keyframes readingNavigatorEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   QUESTION NUMBER BUTTONS
+========================================================= */
+
+.question-number {
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.question-number:hover {
+    background: #eef2ff;
+
+    border-color: #818cf8;
+
+    color: #4f46e5;
+
+    transform:
+        translateY(-3px)
+        scale(1.05);
+
+    box-shadow:
+        0 5px 12px rgba(79, 70, 229, 0.12);
+}
+
+.question-number.active {
+    box-shadow:
+        0 0 0 4px rgba(79, 70, 229, 0.10),
+        0 7px 18px rgba(79, 70, 229, 0.20);
+
+    animation:
+        activeQuestionPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes activeQuestionPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+.question-number.answered {
+    box-shadow:
+        0 4px 12px rgba(25, 135, 84, 0.15);
+
+    animation:
+        answeredQuestionPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes answeredQuestionPulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 4px 10px rgba(25, 135, 84, 0.10);
+    }
+
+    50% {
+        box-shadow:
+            0 5px 16px rgba(25, 135, 84, 0.24);
+    }
+}
+
+
+/* =========================================================
+   MOBILE ORBS
+========================================================= */
+
+@media (max-width: 768px) {
+
+    body::before {
+        width: 280px;
+        height: 280px;
+
+        top: -100px;
+        left: -100px;
+    }
+
+    body::after {
+        width: 300px;
+        height: 300px;
+
+        right: -110px;
+        bottom: -110px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
 

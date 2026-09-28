@@ -677,6 +677,1022 @@ Responsive Design
 #questionNumbers {
     grid-template-columns: repeat(5, 1fr);
 }
+}
+/* =========================================================
+   PREPCONNECT VOCABULARY - PREMIUM ANIMATIONS
+========================================================= */
 
+/* =========================================================
+   ANIMATED BACKGROUND
+========================================================= */
+
+body {
+    position: relative;
+    overflow-x: hidden;
+
+    background:
+        radial-gradient(
+            circle at 12% 18%,
+            rgba(37, 99, 235, 0.18),
+            transparent 27%
+        ),
+        radial-gradient(
+            circle at 88% 22%,
+            rgba(124, 58, 237, 0.17),
+            transparent 27%
+        ),
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(16, 185, 129, 0.12),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #eef4ff,
+            #f8faff,
+            #f2f5ff
+        );
+
+    background-size:
+        100% 100%,
+        100% 100%,
+        100% 100%,
+        300% 300%;
+
+    animation:
+        vocabularyBackground 14s ease-in-out infinite;
+}
+
+
+@keyframes vocabularyBackground {
+
+    0% {
+        background-position:
+            0% 0%,
+            100% 0%,
+            50% 100%,
+            0% 50%;
+    }
+
+    25% {
+        background-position:
+            25% 20%,
+            75% 30%,
+            40% 80%,
+            50% 100%;
+    }
+
+    50% {
+        background-position:
+            40% 40%,
+            60% 20%,
+            60% 60%,
+            100% 50%;
+    }
+
+    75% {
+        background-position:
+            20% 60%,
+            80% 50%,
+            30% 90%,
+            50% 0%;
+    }
+
+    100% {
+        background-position:
+            0% 0%,
+            100% 0%,
+            50% 100%,
+            0% 50%;
+    }
+}
+
+
+/* =========================================================
+   FLOATING BACKGROUND GLOW
+========================================================= */
+
+body::before {
+    content: "";
+
+    position: fixed;
+
+    width: 430px;
+    height: 430px;
+
+    top: -150px;
+    left: -120px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(37, 99, 235, 0.25) 0%,
+            rgba(59, 130, 246, 0.12) 35%,
+            transparent 70%
+        );
+
+    filter: blur(25px);
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    animation:
+        vocabularyOrbOne 10s ease-in-out infinite alternate;
+}
+
+
+body::after {
+    content: "";
+
+    position: fixed;
+
+    width: 450px;
+    height: 450px;
+
+    right: -160px;
+    bottom: -160px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(124, 58, 237, 0.24) 0%,
+            rgba(139, 92, 246, 0.11) 35%,
+            transparent 70%
+        );
+
+    filter: blur(25px);
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    animation:
+        vocabularyOrbTwo 12s ease-in-out infinite alternate;
+}
+
+
+@keyframes vocabularyOrbOne {
+
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    30% {
+        transform: translate(180px, 80px) scale(1.15);
+    }
+
+    60% {
+        transform: translate(80px, 230px) scale(0.9);
+    }
+
+    100% {
+        transform: translate(300px, 140px) scale(1.2);
+    }
+}
+
+
+@keyframes vocabularyOrbTwo {
+
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    30% {
+        transform: translate(-180px, -100px) scale(1.15);
+    }
+
+    60% {
+        transform: translate(-80px, -250px) scale(0.9);
+    }
+
+    100% {
+        transform: translate(-300px, -150px) scale(1.2);
+    }
+}
+
+
+/* =========================================================
+   CONTENT ABOVE BACKGROUND
+========================================================= */
+
+.vocabulary-header,
+.vocabulary-container {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================================
+   HEADER ANIMATION
+========================================================= */
+
+.vocabulary-header {
+    background: rgba(255, 255, 255, 0.82);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    box-shadow:
+        0 8px 30px rgba(15, 23, 42, 0.08);
+
+    animation:
+        vocabularyHeaderIn 0.8s ease both;
+}
+
+
+@keyframes vocabularyHeaderIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.vocabulary-header .header-center h1 {
+    animation:
+        vocabularyTitleIn 0.9s ease both;
+}
+
+
+@keyframes vocabularyTitleIn {
+
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+        letter-spacing: 3px;
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+        letter-spacing: normal;
+    }
+}
+
+
+.vocabulary-header .header-center p {
+    animation:
+        vocabularySubtitleIn 1s ease both;
+}
+
+
+@keyframes vocabularySubtitleIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   HEADER BUTTONS
+========================================================= */
+
+.vocabulary-header .back-btn,
+.vocabulary-header .logout-btn {
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.vocabulary-header .back-btn::before,
+.vocabulary-header .logout-btn::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        110deg,
+        transparent,
+        rgba(255, 255, 255, 0.55),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.6s ease;
+}
+
+
+.vocabulary-header .back-btn:hover::before,
+.vocabulary-header .logout-btn:hover::before {
+    left: 140%;
+}
+
+
+.vocabulary-header .back-btn:hover,
+.vocabulary-header .logout-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+
+    box-shadow:
+        0 8px 20px rgba(15, 23, 42, 0.14);
+}
+
+
+/* =========================================================
+   INFORMATION CARDS
+========================================================= */
+
+.vocabulary-info .info-card {
+    position: relative;
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.84);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    animation:
+        vocabularyInfoIn 0.7s ease both;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.vocabulary-info .info-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+
+.vocabulary-info .info-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+
+.vocabulary-info .info-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+
+@keyframes vocabularyInfoIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+.vocabulary-info .info-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        110deg,
+        transparent,
+        rgba(255, 255, 255, 0.75),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.7s ease;
+}
+
+
+.vocabulary-info .info-card:hover::before {
+    left: 140%;
+}
+
+
+.vocabulary-info .info-card:hover {
+    transform: translateY(-7px);
+
+    border-color: rgba(37, 99, 235, 0.25);
+
+    box-shadow:
+        0 14px 30px rgba(15, 23, 42, 0.11);
+}
+
+
+.vocabulary-info .info-card span {
+    display: block;
+
+    animation:
+        vocabularyEmojiFloat 2.5s ease-in-out infinite;
+}
+
+
+@keyframes vocabularyEmojiFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
+.vocabulary-info .info-card p {
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease;
+}
+
+
+.vocabulary-info .info-card:hover p {
+    color: #2563eb;
+
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.progress-section {
+    background: rgba(255, 255, 255, 0.84);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    animation:
+        vocabularyProgressIn 0.8s ease both;
+
+    animation-delay: 0.35s;
+}
+
+
+@keyframes vocabularyProgressIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.progress-bar {
+    position: relative;
+
+    box-shadow:
+        inset 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+
+#progressFill {
+    position: relative;
+
+    background:
+        linear-gradient(
+            90deg,
+            #2563eb,
+            #4f8df7,
+            #2563eb
+        );
+
+    background-size: 200% 100%;
+
+    animation:
+        vocabularyProgressGradient 2s linear infinite;
+}
+
+
+#progressFill::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 60%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.75),
+        transparent
+    );
+
+    animation:
+        vocabularyProgressShine 2s ease-in-out infinite;
+}
+
+
+@keyframes vocabularyProgressGradient {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+
+@keyframes vocabularyProgressShine {
+
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 150%;
+    }
+}
+
+
+/* =========================================================
+   QUESTION BOX
+========================================================= */
+
+.vocabulary-test .question-box {
+    position: relative;
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.86);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    animation:
+        vocabularyQuestionIn 0.8s ease both;
+
+    animation-delay: 0.45s;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+@keyframes vocabularyQuestionIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+.vocabulary-test .question-box:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 16px 35px rgba(15, 23, 42, 0.10);
+}
+
+
+/* =========================================================
+   QUESTION TYPE
+========================================================= */
+
+.question-type {
+    animation:
+        vocabularyTypePulse 2.5s ease-in-out infinite;
+
+    box-shadow:
+        0 5px 15px rgba(67, 56, 202, 0.10);
+}
+
+
+@keyframes vocabularyTypePulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+
+/* =========================================================
+   QUESTION TEXT
+========================================================= */
+
+.vocabulary-test .question-box h2 {
+    animation:
+        vocabularyQuestionTextIn 0.7s ease both;
+}
+
+
+@keyframes vocabularyQuestionTextIn {
+
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================================================
+   ANSWER OPTIONS
+========================================================= */
+
+.vocabulary-test .option {
+    position: relative;
+    overflow: hidden;
+
+    animation:
+        vocabularyOptionIn 0.5s ease both;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.vocabulary-test .option:nth-child(1) {
+    animation-delay: 0.55s;
+}
+
+
+.vocabulary-test .option:nth-child(2) {
+    animation-delay: 0.65s;
+}
+
+
+.vocabulary-test .option:nth-child(3) {
+    animation-delay: 0.75s;
+}
+
+
+.vocabulary-test .option:nth-child(4) {
+    animation-delay: 0.85s;
+}
+
+
+@keyframes vocabularyOptionIn {
+
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.vocabulary-test .option::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 65%;
+    height: 100%;
+
+    background: linear-gradient(
+        110deg,
+        transparent,
+        rgba(255, 255, 255, 0.65),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.6s ease;
+}
+
+
+.vocabulary-test .option:hover::before {
+    left: 140%;
+}
+
+
+.vocabulary-test .option:hover {
+    transform: translateX(6px);
+
+    background: #ffffff;
+
+    border-color: #93c5fd;
+
+    box-shadow:
+        0 7px 18px rgba(37, 99, 235, 0.10);
+}
+
+
+.vocabulary-test .option input {
+    transition:
+        transform 0.2s ease;
+}
+
+
+.vocabulary-test .option:hover input {
+    transform: scale(1.12);
+}
+
+
+.vocabulary-test .option:has(input:checked) {
+    background: #eff6ff;
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 7px 20px rgba(37, 99, 235, 0.12);
+
+    transform: translateX(5px);
+}
+
+
+.vocabulary-test .option:has(input:checked) span {
+    color: #1d4ed8;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   NAVIGATION BUTTONS
+========================================================= */
+
+.vocabulary-test .navigation-buttons {
+    animation:
+        vocabularyNavigationIn 0.7s ease both;
+
+    animation-delay: 0.9s;
+}
+
+
+@keyframes vocabularyNavigationIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.vocabulary-test .navigation-buttons button {
+    position: relative;
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.vocabulary-test .navigation-buttons button::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 65%;
+    height: 100%;
+
+    background: linear-gradient(
+        110deg,
+        transparent,
+        rgba(255, 255, 255, 0.45),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.6s ease;
+}
+
+
+.vocabulary-test .navigation-buttons button:hover::before {
+    left: 140%;
+}
+
+
+.vocabulary-test .navigation-buttons button:hover:not(:disabled) {
+    transform: translateY(-4px) scale(1.02);
+
+    box-shadow:
+        0 9px 22px rgba(37, 99, 235, 0.18);
+}
+
+
+.vocabulary-test .navigation-buttons #submitBtn {
+    animation:
+        vocabularySubmitPulse 2.5s ease-in-out infinite;
+}
+
+
+@keyframes vocabularySubmitPulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 5px 12px rgba(22, 163, 74, 0.15);
+    }
+
+    50% {
+        box-shadow:
+            0 8px 22px rgba(22, 163, 74, 0.32);
+    }
+}
+
+
+/* =========================================================
+   QUESTION NAVIGATOR
+========================================================= */
+
+.vocabulary-container .question-navigator {
+    position: relative;
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.84);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    animation:
+        vocabularyNavigatorIn 0.8s ease both;
+
+    animation-delay: 1s;
+}
+
+
+@keyframes vocabularyNavigatorIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#questionNumbers button {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+#questionNumbers button:hover {
+    transform: translateY(-4px) scale(1.05);
+
+    box-shadow:
+        0 7px 16px rgba(37, 99, 235, 0.12);
+}
+
+
+#questionNumbers button.current-question {
+    animation:
+        vocabularyCurrentPulse 1.8s ease-in-out infinite;
+}
+
+
+@keyframes vocabularyCurrentPulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 0 rgba(37, 99, 235, 0);
+    }
+
+    50% {
+        box-shadow:
+            0 0 16px rgba(37, 99, 235, 0.38);
+    }
+}
+
+
+#questionNumbers button.answered-question {
+    animation:
+        vocabularyAnsweredPop 0.35s ease both;
+}
+
+
+@keyframes vocabularyAnsweredPop {
+
+    0% {
+        transform: scale(0.85);
+    }
+
+    70% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* =========================================================
+   MOBILE BACKGROUND
+========================================================= */
+
+@media (max-width: 768px) {
+
+    body::before,
+    body::after {
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    body::before,
+    body::after {
+        width: 230px;
+        height: 230px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
 
 }
