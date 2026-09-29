@@ -19,30 +19,6 @@ public class EmailService {
     private final HttpClient httpClient = HttpClient.newHttpClient();
 
     // =========================
-    // EMAIL VERIFICATION
-    // =========================
-    public void sendVerificationEmail(
-            String email,
-            String verificationToken) {
-
-        String verificationLink
-                = "http://127.0.0.1:5500/FrontEnd/verify.html?token="
-                + verificationToken;
-
-        String subject = "PrepConnect Email Verification";
-
-        String text
-                = "Welcome to PrepConnect!\n\n"
-                + "Please verify your email using the link below:\n\n"
-                + verificationLink
-                + "\n\n"
-                + "Thank you,\n"
-                + "PrepConnect Team";
-
-        sendEmail(email, subject, text);
-    }
-
-    // =========================
     // PASSWORD RESET EMAIL
     // =========================
     public void sendPasswordResetEmail(
