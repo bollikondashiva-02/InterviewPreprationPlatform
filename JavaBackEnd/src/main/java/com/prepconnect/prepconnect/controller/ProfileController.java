@@ -2,7 +2,6 @@ package com.prepconnect.prepconnect.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,10 +12,6 @@ import com.prepconnect.prepconnect.service.UserService;
 
 @RestController
 @RequestMapping("/api/profile")
-@CrossOrigin(
-origins = "http://127.0.0.1:5500",
-allowedHeaders = "*"
-)
 public class ProfileController {
 
 private final UserService userService;

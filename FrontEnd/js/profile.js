@@ -45,7 +45,7 @@ async function loadProfile() {
 try {
 
     const response = await fetch(
-        `${API}/profile`,
+        `${API}/api/profile`,
         {
             method: "GET",
 
